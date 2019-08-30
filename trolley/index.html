@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SDRTA</title>
+	
+<!-- <META HTTP-EQUIV="refresh" content="0;URL=http://www.saltydog.com/trolley/">  -->
+	
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Expires" content="0" />
+
+
+	<meta name="generator" content="BBEdit 9.6" />
+</head>
+<body bgcolor="#000066">
+<div align="center">
+
+
+
+<script language="javascript">
+var refreshrate=62;             
+var image="http://64.203.225.15:8060/images/trolley.jpg";     
+var imgheight=1024;                   
+var imgwidth=1280;                
+function refresh(){
+document.images["pic"].src=image+"?"+new Date();
+setTimeout('refresh()', refreshrate*1000);}
+document.write('<IMG SRC="'+image+'" ALT="Please Stand By For Photo Upload" NAME="pic" ID="pic" WIDTH="'+imgwidth+'" HEIGHT="'+imgheight+'" STYLE="border: 3px solid Black;">');
+if(document.images)window.onload=refresh;
+</script> 
+</div>
+
+<br><br>
+
+<div align="center">
+<FORM>
+<INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+</FORM><br><br>
+
+<img src="sdrta.jpg" border="2" align="middle" />
+<br><br>
+
+
+<font size="+3" color="yellow" face="verdana"><b>TRACK BIG DOG & LITTLE DOG!</b></font>
+<br><br>
+
+ <img src="SDRTA_TROLLEYSCHED_2019.jpg" border="2"style="width:110%" />  
+</div>
+
+
+
+</body>
+</html>
+
+
+<!-- <?php $date = date("Y-m-d-H-i-s"); ?>
+
+
+
+<img src="http://64.203.225.15:8060/images/trolley.jpg?date=<?php echo $date; ?" border="2" align="middle"/>  -->

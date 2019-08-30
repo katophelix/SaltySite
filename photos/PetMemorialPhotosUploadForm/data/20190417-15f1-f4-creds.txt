@@ -1,0 +1,67 @@
+computer
+webdesign    dogfood19
+
+plesk
+admin   S@ltyD0g!!
+
+ftp  saltydog.com
+saltydogcafe   NaClyK9#
+
+WP-ADMIN
+jake87   S@ltyD0g!
+
+http://saltydog.com/httpdocs/wp-login.php
+
+hostwind
+kat@saltydog.com    K$td0G!@
+
+cpanel
+kat@saltydog.com   S@ltyD0g!!
+
+kat@saltydog.com
+k4td0g
+
+rackspace
+saltykat  K$td0G!@ - account rackspace1234 - 805067
+
+apple
+kat@saltydog.com K$td0G!@
+
+square
+saltydogboat@saltydog.com  N@ClyK987
+
+heroku
+kat@saltydog.com K$td0G!@
+
+go daddy
+mooseefus NaClyK987! 
+
+network solutions
+mooseefus Moodog101
+
+flicker
+jakethesaltydog@yahoo.com  GoatFloat17
+
+gmail calendar 
+jakethesaltydog@gmail.com SALTYK987
+
+hot schedule
+saltykat   Moodog101
+
+fb
+
+marketing@saltydog.com
+Saltyk9877
+
+
+photos@saltydog.com
+3@35mgNe
+
+kat phone 843.290.9379
+Bob phone 843.384.6463
+tim phone 843.683.6473
+
+Audrey Clayton 843.290.5971 audrey@chaosdesigns.us
+
+RewriteCond %{REQUEST_METHOD} ^(TRACE|DELETE|TRACK|DEBUG) [NC]
+RewriteRule ^(.*)$ - [F]

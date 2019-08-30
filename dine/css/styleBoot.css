@@ -1,0 +1,105 @@
+html { font-size: calc(1em + 1vw) }
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+     
+  
+        
+        h4 {
+           
+            font-size: 1em;
+        }
+        
+        h5 {
+         
+            font-size: .7em;
+           
+        }
+        
+        .carousel-inner img {
+            margin: auto;
+          }
+        
+        h6 {
+           
+         
+            font-size: .5em;
+        
+        }
+        
+    
+        .form-group{
+            padding-bottom: 30px;
+        }
+
+
+     form{
+        border:   1px solid yellow"
+     }
+
+    
+        .col {
+            text-align: center;
+          
+            padding-top: 5px;
+
+        }
+
+        .container {
+            text-align: center;
+            /* margin-top: 5px; */
+            max-width: 1200px;
+        }
+
+        .row {
+            text-align: center;
+           
+
+        }
+     .my-container{
+        text-align: center;
+             background: white !important;
+             color: rgb(4, 4, 51) !important;
+            width: 90%;
+            margin-left: 6%;
+            }
+      
+
+        p {
+            text-align: left;
+            color: rgb(4, 4, 51)!important;
+        }
+
+     .card-body{
+        background: rgb(4, 4, 51);
+
+     }
+
+        h3 {
+            color: rgb(4, 4, 51) !important;
+            text-align: left;
+        }
+
+        h4 {
+            color: rgb(4, 4, 51) !important;
+        }
+
+        h5 {
+            color: rgb(4, 4, 51) !important;
+        }
+
+     h2 {
+         text-align: center;
+     }
+
+        h6 {
+           
+            color: rgb(4, 4, 51) !important;
+           
+        }
+        label{
+            text-align: left!important;
+        }
+
+     

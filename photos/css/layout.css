@@ -1,0 +1,44 @@
+*,
+*:before,
+*:after
+{
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.island
+{
+   display: block; 
+   max-width: 1024px;
+   margin: 0 auto;
+   
+    align-items:baseline;
+  
+}
+
+.island thumbnails
+
+ {
+    display:flex;    
+    align-items:baseline;
+  }
+
+body
+{
+   background-color: rgb(4, 4, 51);
+   color: #FFFFFF;
+   
+    font-family: 'Rubik', sans-serif;
+
+}
+
+h1
+{
+   display: block;
+   color: #FCB720;
+}
+
+a
+{
+   color: #FFFFFF;
+}

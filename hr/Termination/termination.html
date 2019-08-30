@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9994729-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-9994729-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Termination Form
+    </title>
+    <!-- Modernizr -->
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- framework css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--<![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../headers/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="../headers/mega-header.css">
+
+    <style>
+        label{
+        font-size: .7em;
+        text-transform: uppercase;
+
+      }
+    h1{
+        font-size: .9em;
+    }
+    h4{
+        font-size: .6em;
+    }
+    p{
+        font-size: .5em;
+        margin-bottom: 0 !important;
+    }
+    h6{
+        font-size: .7em;
+    }
+    .my-container{
+
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+    <div class="container justify-content-center">
+
+     
+
+       
+            <div class="my-container ">
+            <div class="form-container justify-content-center" style="margin-left:7%;">
+                <div class="row justify-content-center" style="border:3px solid rgb(4, 4, 51); width:90%; padding-bottom: 5px; margin-left: 5%; text-align: left !important; font-size: 1em">
+                    <div class="col-10">
+                        <h1 style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 1%; color:rgb(4, 4, 51) !important ;">
+                          Termination form</h1>
+                           
+                      
+
+               
+                <form method="post" name="myemailform" action="form-to-email.php">
+
+                 
+       
+        <div class="form-group">
+            <label for="manager"> Manager:</label>
+            <input type="text" class="form-control" name="manager" aria-describedby="emailHelp"
+            placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="date"> Today's Date:</label>
+            <input type="date"name="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="employee"> Employee Name:</label>
+            <input type="text"name="employee" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="location"> Location:</label>
+            <input type="text"name="location" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="hiredate"> Hire Date:</label>
+            <input type="text" name="hiredate" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="">
+        <div class="form-group">
+            <label for="termdate"> Term Date:</label>
+            <input type="text" name="termdate" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="">
+        <div class="form-group">
+            <label for='typeterm'>Type of Termination?</label>
+            <select name="typeterm" style="display: block; 
+                     width: 100%; border-radius: 10px;
+                    height: calc(2.25rem + 1px);">
+                <option value=""></option>
+                <option value="Termination">Termination</option>
+                <option value="Self-Termination WITHOUT notice">Self-Termination WITHOUT notice</option>
+                <option value="Self-Termination WITH notice">Self-Termination WITH notice</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="notice"> How Much Notice:</label>
+            <input type="text" name="notice"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="">
+
+
+        <div class="form-group">
+            <label for="reasonSelf"> Reason For Self-Termination:</label>
+            <p>if this doesn't apply, please put N/A</p>
+           <input type="text"name="reasonSelf" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="">
+
+
+        <div class="form-group">
+            <label for="reasonTerm"> Reason For Termination:</label>
+            <p>if this doesn't apply, please put N/A</p>
+           <input type="text" name="reasonTerm" class="form-control" aria-describedby="emailHelp"
+            placeholder="">
+
+        <div class="form-group">
+            <label for='rehire'>Eligible for Rehire?</label>
+            <select name="rehire" style="display: block; 
+                                         width: 100%; border-radius: 10px;
+                                        height: calc(2.25rem + 1px);">
+                <option value=""></option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="explain"> Please explain:</label>
+            <p>if this doesn't apply, please put N/A</p>
+          <input type="text" name="explain" class="form-control"  aria-describedby="emailHelp"
+            placeholder="">
+       
+
+                    <button type="submit" name='submit' value="submit" class="btn btn-secondary">Submit</button>
+                </form>
+
+                <!-- <script language="JavaScript">
+                    // Code for validating the form
+                    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+                    // for details
+                    var frmvalidator = new Validator("myemailform");
+                    frmvalidator.addValidation("name", "req", "Please provide your name");
+                    frmvalidator.addValidation("email", "req", "Please provide your email");
+                
+                </script> -->
+
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <br>
+   
+</body>
+
+</html>

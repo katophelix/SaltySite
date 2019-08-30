@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Termination Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <div class="form-container">
+                <h1>
+                   Termination Form
+                </h1>
+                <form method="post" id="reused_form" >
+                    <label for='manager' > Manager: </label>
+                    <input type="text" name="manager"  id="manager" 
+                        placeholder="">
+                        <label for='name'>Today's Date: </label>
+                        <input type="text" name="today's date"  id="date"
+                            placeholder="">   
+                        <label for='name' >Employee Name: </label>
+                        <input type="text" name=" employee name" id="name" 
+                            placeholder="">
+                            <label for="location"> Location:</label>
+                            <input type="text"name="location"  id="location" 
+                            placeholder="">
+   
+                                <label for="hiredate"> Hire Date:</label>
+                                <input type="text" name="hire date" id="hiredate"
+                                placeholder="">
+                                
+                              
+                                    <label for="termdate"> Term Date:</label>
+                                    <input type="text" name="termination date"  id="termdate" 
+                                    placeholder="">
+                                  
+                                    <label for='typeterm'>Type of Termination?</label>
+                                    <select name="type of termination" style="display: block; 
+                                             width: 100%; border-radius: 10px;
+                                            height: calc(2.25rem + 1px);">
+                                        <option value=""></option>
+                                        <option value="Termination">Termination</option>
+                                        <option value="Self-Termination WITHOUT notice">Self-Termination WITHOUT notice</option>
+                                        <option value="Self-Termination WITH notice">Self-Termination WITH notice</option>
+                        
+                                    </select>
+                                    <label for="notice"> How Much Notice:</label>
+            <input type="text" name="how much notice" id="notice" 
+            placeholder="">
+
+            <label for="reasonSelf"> Reason For Self-Termination:</label>
+            <p>if this doesn't apply, please put N/A</p>
+           <input type="text"name="self termination reason" id="reasonSelf" 
+            placeholder="">
+            <label for="reasonTerm"> Reason For Termination:</label>
+            <p>if this doesn't apply, please put N/A</p>
+           <input type="text" name="termination reason" aria-describedby="reasonTerm"
+            placeholder="">
+            <label for='rehire'>Eligible for Rehire?</label>
+            <select name="rehire" style="display: block; 
+                                         width: 100%; border-radius: 10px;
+                                        height: calc(2.25rem + 1px);">
+                <option value=""></option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+
+
+            </select>
+
+            <label for="explain"> Please explain:</label>
+            <p>if this doesn't apply, please put N/A</p>
+          <input type="text" name="explain"  id="explain"
+            placeholder="">
+                    <div class="g-recaptcha" data-sitekey="6Lckc5YUAAAAAAMHgfCXuvlbeO1FTsCAu4ihH8kx"></div>
+                    <button class="button-primary" type="submit" >Post</button>
+                </form>
+                <div id="success_message" style="display:none">
+                    <h3>Submitted successfully!</h3> 
+                   
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+            </div>
+        </div>
+    </body>
+</html>

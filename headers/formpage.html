@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9994729-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-9994729-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Contact Us</title>
+    <!-- Modernizr -->
+
+    <!-- jQuery-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- framework css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--<![endif]-->
+    <link rel="icon" type="image/png" href="../images/social-logos/favicon.ico">
+     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet"> 
+  
+    <!-- <link type="text/css" rel="stylesheet" href="../css/dropMenustyle.css"> -->
+    <link type="text/css" rel="stylesheet" href="../headers/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="../headers/mega-header.css">
+    <link rel="stylesheet" href="form.css" >
+</head>
+
+
+
+<body>
+
+
+        <script>
+                $(document).ready(function () {
+                    $("div[data-includeHTML]").each(function () {                
+                        $(this).load($(this).attr("data-includeHTML"));
+                    });
+                });
+            </script>
+
+
+
+        <header>
+                <div data-includeHTML="https://saltydog.com/headers/_HeaderPartial.html"></div>
+           </header>
+    <br>
+    <br>
+
+    <img src="../images/NEW HEADERS/CONTACT.jpg" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and events written on it.">
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card" style="width: 90%;">
+                <div class="card-body">
+                    <h1 class="card-title">843.671.CAFE // info@saltydog.com </h1>
+                    <h6 class="card-subtitle mb-2 text-muted"> SEND US A QUICK NOTE</h6>
+                    <!-- Start code for the form-->
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2>Contact Us</h2> Got a question ? Feedback? Awesome! 
+                        <p> Send your message in the form below and we will get back to you as early as possible. </p>
+                        <form role="form" method="post" id="reused_form" >
+                            <div class="form-group">
+                                <label for="name"> Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"> Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                            </div>
+                            <div class="form-group">
+                                <label for="name"> Message:</label>
+                                <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                            </div>
+                            <div class="row" style="margin-bottom:30px;">
+                                <div class="col-sm-5">
+                                    <img src="captcha.php" id="captcha_image"/>
+                                    <br/>
+                                    <a id="captcha_reload" href="#">reload</a> 
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="email">Enter the code from the image here:</label>
+                                    <input type="text" class="form-control" required id="captcha" name="captcha" >
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">Post It! &rarr;</button>
+                        </form>
+                        <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                        <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <style>
+            input[type=text],
+                select,
+                textarea {
+                    width: 90%;
+                    padding: 1px;
+                    border: 1px solid #ccc;
+                    border-radius: 2px;
+                    box-sizing: border-box;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                    resize: vertical;
+                }
+
+                input[type=submit] {
+
+                    color: rgb(4, 4, 51);
+                    padding: 5px 10px;
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+
+                input[type=submit]:hover {
+                    /* background-color: #45a049; */
+                }
+
+                .my-container {
+                    border-radius: 2px;
+                    background-color: white;
+                    padding: 2px;
+                    color: black;
+                    width: 80%;
+
+                }
+
+                /* .photo-container {
+                    background-color: rgb(4, 4, 51)
+                } */
+
+                .container .card-body {
+
+
+                    background-color: white !important
+                }
+
+                .container .card {
+
+                    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+                    background-color: white !important;
+                    margin: 2px;
+                    text-align: center
+                }
+
+             
+
+
+                .container .card-img-top {
+
+                    background-color: white !important
+                }
+
+                .container h1 {
+font-size: .7em;
+                    color: rgb(4, 4, 51) !important;
+                }
+            </style>
+
+
+
+        <script language="JavaScript">
+            // Code for validating the form
+            // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+            // for details
+            var frmvalidator = new Validator("myemailform");
+            frmvalidator.addValidation("name", "req", "Please provide your name");
+            frmvalidator.addValidation("email", "req", "Please provide your email");
+            frmvalidator.addValidation("email", "email", "Please enter a valid email address"); 
+        </script>
+
+
+
+
+        <div class="row justify-content-center" style="margin-top: 10px;">
+
+            <div class="card" style="width: 8rem;">
+                <a href="../Dine/dine.html">
+                    <img class="card-img-top" src="images/dining.png" style="width:70%;" alt="Black cat on a table, drinking from a Salty Dog mug.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text">DINING</h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 8rem;">
+                <a href="../Pages/stores.html">
+                    <img class="card-img-top" src="images/shopping.png" style="width:70%;" alt="Yellow lab puppy in a blue canvas salty dog shopping bag on a beach.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong> SHOPPING</strong></h1>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 8rem;">
+                <a href="../Pages/findus.html">
+                    <img class="card-img-top" src="images/findus.png" style="width:70%;" alt="Small pomeranian mix, wearing a red salty dog t-shirt, in a white wicker basket, with a white blanket on a black bicycle on the beach with the surf in the backgound.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong> FIND US</strong></h1>
+                </div>
+            </div>
+
+
+
+            <div class="card" style="width: 8rem;">
+                <a href="http://www.sbinn.com/">
+                    <img class="card-img-top" src="images/inn.png" style="width:70%;" alt="A red golden retriever wearing a pink Salty dog t-shirt sitting on a pier overlooking the marsh. 
+                            woman is sitting beside the dog, her hand on the dog's back.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong> THE INN</strong></h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 8rem;">
+                <a href="../cruise/cruise.html">
+                    <img class="card-img-top" src="images/cruisde.png" style="width:70%;" alt="2 weimaramers sitting on benches with colorful towels at the stern of a boat, water and dock in background. 
+                            woman is sitting beside the dog, her hand on the dog's back.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong> CRUISING</strong></h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 8rem;">
+                <a href="http://bluewaterhhi.com/">
+                    <img class="card-img-top" src="images/blue.png" style="width:70%;" alt="Blue tick Hound wearing salty dog bandana, cap and  red sunglasses, sitting on walkway of a dock, wter and boats in background.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong> BLUE WATER TACKLE SHOP</strong></h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 8rem;">
+                <a href="../employment/employment.html">
+                    <img class="card-img-top" src="images/employment.png" style="width:70%;" alt="Yellow lab in a green hammock on a porch, wearing a blue salty dog bandana and black sunglasses.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong>EMPLOYMENT</strong></h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 8rem;">
+                <a href="../donation/donation.html">
+                    <img class="card-img-top" src="images/charity.png" style="width:70%;" alt="Red Golden Retriever wearing a white fedora and blue tie dye salty dog bandana, flowers and wooden structure in background.">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong>DONATIONS</strong></h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 8rem;">
+                <a href="../Dine/noDogs.html">
+                    <img class="card-img-top" src="images/nodog.png" style="width:70%;" alt="Yellow Lab sitting in hallway with beige carpet looking directly into camera, torn tissue all over the floor..">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong>WHY NO DOGS?</strong></h1>
+                </div>
+            </div>
+
+            <div class="card" style="width: 8rem;">
+                <a href="meetcrew.html">
+                    <img class="card-img-top" src="images/meetcrew.png" style="width:70%;" alt="Yellow Lab sitting in hallway with beige carpet looking directly into camera, torn tissue all over the floor..">
+                </a>
+                <div class="card-body">
+                    <h1 class="card-text"><strong>MEET THE CREW</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <br>
+
+
+    
+</body>
+
+</html>

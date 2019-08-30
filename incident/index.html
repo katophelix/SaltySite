@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INCIDENT REPORT FORM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form-container">
+            <h1>
+                INCIDENT REPORT FORM
+            </h1>
+            <h3 style="text-align:center">Internal use only.</h3>
+            <div id="success_message" style="display:none">
+                    <h3>Submitted successfully!</h3>
+    
+                </div>
+            <div id="text">
+                <p>
+                    USE THIS FORM FOR ANY INCIDENT THAT MAY POSSIBLY INVOLVE INJURY (INCLUDING BOTH CUSTOMERS AND
+                    EMPLOYEES), PROPERTY DAMAGE, THEFT AND ANY SUCH RELATED ACTIVITY. THIS REPORT IS AN INTERNAL
+                    DOCUMENT
+                    AND SHOULD NOT BE DISCUSSED IN ANY MANNER WITH ANYONE. THIS REPORT MAY BE USED FOLLOWING THE
+                    RESOLUTION
+                    OF THE INCIDENT NEAR THE END OF YOUR SHIFT FOR COMPANY RECORDS. FILL OUT ONLY WHAT YOU RECALL. IF
+                    YOU
+                    DON’T KNOW SOMETHING, SIMPLY LEAVE IT BLANK. ONLY ONE REPORT PER INCIDENT IS REQUIRED. IF THERE IS
+                    MORE
+                    THAN ONE EMPLOYEE INVOLVED IN THE RESOLUTION OF THE INCIDENT, THE MOST SENIOR STAFF MEMBER SHOULD
+                    COMPLETE THIS FORM. OTHERWISE, THE EMPLOYEE MOST INVOLVED WITH THE INCIDENT RESOLUTION IS REQUIRED
+                    TO
+                    COMPLETE THIS FORM, AS WELL AS ANY OTHER ACTIONS CONTAINED HEREIN. CALL OR TEXT TIM STEARNS
+
+
+                    (843-683-6473) BOB GOSSETT
+
+                    (843-384-6463) UPON KNOWLEDGE OF ANY INCIDENT OR LOSS.
+                </p>
+
+            </div>
+            <form method="post" id="reused_form">
+                <label for='Date'>Date: </label>
+                <input type="date" name="date" id="date" placeholder="">
+
+                <label for='Time of incident:'>Time of incident: </label>
+                <input type="text" name="Time of incident:" id="Time of incident:" placeholder="">
+
+
+                <label for='Place of incident'>Place of incident: </label>
+                <input type="text" name="Place of incident" id="Place of incident" placeholder="">
+
+
+                <label for='Incident Directly affected Crew or Guest or both:'>Incident Directly affected Crew or Guest
+                    or both:<br>
+
+
+                    <select name="Incident Directly affected Crew or Guest or both:">
+                        <option hidden>Choose CREW, GUEST OR BOTH</option>
+                        <option value="CREW">CREW</option>
+                        <option value="GUEST">GUEST</option>
+                        <option value="BOTH">BOTH</option>
+                    </select>
+
+
+
+                    <label for='LOCATION AND WEATHER AT TIME OF INCIDENT'>LOCATION AND WEATHER AT TIME OF INCIDENT
+
+                        (PLEASE SPECIFY WHERE INCIDENT OCCURRED): </label>
+                    <input type="text" name="LOCATION AND WEATHER AT TIME OF INCIDENT"
+                        id="LOCATION AND WEATHER AT TIME OF INCIDENT" placeholder="">
+
+
+                    <label for='LIST OF EMPLOYEES INVOLVED IN RESOLVING THE INCIDENT"'> LIST OF EMPLOYEES INVOLVED IN
+                        RESOLVING THE INCIDENT:
+                    </label>
+                    <input type="text" name="LIST OF EMPLOYEES INVOLVED IN RESOLVING THE INCIDENT"
+                        id="LIST OF EMPLOYEES INVOLVED IN RESOLVING THE INCIDENT" placeholder="">
+
+
+                    <label for='description of incident'> BRIEF DESCRIPTION OF INCIDENT:
+                        <textarea id="description of incident" name="description of incident" rows="10"
+                            ></textarea>
+
+                        <label for='PHYSICAL CONDITION PURPORTEDLY RESULTING FROM INCIDENT:'>
+                            PHYSICAL CONDITION PURPORTEDLY RESULTING FROM INCIDENT:
+                            <textarea id="PHYSICAL CONDITION PURPORTEDLY RESULTING FROM INCIDENT"
+                                name="PHYSICAL CONDITION PURPORTEDLY RESULTING FROM INCIDENT" rows="10"
+                                ></textarea>
+
+                            <label for='WHAT WAS THE PERSON(S) DOING THAT RESULTED IN THE INCIDENT OCCURRING:'>
+                                WHAT WAS THE PERSON(S) DOING THAT RESULTED IN THE INCIDENT OCCURRING:
+                                <textarea id="WHAT WAS THE PERSON(S) DOING THAT RESULTED IN THE INCIDENT OCCURRING:"
+                                    name="WHAT WAS THE PERSON(S) DOING THAT RESULTED IN THE INCIDENT OCCURRING:"
+                                    rows="10"></textarea>
+
+                                <label for='ANY FOLLOW UP TREATMENT NEEDED'>
+                                    ANY FOLLOW UP TREATMENT NEEDED:
+                                    <textarea id="ANY FOLLOW UP TREATMENT NEEDED" name="ANY FOLLOW UP TREATMENT NEEDED"
+                                        rows="10"></textarea>
+
+
+                                    <label for='HAS THIS EMPLOYEE RETURNED TO WORK:"'>
+                                        HAS THIS EMPLOYEE RETURNED TO WORK:
+                                    </label>
+                                    <input type="text" name="HAS THIS EMPLOYEE RETURNED TO WORK:"
+                                        id="HAS THIS EMPLOYEE RETURNED TO WORK:" placeholder="">
+
+                                    <label for='IF YES, WHEN'>
+                                        IF YES, WHEN:
+                                    </label>
+                                    <input type="text" name="IF YES, WHEN:" id="IF YES, WHEN:" placeholder="">
+
+                                    <label for='WAS ANYONE ELSE NOTIFIED OF OR INVOLVED WITH THE INCIDENT 
+                                        ON PROPERTY (PLEASE CIRCLE) '>
+                                        WAS ANYONE ELSE NOTIFIED OF OR INVOLVED WITH THE INCIDENT
+                                        ON PROPERTY (PLEASE SELECT YES OR NO FOR ALL NOTIFIED)
+                                        POLICE / SECURITY / MEDICAL PROFESSIONAL / FIRE DEPARTMENT :
+                                    </label>
+
+                                    <label for='police notified'>POLICE NOTIFIED</label>
+                                    <select name="POLICE NOTIFIED">
+                                        <option hidden>Choose yes or no</option>
+                                        <option value="YES">YES</option>
+                                        <option value="NO">NO</option>
+
+                                    </select>
+
+                                    <br>
+                                    <label for='SECURITY notified'>SECURITY NOTIFIED</label>
+                                    <select name="SECURITY NOTIFIED">
+                                        <option hidden>Choose yes or no</option>
+                                        <option value="YES">YES</option>
+                                        <option value="NO">NO</option>
+
+                                    </select>
+                                    <br>
+
+                                    <label for='MEDICAL PROFESSIONAL notified'>MEDICAL PROFESSIONAL NOTIFIED</label>
+                                    <select name="MEDICAL PROFESSIONAL NOTIFIED">
+                                        <option hidden>Choose yes or no</option>
+                                        <option value="YES">YES</option>
+                                        <option value="NO">NO</option>
+
+                                    </select>
+                                    <br>
+                                    <label for='FIRE DEPARTMENT notified'>FIRE DEPARTMENT NOTIFIED</label>
+                                    <select name="FIRE DEPARTMENT  NOTIFIED">
+                                        <option hidden>Choose yes or no</option>
+                                        <option value="YES">YES</option>
+                                        <option value="NO">NO</option>
+
+                                    </select>
+                                    <label for='was 911 called '>Was 911 called?</label>
+                                    <select name="Was 911 called">
+                                        <option hidden>Choose yes or no</option>
+                                        <option value="YES">YES</option>
+                                        <option value="NO">NO</option>
+
+                                    </select>
+                                    <label for='did 911 respond '>Did 911 respond?</label>
+                                    <select name="Did 911 respond">
+                                        <option hidden>Choose yes or no</option>
+                                        <option value="YES">YES</option>
+                                        <option value="NO">NO</option>
+
+                                    </select>
+
+                                    <label for='HOW DID THE INCIDENT CONCLUDE? '>
+                                        HOW DID THE INCIDENT CONCLUDE? / HOW WAS IT RESOLVED?:
+                                        <textarea id="HOW DID THE INCIDENT CONCLUDE? / HOW WAS IT RESOLVED?: "
+                                            name="HOW DID THE INCIDENT CONCLUDE? / HOW WAS IT RESOLVED?: " rows="10"
+                                            ></textarea>
+
+
+
+                                        <label
+                                            for='What time was Tim Stearns Notified via phone (Bob Gossett if Tim not Available):'>
+                                            What time was Tim Stearns Notified via phone (Bob Gossett if Tim not
+                                            Available):
+                                        </label>
+                                        <input type="text"
+                                            name="What time was Tim Stearns Notified via phone (Bob Gossett if Tim not Available)"
+                                            id="What time was Tim Stearns Notified via phone (Bob Gossett if Tim not Available)"
+                                            placeholder="">
+
+                                        <label for='Person Completing Form:'>
+                                            Person Completing Form:
+                                        </label>
+                                        <input type="text" name="Person Completing Form:" id="Person Completing Form:"
+                                            placeholder="">
+
+
+                                        <!-- 
+
+
+                                        <div class="form-group">
+
+                                            <p>Please add a picture of incident if possible.</p>
+                                            <label for="name"> Image Upload:</label>
+                                            <input type="file" class="form-control" id="image" name="image">
+                                        </div> -->
+
+                                        <button class="button-primary" type="submit">Post</button>
+            </form>
+
+          
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+                <h3>Error</h3> Sorry there was an error sending your form.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

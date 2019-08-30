@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9994729-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-9994729-1');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PetSearch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet"> 
+ 
+   
+   
+    <link type="text/css" rel="stylesheet" href="../../headers/styleBoot.css">
+     <link type="text/css" rel="stylesheet" href="../../headers/mega-header.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+
+
+
+
+
+
+    <!-- <script type="text/javascript" src="petphotosearch.js"></script> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand');
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+     
+        font-size: 1em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+    .image-container {
+        background: #EEE;
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+        -ms-flex-direction: column;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        display: -webkit-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .image {
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        width: 300px;
+        margin: .1vw;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    .material-placeholder {
+        flex: 1;
+    }
+
+    #moreImagesBtn {
+        display: none;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #moreImagesBtn>i {
+        font-size: 18px;
+    }
+
+    /*
+	------------------------------
+	Changes to the Materialize CSS
+	------------------------------
+*/
+
+  
+
+    .btn:hover {
+        background: #5d5d5e;
+    }
+
+    .btn>i {
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    input[type=text]:not(.browser-default):focus:not([readonly]) {
+        border-bottom: 1px solid #606161;
+        box-shadow: 0 2px 0 0 #626263;
+    }
+
+    input:not([type]):focus:not([readonly])+label,
+    input[type=text]:not(.browser-default):focus:not([readonly])+label,
+    input[type=password]:not(.browser-default):focus:not([readonly])+label,
+    input[type=email]:not(.browser-default):focus:not([readonly])+label,
+    input[type=url]:not(.browser-default):focus:not([readonly])+label,
+    input[type=time]:not(.browser-default):focus:not([readonly])+label,
+    input[type=date]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+    input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+    input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+    input[type=number]:not(.browser-default):focus:not([readonly])+label,
+    input[type=search]:not(.browser-default):focus:not([readonly])+label,
+    textarea.materialize-textarea:focus:not([readonly])+label {
+        color: #28282b;
+    }
+
+    /*
+	MEDIA QUERIES
+*/
+
+    @media screen and (max-width: 400px) {
+        image-container div {
+            margin: 0;
+        }
+        image-container {
+            padding: 0;
+        }
+    }
+</style>
+
+<body>
+    <main>
+
+
+
+        <style type="text/css">
+            body {
+                color: rgb(4, 4, 51);
+                
+                padding: 10px 0;
+            }
+
+
+            nav.nav-center ul {
+                text-align: center;
+            }
+
+            nav.nav-center ul li {
+                display: inline;
+                float: none;
+            }
+
+            nav.nav-center ul li a {
+                display: inline-block;
+            }
+
+            .nav-item {
+                color: rgb(4, 4, 51);
+               
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            nav {
+                color: white;
+             
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            .nav-link {
+                color: white;
+                
+
+                text-align: center;
+                align-content: center;
+                max-width: 1100;
+            }
+
+            .col img {
+                width: 98%;
+
+            }
+
+            .container {
+                text-align: center;
+                /* margin-top: 5px; */
+                max-width: 1200px;
+            }
+
+            .btn-warning {
+                
+                color: rgb(4, 4, 51);
+            }
+
+            p {
+                text-align: center;
+                color: rgb(4, 4, 51) !important;
+                font-size: 1.2em;
+                font-family: 'Baloo Bhaina', cursive;
+    text-transform: uppercase;
+            }
+            label {
+                text-align: center;
+                color: rgb(4, 4, 51) !important;
+                font-size: 1.2em;
+                font-family: 'Baloo Bhaina', cursive;
+    text-transform: uppercase;
+            }
+
+            .col .btn {
+                float: none !important;
+                text-align: center;
+                align-content: center;
+                background-color: transparent;
+            }
+
+            .btn {
+               
+                text-align: center;
+                align-content: center;
+                color: rgb(4, 4, 51);
+            }
+            h2{
+                font-size: 1.5em;
+            }
+
+        
+
+  
+        </style>
+     
+           
+  
+      
+       
+          
+       
+
+        </div>
+        <div class="container">
+            <div id="back-button">
+                <a class="btn btn-secondary " 
+           
+                href="https://www.saltydog.com/photos/" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Salty Dog Photos
+                </a>
+            </div>
+           
+            <div class="row">
+                <div class="input-field col s5">
+                    <!-- // Search Box -->
+                    <input id="userInput" type="text" class="validate">
+                    <label for="userInput">Enter Pets Name</label>
+                </div>
+                <div class="input-field col s2">
+                    <!-- // Search Button -->
+                    <button type="button" class="btn btn-warning">
+                        <a class="btn-warning" id="searchBtn">
+                            <p>Search</p>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <!-- // Search results will be appended here -->
+            </div>
+            <!-- // More image btn -->
+            <!-- <a class="waves-effect waves-light btn" id="moreImagesBtn">
+                LOAD MORE PHOTOS
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a> -->
+        </div>
+    </main>
+    <script type="text/javascript">
+
+     var gallery;
+   var lastSearch = "salty dog cafe dogs";
+        console.log("I'm here");
+        $(
+            (function (document, window) {
+                "use strict";
+                // API Key
+                const flickrKey = "204df225455ff4bafd6d7bf01c742e3d";
+                // Search Text
+                let userInput = $("#userInput");
+                // Search Btn
+                let searchBtn = $("#searchBtn");
+                // More Images btn
+                // let moreImagesBtn = $("#moreImagesBtn");
+                // Result Image area
+                let imageContainer = $(".image-container");
+                // Count of returned results
+                let perPageCount = 500;
+                // variable for current page requested so that when the user scrolls, it is increamented and json is requested
+                let currentPage = 1;
+
+                // SEARCH BTN EVENT LISTENER
+                searchBtn.on("click", function () {
+                    // Clear exisitng images
+                    imageContainer.html("");
+                    validateInput();
+                }); // end of SEARCH BTN EVENT LISTENER
+
+                //USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
+                userInput.on("keyup", function (e) {
+                    if (e.keyCode == 13) {
+                        // Clear exisitng images
+                        imageContainer.html("");
+                        validateInput();
+                    }
+                }); // end of USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
+
+                // MORE IMAGES BTN
+                // moreImagesBtn.on("click", function () {
+                //     currentPage++;
+                //     console.log(currentPage);
+                //     validateInput();
+
+                // }); // END OF MORE IMAGES BTN
+
+                // VALIDATE USER INPUT
+                function validateInput() {
+                    console.log(userInput);
+                    //check if query len is valid
+                    if (userInput.val().length != 0) {
+                        // Call the AJAX req passing in the user search
+                        getImageData(userInput.val());
+                    } else {
+                        userInput.focus();
+                    } // end of validation
+                } //end of VALIDATE USER INPUT
+
+                // GET JSON FROM FLICKR API
+                function getImageData(query) {
+                    $.ajax({
+                        type: "GET",
+                        url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&tags="salty+dog+cafe+dog+photos+for+salty+dog+site&text=${query}&safe_search=1&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
+                        success: function (data) {
+                            // Call the handle Data function and pass the response
+                            handleData(data);
+                            console.log(data);
+                            console.log(url)
+                            console.log("here 2")
+                        },
+                        error: function (e) {
+                            alert("Failed to load data from API");
+                            // moreImagesBtn.html("Something Went Wrong");
+                            console.log(e);
+                        }
+                    });
+                } // END OF getImageData
+
+                // Build urls for the images
+                function handleData(data) {
+                    //console.log(data);
+                    data.photos.photo.forEach(function (currentPhoto, index, array) {
+                        // Image URL > Will be built and made an link
+                        let photoURL = `https://farm${currentPhoto.farm}.static.flickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
+                        // alt text
+                        let title = currentPhoto.title;
+                        // plug the data to page
+                        pushImages(photoURL, title);
+                    });
+                    //show the more btn
+                    moreImagesBtn.slideDown();
+                } // END OF handleData
+
+                // Built HTML tempate and push the images to the webpage
+                function pushImages(url, title) {
+                    // Build the HTML element
+                    let htmlText =
+                        '<div class="image">' +
+                        '<img class="materialboxed" data-caption="' +
+                        title +
+                        '" src="' +
+                        url +
+                        '">' +
+                        "</div>";
+                    imageContainer.append(htmlText);
+                    // Add the Materialize functionality to the images
+                    $(".materialboxed").materialbox();
+                } // END OF pushImages
+            })() // end of self self executing anonymous function
+        );
+
+
+
+
+    </script>
+</body>

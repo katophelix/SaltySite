@@ -1,0 +1,159 @@
+html { font-size: calc(1em + 1vw) }
+body{
+    font-family: 'Rubik', sans-serif;
+}
+     
+        h1 {
+           
+            font-size: 4.0vw;
+        }
+        
+        h2 {
+          
+            font-size: 3.0vw;
+        }
+        h3 {
+           
+            font-size: .9em;
+        }
+        p {
+           
+            font-size: .5em;
+        }
+        .block {
+          
+            background: white;
+            padding: .5rem;
+           
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+          /* .block nav {
+            width: 55%;
+            height: auto;
+            float: left;
+            margin: 0 1rem 0 0;
+          } */
+          .block p {
+            font-weight: 500;
+            margin: 0 0 0.5rem 1rem;
+            color: rgb(4, 4, 51);
+            text-align: left;
+          }
+          
+        h4 {
+           
+            font-size: .7em !important;
+        }
+        
+        h5 {
+         
+            font-size: 1.3vw;
+           
+        }
+        
+        .carousel-inner img {
+            margin: auto;
+          }
+        
+        h6 {
+           
+         
+            font-size: 1.1vw;
+        
+        }
+        
+        
+    
+       
+
+        label{
+
+            font-size: 1em !important;
+            
+        }
+   
+
+
+
+    
+        .col {
+            text-align: center;
+          
+            padding-top: 5px;
+
+        }
+
+        .container {
+            text-align: center;
+            /* margin-top: 5px; */
+            max-width: 1200px;
+        }
+
+        .row {
+            text-align: center;
+           
+
+        }
+
+    
+
+     
+
+     .card-body{
+        background: rgb(4, 4, 51);
+
+     }
+
+        h3 {
+            color: white !important;
+            text-align: left;
+        }
+
+        h4 {
+            color: white !important;
+        }
+
+        h5 {
+            color: white !important;
+        }
+
+     h2 {
+         text-align: center;
+     }
+
+        h6 {
+           
+            color: white !important;
+           
+        }
+  
+
+     
+        .form-group   label textarea{
+
+            font-size: .9em !important;
+            
+        }
+        .form-group   label{
+
+            font-size: .9em !important;
+            
+        }
+
+        label{
+
+            font-size: .9em !important;
+            text-align: left !important;
+            
+        }
+        .form-group{
+            font-size: .9em !important;
+            
+        }
+
+
+     form{
+        font-size: .9em !important;
+       
+     }

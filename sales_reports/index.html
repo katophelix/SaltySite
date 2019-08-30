@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retail Sales</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+textarea[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=file] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#location{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#shift{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Retail Sales</h1>
+
+                    <br>
+                    <form enctype="multipart/form-data" method="POST" action="send.php">
+                        <div class="form-group">
+
+                            <label for="Location">
+                                <h3>Choose your location from the drop down</h3>
+                            </label>
+
+
+                            <select id="location" name="location">
+                                <option value="">- Select -</option>
+                                <option value="TSS">T-shirt Store South Beach</option>
+                                <option value="Cargo"> Jake's Cargo</option>
+                                <option value="Tanger Retail">T-shirt Store Tanger Retail</option>
+                                <option value="Blue Water">Blue Water South Beach Marina</option>
+                                <option value="Arrow">T-shirt Store on Arrow Rd</option>
+                                <option value="Online Store">Online Store</option>
+                                <option value="Bohicket T-shirt">T-shirt Store in Bohicket</option>
+                                <option value="Bohicket Blue Water">Blue Water Bohicket Marina</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Date">Date</label>
+                            <input id="date" type="text" name="date" maxlength="50" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Net Sales">Net Sales</label>
+
+
+                            <input type="text" id="NetSales" name="NetSales" />
+                        </div>
+                        <div class="form-group">
+                            <label for="AMLead">AM Lead:</label>
+                            <input id="AMLead" type="text" name="AMLead" maxlength="50">
+                        </div>
+                        <div class="form-group"> <label for="PMLead">PM Lead:</label>
+                            <input id="PMLead" type="text" name="PMLead" maxlength="50"></div>
+                        <div class="form-group"><label for="YourName">Your Name:</label>
+                            <input id="YourName" type="text" name="YourName" maxlength="50"></div>
+                        <div class="form-group"><label for="shift">Shift</label>
+                            <select id="shift" name="shift">
+                                <option value="">- Select -</option>
+                                <option value="Mid Day">Mid Day</option>
+                                <option value="End of Day">End of Day</option>
+                            </select></div>
+                        <div class="form-group"><label for="RegisterOne">Register One:</label>
+                            <input id="RegisterOne" type="text" name="RegisterOne" maxlength="50"></div>
+                        <div class="form-group"><label for="RegisterTwo">Register Two:</label>
+                            <input id="RegisterTwo" type="text" name="RegisterTwo" maxlength="50"></div>
+
+
+
+                        <div class="form-group"><label for="TotalTransations">Total Transactions:</label>
+                            <input id="TotalTransactions" type="text" name="TotalTransactions" maxlength="50"></div>
+
+                        <div class="form-group"> <label for="Notes">Notes:</label>
+                            <textarea id="Notes" type="text" name="Notes" Kitchen maxlength="500"></textarea>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="name"> Image Upload:</label>
+                            <input type="file" class="form-control" id="image" name="my_files[]">
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Image Upload:</label>
+                            <input type="file" class="form-control" id="image2" name="my_files[]">
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">Post It!
+                            &rarr;</button>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Sent your message successfully!</h3>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Error</h3> Sorry there was an error sending your form.
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

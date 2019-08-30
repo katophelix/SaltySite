@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>F&B Sales Report</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <style>
+        input[type=text] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        textarea[type=text] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        input[type=file] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        #location{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        #shift{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        </style>
+    <body >
+
+        <div class="container">
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <div class="form-container">
+
+    
+     
+        <h1 >Food &amp; Beverage Sales</h1>
+ 
+    
+      <hr>
+      <form enctype="multipart/form-data" method="POST" action="sendfb.php">
+
+
+<label for="Date">Date</label>
+<input id="date" type="text"  name="date" maxlength="50" />
+
+
+
+
+
+
+  <label  for="Location">Choose your location from the dropdown</label>
+
+
+<select  id="location" name="location">
+<option  value="">Select</option>
+  <option  value="cafe">The Cafe</option>
+  <option  value="land's end">Land's End Tavern</option>
+  <option  value="wreck">The Wreck</option>
+  <option  value="bluffdog">Bluffdog</option>
+  <option  value="cruise">Cruise</option>
+  <option  value="iceCream">Ice Cream</option>
+  <option  value="pizza">Pizza</option>
+  <option  value="cookout">Cookout</option>
+  <option  value="bodogcafe">BoDog Cafe</option>
+<option  value="other">Other</option>
+  </select>
+
+
+
+
+
+
+  <label  for="Net Sales">Net Sales</label>
+
+
+<input type="text"  id="Net Sales" name="NetSales"  />
+
+
+  
+
+
+<label for="name">Person Completing Form:</label>
+                    <input id="Name" type="text" name="YourName"  maxlength="50">
+
+
+
+  
+
+                    <label for="Shift">Shift:</label>
+                  
+
+
+
+
+<select  name="Shift">
+  <option  value="mid-day">Mid-Day</option>
+  <option  value="end-of-day">End of Day</option>
+  </select>
+
+
+
+
+
+
+  <h1>F&B Sales Info</h1>
+
+  <hr>
+  
+
+
+
+<label for="Breakfast Net">Breakfast Net:</label>
+<input id="BreakfastNet" type="text" name="BreakfastNet"  maxlength="50">
+
+
+
+  
+<label for="Breakfast Covers">Breakfast Covers:</label>
+<input id="Breakfast Covers" type="text" name="BreakfastCovers"  maxlength="50">
+
+
+
+<label for="BreakfastAverage">Breakfast Average:</label>
+<input id="BreakfastAverage" type="text" name="BreakfastAverage"  maxlength="50">
+
+
+
+
+<label for="LunchNet">Lunch Net:</label>
+<input id="LunchNet" type="text" name="LunchNet"  maxlength="50">
+
+
+<label for="LunchCovers">Lunch Covers:</label>
+<input id="LunchCovers" type="text" name="LunchCovers"  maxlength="50">
+
+<label for="Lunch Average">Lunch Average:</label>
+<input id="Lunch Average" type="text" name="LunchAverage"  maxlength="50">
+
+
+<label for="DinnerNet">Dinner Net:</label>
+<input id="DinnerNet" type="text" name="DinnerNet"  maxlength="50">
+
+
+<label for="DinnerCovers">Dinner Covers:</label>
+<input id="DinnerCovers" type="text" name="DinnerCovers"  maxlength="50">
+
+<label for="Dinner Average">Dinner Average:</label>
+<input id="Dinner Average" type="text" name="DinnerAverage"  maxlength="50">
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+  <h4>Cruise F&B</h4>
+
+
+ 
+ 
+
+<label for="CruiseTickets">Cruise Tickets:</label>
+<input id="CruiseTickets" type="text" name="CruiseTickets"  maxlength="50">
+
+
+<label for="CruisePassengers">Cruise Passengers:</label>
+<input id="CruisePassengers" type="text" name="CruisePassengers"  maxlength="50">
+
+<label for="CruiseCrew">Cruise Crew:</label>
+<input id="CruiseCrew" type="text" name="CruiseCrew"  maxlength="50">
+
+<label for="Notes/CompReports">Notes/Comp Reports:</label>
+<input id="Notes/CompReports" type="text" name="Notes/CompReports"  maxlength="50">
+
+<label for="AMFloorLead">AM Floor Lead:</label>
+<input id="AMFloorLead" type="text" name="AMFloorLead"  maxlength="50">
+
+<label for="AMKitchenLead">AM Kitchen Lead:</label>
+<input id="AMKitchenLead" type="text" name="AMKitchenLead"  maxlength="50">
+
+<label for="PMFloorLead">PM Floor Lead:</label>
+<input id="PMFloorLead" type="text" name="PMFloorLead"  maxlength="50">
+
+<label for="PMKitchenLead">PM Kitchen Lead:</label>
+<input id="PMKitchenLead" type="text" name="PMKitchenLead"  maxlength="50">
+
+<label for="Notes">Notes:</label>
+<textarea id="Notes" type="text" name="Notes"  maxlength="500"></textarea>
+
+
+<div class="form-group">
+    <label for="name"> Image Upload:</label>
+    <input type="file" class="form-control" id="image" name="my_files[]">
+</div>
+<div class="form-group">
+    <label for="name"> Image Upload:</label>
+    <input type="file" class="form-control" id="image2" name="my_files[]">
+</div>
+
+<!-- <div class="g-recaptcha" data-sitekey="6Lckc5YUAAAAAAMHgfCXuvlbeO1FTsCAu4ihH8kx"></div> -->
+<button class="button-primary" type="submit" >Post</button>
+</form>
+<div id="success_message" style="display:none">
+<h3>Submitted  successfully!</h3> 
+<p> Thank you. </p>
+</div>
+<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+</div>
+
+
+
+	
+
+
+
+
+  </body>
+</html>

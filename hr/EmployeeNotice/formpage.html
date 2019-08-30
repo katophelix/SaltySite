@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Employee Notice</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <div class="form-container">
+                <h1>
+                   Employee Notice Form
+                </h1>
+                <form method="post" id="reused_form" >
+                    <label for='manager' >Approving Manager: </label>
+                    <input type="text" name="approving manager"  id="manager" 
+                        placeholder="">
+                        <label for='name' >Employee Name: </label>
+                        <input type="text" name=" employee name" id="name" 
+                            placeholder="">
+                            <label for='notice'> Notice Type
+                            </label>
+                            <select name="noticeType" style="display: block; 
+                             width: 100%; border-radius: 10px;
+                            height: calc(2.25rem + 2px);">
+                                <option value=""></option>
+                                <option value="Rehire">Rehire</option>
+                                <option value="Rate Change">Rate Change</option>
+                              
+    
+                            </select>
+                            <label for='name'>Effective Date: </label>
+                            <input type="text" name="effective date"  id="date"
+                                placeholder="">    
+                                
+                                <label for='name'>Job Title: </label>
+                                <input type="text" name="job title"  id="title"
+                                    placeholder="">
+                                    <label for='notice'> Normal Hours of work?
+                                    </label>
+                                    <select name="hours" style="display: block; 
+                                     width: 100%; border-radius: 10px;
+                                    height: calc(2.25rem + 2px);">
+                                        <option value=""></option>
+                                        <option value="temp">Temp (Seasonal or Special Projects of Limited Duration</option>
+                                        <option value="fullTime">Part Time (Less than 32 hours/wk)</option>
+                                      
+                                        <option value="fullTime">Full Time</option>
+                                      
+            
+                                    </select>
+                                    <label for='name'>Hourly Wage: </label>
+                                    <input type="text" name="hourly wage" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="">
+            
+                   
+                    <div class="g-recaptcha" data-sitekey="6Lckc5YUAAAAAAMHgfCXuvlbeO1FTsCAu4ihH8kx"></div>
+                    <button class="button-primary" type="submit" >Post</button>
+                </form>
+                <div id="success_message" style="display:none">
+                    <h3>Submitted successfully!</h3> 
+                   
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<html>
+<head>
+	<title>Radio Form</title>
+<!-- define some style elements-->
+<style>
+	input[type=text] {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  box-sizing: border-box;
+	}
+	textarea[type=text] {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  box-sizing: border-box;
+	}
+	input[type=file] {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  box-sizing: border-box;
+	}
+
+.container{
+	text-align: left;
+}
+                input[name="ipFormInput"] {
+  display: none;  
+}
+	</style>	
+<!-- a helper script for vaidating the form-->
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+</head>	
+
+
+<body>
+	<div class="container">
+      
+            <div class="row justify-content-center" style="margin-top: 10px;">
+                <div class="col justify-content-center">
+                  <h1 style="text-align: center">Salty Dog Radio Request a Song</h1>        
+                </div>
+              </div>
+          
+              <div class="row justify-content-center" style="margin-top: 10px;">
+                <div class="col justify-content-center">
+<form method="POST" name="contactform" action="contact-form-handler.php"> 
+<p>
+<label for='name'>Song Name:</label> <br>
+<input type="text" name="name">
+</p>
+
+
+<div class="row justify-content-center" style="margin-top: 10px;">
+	<div class="col justify-content-center">
+<p>
+<label for='email'>Artist Name:</label> <br>
+<input type="text" name="artist"> <br>
+</p>
+</div>
+</div>
+<div class="row justify-content-center" style="margin-top: 10px;">
+	<div class="col justify-content-center">
+<p>
+	<div class="form-group" >
+           
+		<input type="text"  class="form-control" id="ipFormInput" name="ipFormInput" >
+	  </div>
+</p>
+</div>
+</div>
+
+<p>
+		<div class="row justify-content-center" style="margin-top: 10px;">
+                <div class="col justify-content-center">
+<label for='message'>Message (not required):</label> <br>
+<textarea name="message"></textarea>
+</p>
+</div>
+</div>
+<div class="row justify-content-center" style="margin-top: 10px;">
+		<div class="col justify-content-center">
+<input type="submit" value="Submit"><br>
+</div>
+</div>
+</form>
+<script type="application/javascript ">
+    const ipFormInput = document.getElementById('ipFormInput');
+
+    fetch('https://api.ipify.org?format=json')
+        .then((response) => { return response.json() })
+        .then((json) => {
+            let ip = json.ip;
+            ipFormInput.value = ip;
+        })
+        .catch((err) => { console.log(`Error getting IP Address: ${err}`) })
+</script>
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("song","req","Please provide the name of the Song"); 
+frmvalidator.addValidation("artist","req","Please provide the namke of the artist"); 
+// frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+<!--
+Sample code from:
+http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+-->
+
+
+</body>
+</html>
