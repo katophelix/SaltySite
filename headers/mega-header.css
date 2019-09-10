@@ -30,8 +30,21 @@ html { font-size: calc(1em + 1vw) }
     margin: auto;
   }
 
-     
 
+  .btn-secondary {
+    background: rgb(7, 7, 44);
+   border: none;
+    color: white;
+    white-space: normal !important;
+    font-size: .7em !important;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+
+   
+} 
+
+     
+/* 
 
   .btn-secondary {
     background: white;
@@ -45,7 +58,7 @@ html { font-size: calc(1em + 1vw) }
     border: 1px solid rgb(4, 4, 51);   
     box-shadow: 5px 5px 5px black;
    
-}
+} */
 
 .btn-primary {
     background: none;

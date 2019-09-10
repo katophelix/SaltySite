@@ -30,10 +30,10 @@ html { font-size: calc(1em + 1vw) }
     margin: auto;
   }
 
-     
+    
 
 
-  .btn-secondary {
+ .btn-secondary {
     background: rgb(4, 4, 51);
    border: none;
     color: white;
@@ -43,7 +43,7 @@ html { font-size: calc(1em + 1vw) }
     text-transform: uppercase;
 
    
-}
+} 
 
 .btn-primary {
     background: none;
