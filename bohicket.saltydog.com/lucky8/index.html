@@ -119,7 +119,19 @@
 
 
 <body>
-
+    <script>
+        $(document).ready(function () {
+          $("div[data-includeHTML]").each(function () {
+            $(this).load($(this).attr("data-includeHTML"));
+          });
+        });
+      </script>
+    
+    
+    
+      <header>
+        <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
+      </header>
     <br>
     <br>
 
@@ -243,7 +255,7 @@
                             <h5>Please write "Lucky 8 Contest" in the subject line of your email.</h5>
 <!-- added bob by email 6-4 Re: Please post these latest Lucky 8 winners online similar to Lucky Receipt Winners
 -->
-                            <a class="btn btn-secondary " href="https://saltydog.com/lucky8/winners.html" role="button" style="border:1" aria-haspopup="true" aria-expanded="false">
+                            <a class="btn btn-secondary " href="https://bohicket.saltydog.com/lucky8/winners.html" role="button" style="border:1" aria-haspopup="true" aria-expanded="false">
                                     
                                 See Previous Winners!
                              

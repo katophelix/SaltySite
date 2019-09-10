@@ -118,6 +118,11 @@
         font-size: 1.5em;
 
     }
+      h3{
+
+        font-size: 1.5em;
+
+    }
 
 h4{
 
@@ -197,7 +202,7 @@ font-size: 1.5em;
                    <div class="col">
 
 <a href="https://www.saltydog.com/chefs"><button type="button" class="btn btn-secondary btn-block" >
-       <h1> MEET OUR CHEFS!</h1> </button></a>
+       <h3>MEET OUR CHEFS!</h3>  </button></a>
 
 
 </div>
