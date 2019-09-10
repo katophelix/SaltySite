@@ -53,14 +53,18 @@
     <!-- 
     <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'> -->
     <style>
-        .radio-container {
+        /* .radio-container {
 
 
             height: 90%;
             width: 90%;
             text-align: center;
-        }
-
+        } */
+.container{
+    height: 550px;
+            width: 350px;
+    padding-left: 0;
+}
         .my-container {
 
 
@@ -85,17 +89,16 @@
         }
 
 
-        h2 {
+        /* h2 {
 
             font-size: .9em;
             font-family: 'Baloo Bhaina', cursive;
-        }
+        } */
 
         body {
             color: rgb(4, 4, 51);
             background-color: #E3F4FA;
-            max-height: 600px;
-            max-width: 400px;
+         
         }
 
         .btn-secondary {
@@ -103,18 +106,15 @@
 
             color: rgb(4, 4, 51);
             white-space: normal !important;
-            font-size: .6em !important;
-            font-family: 'Baloo Bhaina', cursive;
+            font-size: 10px !important;
+            font-family: 'Baloo Bhaina', cursive; 
             text-transform: uppercase;
             margin: 4px;
             border: 1px solid rgb(4, 4, 51);
-            box-shadow: 5px 5px 5px black;
+            box-shadow: 3px 3px 3px black;
 
         }
-        h1{
-
-            font-size: 1.5em;
-        }
+     
     </style>
     </head>
 
@@ -153,30 +153,21 @@
         
         
                         </div>
+                    
+     
                     </div>
-        <br>
-        
                     <div class="row justify-content-center">
                         <div class="col justify-content-center" style="padding-top: 2px; text-align: center">
-                            <button class="btn-secondary btn-lg" id="myBtn"><h1>Guess the Song</h1></button>  <button class="btn-secondary btn-lg" id="myBtn2"><h1>Clear</h1></button>
+                            <button class="btn-secondary btn-lg" id="myBtn">Guess the Song</button>  <button class="btn-secondary btn-lg" id="myBtn2">Clear</button>
                           
                             <div id="myDiv2"></div>
                             <div id="myDiv1"></div>
                            
                         
         
-                            <script>
-                           
-                           
-                                
-                      
-                                
-                            
-        
-                                </script>
                         </div>
                     </div>
-                </div>
+                
 
         <script>
  document.getElementById("myBtn").addEventListener("click", getSong);
@@ -226,7 +217,7 @@
             }
         </script>
 
-
+</div>
 
         </div>
 
