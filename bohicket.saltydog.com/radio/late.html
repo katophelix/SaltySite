@@ -47,19 +47,20 @@
 
 <body>
 
-    <script>
-        $(document).ready(function () {
-          $("div[data-includeHTML]").each(function () {
-            $(this).load($(this).attr("data-includeHTML"));
-          });
-        });
-      </script>
-    
-    
-    
-      <header>
+        <script>
+                $(document).ready(function () {
+                    $("div[data-includeHTML]").each(function () {                
+                        $(this).load($(this).attr("data-includeHTML"));
+                    });
+                });
+            </script>
+
+
+
+
+<header>
         <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
-      </header>
+    </header>
             <br>
            <br>
            
@@ -70,9 +71,16 @@
         .container {
                 padding-top: 20px;
                 text-align: center;
-                background-color: rgb(246, 248, 248);
+               
                 max-width: 90%;
                 margin-left: 5%;
+
+               
+            }
+            .this-container {
+              
+                background-color: rgb(246, 248, 248);
+              
 
                
             }
@@ -105,10 +113,10 @@
 
 
 
-    <div class="container justify-content-center">
-        <div class="row" style="width:90%; margin-left: 6%">
+    <div class="container mx-auto">
+        <div class="row mx-auto">
     
-       
+            <div class="this-container mx-auto">
                     <div>
                       
                         <table class="tableizer-table">

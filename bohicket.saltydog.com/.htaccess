@@ -12,7 +12,7 @@ RewriteRule ^(.*)$ https://bohicket.saltydog.com/$1 [R,L]
 Header set Access-Control-Allow-Origin "*"
 Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
 Header set Access-Control-Allow-Headers "Content-Type, Authorization"
-Header set Access-Control-Allow-Origin: "https://saltydog.com/headers/_HeaderPartial.html"
+# Header set Access-Control-Allow-Origin: "https://bohicket.saltydog.com/headers/headerbo.html"
 
 ErrorDocument 404 /404.html
 RewriteCond %{HTTP_HOST} ^bohicket\.saltydog\.com$ [OR]
