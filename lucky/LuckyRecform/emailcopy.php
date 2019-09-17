@@ -147,12 +147,12 @@ if($_POST){
     }
         
     $sentMail = mail($recipient_email, $subject, $body, $headers);
- $link_address = "https://bohicket.saltydog.com";
+ $link_address = "https://saltydog.com";
     if($sentMail){//output success or failure messages
         
         echo "<div style='text-align:center'><h1>Thank you for filling out our Lucky Receipts form!</h1>
           <h1>Confirmation of your submission has been sent to your email.</h1>
-          <a href='".$link_address."'>Salty Dog Bohicket Marina Home Page</a>
+          <a href='".$link_address."'>Salty Dog  Home Page</a>
         </div>";
        
         exit;

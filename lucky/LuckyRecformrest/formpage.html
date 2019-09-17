@@ -15,6 +15,7 @@
         <script src='https://www.google.com/recaptcha/api.js'></script>
      
         <script src="form.js"></script>
+        <script src='jquery-input-file-text.js'></script>
     </head>
     <body >
             <style>
@@ -137,7 +138,15 @@
                     </div>
                     <br>
 
-                    <label>For verification, you must attach an image of your receipt here. A cell phone photo is fine.*<input type="file" name="my_files[]" multiple/></label>
+                    <label>For verification, you must attach an image of your receipt here. A cell phone photo is fine.*
+                    </label> 
+                    <br>
+                            <script>
+                                    $(document).ready(function() {
+                                      $('#choose-file').inputFileText( { text: 'Take a Picture' } );
+                                  });
+                                   </script> 
+                        <input type="file" id="choose-file"  name="my_files[]" multiple/>
                     <!-- <label><input type="submit" name="button" value="Submit" /></label> -->
 
 
