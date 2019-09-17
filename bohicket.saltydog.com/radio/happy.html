@@ -47,68 +47,77 @@
 
 <body>
 
-    <script>
-        $(document).ready(function () {
-          $("div[data-includeHTML]").each(function () {
-            $(this).load($(this).attr("data-includeHTML"));
-          });
-        });
-      </script>
-    
-    
-    
-      <header>
+        <script>
+                $(document).ready(function () {
+                    $("div[data-includeHTML]").each(function () {                
+                        $(this).load($(this).attr("data-includeHTML"));
+                    });
+                });
+            </script>
+
+
+
+
+<header>
         <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
-      </header>
+    </header>
             <br>
            <br>
            
     
             <br>
             <br>
-    <style>
-        .container {
-                padding-top: 20px;
-                text-align: center;
-                background-color: rgb(246, 248, 248);
-                max-width: 90%;
-                margin-left: 5%;
+            <style>
+                .container {
+                        padding-top: 20px;
+                        text-align: center;
+                   
+                        max-width: 90%;
+                        margin-left: 5%;
+        
+                       
+                    }
+                    .this-container {
+                        padding-top: 20px;
+                        text-align: center;
+                        background-color: rgb(246, 248, 248);
+                        max-width: 90%;
+                        margin-left: 5%;
+        
+                       
+                    }
+                    h1{
+                        font-size: .8em
+                    }
+                  
+                    p{
+                        font-size: .6em
+                    }
+                    h4{
+                        font-size: .7em
+                    }
+                    table.tableizer-table {
+                                        font-size: 12px;
+                                        border: 1px solid #CCC; 
+                                        font-family: Arial, Helvetica, sans-serif;
+                                    } 
+                                    .tableizer-table td {
+                                        padding: 4px;
+                                        margin: 3px;
+                                        border: 1px solid #CCC;
+                                    }
+                                    .tableizer-table th {
+                                        background-color: #104E8B; 
+                                        color: #FFF;
+                                        font-weight: bold;
+                                    }
+                </style>
 
-               
-            }
-            h1{
-                font-size: .8em
-            }
-          
-            p{
-                font-size: .6em
-            }
-            h4{
-                font-size: .7em
-            }
-            table.tableizer-table {
-                                font-size: 12px;
-                                border: 1px solid #CCC; 
-                                font-family: Arial, Helvetica, sans-serif;
-                            } 
-                            .tableizer-table td {
-                                padding: 4px;
-                                margin: 3px;
-                                border: 1px solid #CCC;
-                            }
-                            .tableizer-table th {
-                                background-color: #104E8B; 
-                                color: #FFF;
-                                font-weight: bold;
-                            }
-        </style>
 
-
-
-    <div class="container justify-content-center">
-        <div class="row" style="width:90%; margin-left: 6%">
+    <div class="container mx-auto">
+        <div class="row mx-auto">
     
-       
+            <div class="this-container mx-auto">
                     <div>
                       
                         <table class="tableizer-table">
