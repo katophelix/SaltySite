@@ -9,6 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="form.css" >
         <script src="form.js"></script>
+        <script src='jquery-input-file-text.js'></script>
     </head>
     <body >
         <div class="container">
@@ -24,11 +25,13 @@
                     <input id="location" type="text" name="Location" required maxlength="50">
                     <label for="issue">Nature of issue:</label>
                     <textarea id="message" name="Message" rows="10" maxlength="250" required></textarea>
-                    <div class="form-group">
+  <script>
+   $(document).ready(function() {
+     $('#choose-file').inputFileText( { text: 'Take a Picture' } );
+ });
+  </script>
 
-                        <label for="name">Upload Photo:</label>
-                        <input type="file" class="form-control" id="image" name="image" >
-                    </div>
+                    <input type="file" id="choose-file" name="image"/>
                     <button class="button-primary" type="submit" >Post</button>
                 </form>
                 <div id="success_message" style="display:none">
