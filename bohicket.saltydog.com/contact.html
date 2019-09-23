@@ -101,19 +101,19 @@
 
 
 
- <script>
-    $(document).ready(function () {
-      $("div[data-includeHTML]").each(function () {
-        $(this).load($(this).attr("data-includeHTML"));
-      });
-    });
-  </script>
+    <script>
+        $(document).ready(function () {
+            $("div[data-includeHTML]").each(function () {
+                $(this).load($(this).attr("data-includeHTML"));
+            });
+        });
+    </script>
 
 
 
-  <header>
-    <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
-  </header>
+    <header>
+        <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
+    </header>
     <br>
     <br>
 
@@ -187,7 +187,6 @@
 
 
         }
-
     </style>
 
 
@@ -197,65 +196,77 @@
 
     <div class="container ">
 
-        <div class="my-container mx-auto justify-content-center">
-            <div class="row mx-auto justify-content-center">
+        <div class="my-container mx-auto ">
+            <div class="row mx-auto ">
 
+                <div class="col">
+                    <h1>got a question? </h1>
+                </div>
+            </div>
+            <div class="row mx-auto ">
 
-
-
-
-
-
-                <div class="card"
-                    style="margin-top:7px !important;width: 100%;padding-top: 7px;border: none; text-align:center">
-                    <h1 class="card-title">got a question? </h1>
-
+                <div class="col">
 
                     <h2>WE'RE HAPPY TO HELP!</h2>
-
-                    <div class="card-body">
-
-                        <h1 class="card-title">843.998.9557 </h1>
-                        <a href="mailto:bodoginfo@saltydog.com?Subject=Hello" target="_top">
-                            <h1> bodoginfo@saltydog.com </h1>
-                        </a>
-
-
-
-                        <div id="back-button">
-
-                            <a href="https://bohicket.saltydog.com/contactForm/formpage.html"> <button type="button"
-                                    class="btn btn-secondary ">
-                                    SEND US A QUICK NOTE
-                                </button>
-                            </a>
-
-
-
-                            </a>
-
-                        </div>
-
-
-
-
-
-
-
-
-                    </div>
-
                 </div>
             </div>
 
 
-            <div class="row mx-auto justify-content-center" style="padding-bottom:5px ">
+            <div class="row mx-auto ">
+                <div class="col">
+
+
+
+                    <h1>843.998.9557 </h1>
+
+                </div>
+            </div>
+
+            <div class="row mx-auto ">
+                <div class="col">
+                    <a href="mailto:bodoginfo@saltydog.com?Subject=Hello" target="_top">
+                        <h1> bodoginfo@saltydog.com </h1>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="row mx-auto " style="padding-bottom:5px ">
+                <div class="col">
+
+                    <a href="https://bohicket.saltydog.com/contactForm/formpage.html"> <button type="button"
+                            class="btn btn-secondary ">
+                            SEND US A QUICK NOTE
+                        </button>
+                    </a>
+
+
+
+                    <br>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="row mx-auto " style="padding-bottom:5px ">
 
                 <div class="col" style="border: none">
 
                     <a href="https://bohicket.saltydog.com/employment/">
                         <button type="button" class="btn btn-secondary btn-block">
-                           employment
+                            employment
                         </button>
                     </a>
 
@@ -279,12 +290,12 @@
             </div>
 
 
-            <div class="row mx-auto justify-content-center">
+            <div class="row mx-auto ">
                 <div class="col" style="border: none">
 
                     <a href="https://bohicket.saltydog.com/feedback/">
                         <button type="button" class="btn btn-secondary btn-block">
-                          feedback
+                            feedback
                         </button>
                     </a>
 
@@ -296,7 +307,7 @@
 
                     <a href="https://bohicket.saltydog.com/nodogs/">
                         <button type="button" class="btn btn-secondary btn-block">
-                          why no dogs?
+                            why no dogs?
                         </button>
                     </a>
 
@@ -305,19 +316,137 @@
             </div>
 
         </div>
-    </div>
+
+
+
+
+        <style>
+            h5 .card-title {
+
+                color: black !important;
+
+                background-color: white !important;
+                white-space: nowrap !important;
+            }
+
+
+
+            .container {
+
+
+
+                text-align: center;
+            }
 
 
 
 
 
 
+            .media {
 
-    </div>
-    <div class="container justify-content-center" style="width: 90%;">
-        <div class="row">
+                display: inherit !important;
 
-            <div class="col justify-content-center">
+
+
+            }
+
+
+
+            .card .card-body a {
+
+                color: black !important;
+
+                text-align: center !important
+            }
+
+
+
+            .card-body {
+
+                padding: 0 !important;
+                height: 1.5rem;
+                background-color: white !important;
+
+            }
+
+
+
+            .card {
+
+                word-wrap: none !important;
+
+                padding: 0;
+
+
+                text-align: center;
+
+                background-color: white !important;
+
+                margin: 2px;
+
+            }
+
+
+
+            .card-deck {
+
+                margin-bottom: 5px;
+
+            }
+
+
+
+            .card-footer {
+
+                padding: 0;
+                height: 1rem;
+
+            }
+
+            .card-title {
+
+                padding: 0;
+                height: 1rem;
+
+            }
+
+
+            .card-text {
+
+                padding: 0;
+                height: 1.5rem;
+
+            }
+
+            h4 {
+
+
+
+                font-size: .8em
+            }
+
+
+
+            h5 {
+
+
+
+                font-size: .8em
+            }
+
+
+
+            p {
+
+
+
+                font-size: .5em
+            }
+        </style>
+        <div class="row mx-auto " style="padding-bottom:5px ">
+
+            <div class="col ">
 
 
 
@@ -338,9 +467,9 @@
 
         <div class="row">
 
-            <div class="col justify-content-center">
+            <div class="col ">
 
-                <div class="row justify-content-center">
+                <div class="row ">
 
                     <div class="card" style="width: 8rem;">
 
@@ -367,9 +496,9 @@
                 </div>
             </div>
 
-            <div class="col justify-content-center">
+            <div class="col ">
 
-                <div class="row justify-content-center">
+                <div class="row ">
 
                     <div class="card" style="width: 8rem;">
 
@@ -395,9 +524,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col justify-content-center">
+            <div class="col ">
 
-                <div class="row justify-content-center">
+                <div class="row ">
 
                     <div class="card" style="width: 8rem;">
 
@@ -409,8 +538,8 @@
 
                         <div class="card-body">
 
-                           
-                        <a href="mailto:inertia@saltydog.com?Subject=Hello"
+
+                            <a href="mailto:inertia@saltydog.com?Subject=Hello"
                                 style=" font-size: .5em !important; text-align: center" target="_top">Email</a>
 
                         </div>
@@ -424,41 +553,14 @@
                     </div>
                 </div>
             </div>
-           
+
         </div>
         <div class="row">
-            <div class="col justify-content-center">
+        
 
-                <div class="row justify-content-center">
+            <div class="col ">
 
-                    <div class="card" style="width: 8rem;">
-
-                        <h5 class="card-title">Adrian Kraner</h5>
-
-                        <p class="card-text">Restaurant Manager</p>
-
-                        <img src="images/adrian.jpg" class="card-img-top" alt="...">
-
-                        <div class="card-body">
-
-                            <a href="mailto:adrian@saltydog.com?Subject=Hello"
-                                style=" font-size: .5em !important; text-align: center" target="_top">Email</a>
-
-                        </div>
-
-                        <div class="card-footer">
-
-                            <p> <small class="text-muted"><i class="fas fa-paw"></i> 2017</small></p>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col justify-content-center">
-
-                <div class="row justify-content-center">
+                <div class="row ">
 
                     <div class="card" style="width: 8rem;">
 
@@ -484,9 +586,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col justify-content-center">
+            <div class="col ">
 
-                <div class="row justify-content-center">
+                <div class="row ">
 
                     <div class="card" style="width: 8rem;">
 
@@ -512,9 +614,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col justify-content-center">
+            <div class="col ">
 
-                <div class="row justify-content-center">
+                <div class="row ">
 
                     <div class="card" style="width: 8rem;">
 
