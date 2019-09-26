@@ -29,12 +29,7 @@
     <title>SaltyDogRadio</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
         integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -45,16 +40,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
     <!-- <link type="text/css" rel="stylesheet" href="../css/dropMenustyle.css"> -->
-    <link type="text/css" rel="stylesheet" href="../headers/styleBoot.css">
-    <link type="text/css" rel="stylesheet" href="../headers/mega-header.css">
-
-</head>
-
-
-
-<body>
-    <!-- 
-    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'> -->
+    <link type="text/css" rel="stylesheet" href="https://www.saltydog.com/headers/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="https://www.saltydog.com/headers/mega-header.css">
     <style>
         .radio-container {
 
@@ -66,11 +53,11 @@
 
         .my-container {
 
-            background-color:rgb(237, 247, 250) !important;
+            background-color: rgb(237, 247, 250) !important;
 
             border: 5px solid navy;
 
-           
+
 
             margin-top: 3px;
 
@@ -90,15 +77,16 @@
             font-size: .9em;
             font-family: 'Baloo Bhaina', cursive;
         }
+
         h1 {
 
-font-size: 1.2em;
-font-family: 'Baloo Bhaina', cursive;
-}
+            font-size: 1.2em;
+            font-family: 'Baloo Bhaina', cursive;
+        }
 
         body {
             color: rgb(0, 0, 128);
-            
+
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -113,141 +101,128 @@ font-family: 'Baloo Bhaina', cursive;
             z-index: 1;
         }
     </style>
+</head>
 
 
 
+<body>
+    <!-- 
+    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'> -->
 
 
-        <script>
-            $(document).ready(function () {
-                $("div[data-includeHTML]").each(function () {
-                    $(this).load($(this).attr("data-includeHTML"));
-                });
+    <script>
+        $(document).ready(function () {
+            $("div[data-includeHTML]").each(function () {
+                $(this).load($(this).attr("data-includeHTML"));
             });
-        </script>
+        });
+    </script>
 
 
-        <header>
-            <div data-includeHTML="https://www.saltydog.com/headers/_HeaderPartial.html"></div>
-        </header>
-        <br>
+    <header>
+        <div data-includeHTML="https://www.saltydog.com/headers/_HeaderPartial.html"></div>
+    </header>
+    <br>
 
-        <!-- <img src="../images/NEW HEADERS/RADIO.jpg" style="width:100%; height:auto; margin-top: 40px; margin-bottom: 10px"
+    <!-- <img src="../images/NEW HEADERS/RADIO.jpg" style="width:100%; height:auto; margin-top: 40px; margin-bottom: 10px"
             alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and events written on it."> -->
-        <br>
-        <br>
-        <div class="container justify-content-center">
-            <div class="row justify-content-center ">
+    <br>
+    <br>
+    <div class="container justify-content-center">
+      
 
+        <div class="my-container">
+            <div class="row" style="text-align:center">
+                <div class="col" style="padding-top: 5px">
+                    <br><br>
+                    <button class="btn btn-secondary" onclick="myFunction()">Listen to Salty Dog Radio</button>
 
-
-
+                    <script>
+                        function myFunction() {
+                            window.open('radio5.html', 'example', 'width=370,height=620');
+                        }
+                    </script>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row mx-auto" style="text-align:center; width:90%">
+                <div class="col" style="padding-top: 5px;width: 80%">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Check Out Salty Dog Radio Playlists
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="https://saltydog.com/radio/early.html">Early Playlist</a>
+                            <a class="dropdown-item" href="https://saltydog.com/radio/morning.html">Morning
+                                Playlist</a>
+                            <a class="dropdown-item" href="https://saltydog.com/radio/lunch.html">Lunch Playlist</a>
+                            <a class="dropdown-item" href="https://saltydog.com/radio/4pm.html">4 O'Clock'
+                                Playlist</a>
+                            <a class="dropdown-item" href="https://saltydog.com/radio/5pm.html">5 O'Clock
+                                Playlist</a>
+                            <a class="dropdown-item" href="https://saltydog.com/radio/happy.html">Happy Hour
+                                Playlist</a>
+                            <a class="dropdown-item" href="https://saltydog.com/radio/late.html">Late Night
+                                Playlist</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="my-container">
-                          <div class="row" style="text-align:center">
-                    <div class="col" style="padding-top: 5px">
-                    <br><br>
-                        <button class="btn btn-secondary" onclick="myFunction()">Listen to Salty Dog Radio</button>
+            <br>
 
-                        <script>
-                            function myFunction() {
-                                window.open('radio5.html', 'example', 'width=370,height=620');
-                            }
-                        </script>
-                    </div>
-                </div>
+            <div class="row mx-auto" style="text-align:center; width:90%">
+                <div class="col" style="padding-top: 5px">
+                    <div id="back-button">
 
-
-<br><br><br>
-
-
-               <div class="row mx-auto" style="text-align:center; width:90%">
-                    <div class="col" style="padding-top: 5px;width: 80%">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Check Out Salty Dog Radio Playlists
+                        <a href="https://saltydog.com/radioform"> <button type="button" class="btn btn-secondary ">
+                                <p> <strong>Have a favorite song?</strong></p>
+                                <p><strong>Request it be added to our playlist.</strong> </p>
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="https://saltydog.com/radio/early.html">Early Playlist</a>
-                                <a class="dropdown-item" href="https://saltydog.com/radio/morning.html">Morning
-                                    Playlist</a>
-                                <a class="dropdown-item" href="https://saltydog.com/radio/lunch.html">Lunch Playlist</a>
-                                <a class="dropdown-item" href="https://saltydog.com/radio/4pm.html">4 O'Clock'
-                                    Playlist</a>
-                                <a class="dropdown-item" href="https://saltydog.com/radio/5pm.html">5 O'Clock
-                                    Playlist</a>
-                                <a class="dropdown-item" href="https://saltydog.com/radio/happy.html">Happy Hour
-                                    Playlist</a>
-                                <a class="dropdown-item" href="https://saltydog.com/radio/late.html">Late Night
-                                    Playlist</a>
-                            </div>
-                        </div>
-
-
-
-</div>
-
-                    </div>
-          
-          
-          <br>
-          
-                <div class="row mx-auto" style="text-align:center; width:90%">
-                    <div class="col" style="padding-top: 5px">
-                        <div id="back-button">
-
-                            <a href="https://saltydog.com/radioform"> <button type="button" class="btn btn-secondary ">
-                                    <p> <strong>Have a favorite song?</strong></p>
-                                    <p><strong>Request it be added to our playlist.</strong> </p>
-                                </button>
-                            </a>
-
-
-                        </div>
-
+                        </a>
                     </div>
                 </div>
-               
+            </div>
 
-<br>
+            <br>
 
- 
-
-<br>
-                <div class="row" style="text-align:center">
-                    <div class="col" style="padding-top: 5px">
-                        <ul style="list-style-type:none">  Recently  Requested:
+            <br>
+            <div id="radio">
+            <div class="row" style="text-align:center">
+                <div class="col" style="padding-top: 5px">
+                    <ul style="list-style-type:none"> Recently Requested:
                         <br>
                         <li>Symphony / Clean Bandit </li>
                         <li>Old Town Road / Lil Nas & Billy Rae</li>
-                       <li>Songs by Walk The Moon (thanks Arrow!)</li>
-                         <li>Elton John, Beatles</li>
-                         <li>What You Give / Tesla</li>
-                         <li>Put Your Head On My Shoulder / Paul Anka</li>
-                         <li>Dixie Chicken / Little Feet</li>
-                         <li>Brown Eyed Girl / Van Morrison</li>
+                        <li>Songs by Walk The Moon (thanks Arrow!)</li>
+                        <li>Elton John, Beatles</li>
+                        <li>What You Give / Tesla</li>
+                        <li>Put Your Head On My Shoulder / Paul Anka</li>
+                        <li>Dixie Chicken / Little Feet</li>
+                        <li>Brown Eyed Girl / Van Morrison</li>
                         <li> Joy and Pain / Frankie Beverly and Maze </li>
-                         <li> Cater To You  / Destiny's Child </li>
-                         <li> Happy Accidents / Saint Motel </li>
-                         <li> Run Right Back / Moon Taxi </li>
-                          <li> 7 Years / Lukas Graham </li>
+                        <li> Cater To You / Destiny's Child </li>
+                        <li> Happy Accidents / Saint Motel </li>
+                        <li> Run Right Back / Moon Taxi </li>
+                        <li> 7 Years / Lukas Graham </li>
 
-                        </ul>
-                          </div>
-
-
-
+                    </ul>
+                </div>
             </div>
-            
+
             <br>
             All Songs Available at The iTunes Store
 
-
+            </div>
             <!-- google analytics  -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
 
-
-    </body>
+</body>
 
 </html>

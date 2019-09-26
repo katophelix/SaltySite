@@ -29,12 +29,7 @@
     <title>SaltyDogRadio</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+  
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
         integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -60,11 +55,12 @@
             width: 90%;
             text-align: center;
         } */
-.container{
-    height: 550px;
+        .container {
+            height: 550px;
             width: 350px;
-    padding-left: 0;
-}
+            padding-left: 0;
+        }
+
         .my-container {
 
 
@@ -98,7 +94,7 @@
         body {
             color: rgb(4, 4, 51);
             background-color: #E3F4FA;
-         
+
         }
 
         .btn-secondary {
@@ -107,14 +103,13 @@
             color: rgb(4, 4, 51);
             white-space: normal !important;
             font-size: 10px !important;
-            font-family: 'Baloo Bhaina', cursive; 
+            font-family: 'Baloo Bhaina', cursive;
             text-transform: uppercase;
             margin: 4px;
             border: 1px solid rgb(4, 4, 51);
             box-shadow: 3px 3px 3px black;
 
         }
-     
     </style>
     </head>
 
@@ -122,107 +117,112 @@
 
     <body>
 
-            <div class="container justify-content-center">
-            
+        <div class="container justify-content-center">
 
-                    <div class="my-container">
-        
-        
-        
-                        <div class="row">
-                            <div class="col" style="padding-top: 5px">
-        
-                                <audio id="radioplayer" src="http://98.101.223.10:8011" autoplay="autoplay"></audio>
-                                <a href="#" onclick="document.getElementById('radioplayer').play()"><button type="button"
-                                        class="btn btn-secondary btn-sm">PLAY!</button></a>
-                                <a href="#" onclick="document.getElementById('radioplayer').pause()"><button type="button"
-                                        class="btn btn-secondary btn-sm">PAUSE!</button></a>
-                            </div>
-        
-        
-        
-                        </div>
-        
-                        <div class="row">
-                            <div class="col" style="padding-top: 5px">
-                                <input id="volume" name="volume" min="0" max="1" step="0.1" type="range"
-                                    onchange="setVolume()" />
-                                <label for="volume" style="color: black!important">Volume</label>
-                            </div>
-        
-        
-        
-                        </div>
-                    
-     
+
+            <div class="my-container">
+
+
+
+                <div class="row">
+                    <div class="col" style="padding-top: 5px">
+
+                        <audio id="radioplayer" src="http://98.101.223.10:8011" autoplay="autoplay"></audio>
+                        <a href="#" onclick="document.getElementById('radioplayer').play()"><button type="button"
+                                class="btn btn-secondary btn-sm">PLAY!</button></a>
+                        <a href="#" onclick="document.getElementById('radioplayer').pause()"><button type="button"
+                                class="btn btn-secondary btn-sm">PAUSE!</button></a>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col justify-content-center" style="padding-top: 2px; text-align: center">
-                            <button class="btn-secondary btn-lg" id="myBtn">Guess the Song</button>  <button class="btn-secondary btn-lg" id="myBtn2">Clear</button>
-                          
-                            <div id="myDiv2"></div>
-                            <div id="myDiv1"></div>
-                           
-                        
-        
-                        </div>
+
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col" style="padding-top: 5px">
+                        <input id="volume" name="volume" min="0" max="1" step="0.1" type="range"
+                            onchange="setVolume()" />
+                        <label for="volume" style="color: black!important">Volume</label>
                     </div>
-                
-
-        <script>
- document.getElementById("myBtn").addEventListener("click", getSong);
-
-    function getSong(){
-            fetch('https://cors-anywhere.herokuapp.com/https://api.acrcloud.com/v1/monitor-streams/s-DN5fdGT/results?access_key=63100295363396bdeac78ab8df282c4a')
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (myJson) {
-                    console.log(myJson);
-                    // console.log(0.['metadata']['music'][0]['title']);
-                    console.log(myJson[0].metadata.music[0].artists[0].name);
-                    console.log(myJson[0].metadata.music[0].title);
-                    var title = (myJson[0].metadata.music[0].artists[0].name);
-                    var artist = (myJson[0].metadata.music[0].title);
-                    // document.getElementById("myDiv1").innerHTML = title;
-                    // document.getElementById("myDiv2").innerHTML = artist;
-
-                    // document.getElementById("myBtn").addEventListener("click", displayData);
-
-                    // function displayData() {
-                        document.getElementById("myDiv1").innerHTML = title;
-                        document.getElementById("myDiv2").innerHTML = artist;
-
-                      
-                        
-                        function clearDiv()
-                                {
-                                    document.getElementById("myDiv1").innerHTML = "";
-                                    document.getElementById("myDiv2").innerHTML = "";
-                                    
-                                }
-        
-                                document.getElementById("myBtn2").addEventListener("click", clearDiv);
-                  
-                })
-            };
-        </script>
 
 
-       
-        <script type="text/javascript">
-            function setVolume() {
-                document.getElementById("radioplayer").volume
-                    = document.getElementById('volume').value;
-            }
-        </script>
 
-</div>
+                </div>
+
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col justify-content-center" style="padding-top: 2px; text-align: center">
+                    <button class="btn-secondary btn-lg" id="myBtn">Guess the Song</button> <button
+                        class="btn-secondary btn-lg" id="myBtn2">Clear</button>
+
+                    <div id="myDiv2"></div>
+                    <div id="myDiv1"></div>
+
+
+
+                </div>
+            </div>
+
+
+            <script>
+                document.getElementById("myBtn").addEventListener("click", getSong);
+
+                function getSong() {
+                    fetch('https://cors-anywhere.herokuapp.com/https://api.acrcloud.com/v1/monitor-streams/s-DN5fdGT/results?access_key=63100295363396bdeac78ab8df282c4a')
+                        .then(function (response) {
+                            return response.json();
+                        })
+                        .then(function (myJson) {
+                            console.log(myJson);
+                            // console.log(0.['metadata']['music'][0]['title']);
+                            console.log(myJson[0].metadata.music[0].artists[0].name);
+                            console.log(myJson[0].metadata.music[0].title);
+                            var title = (myJson[0].metadata.music[0].artists[0].name);
+                            var artist = (myJson[0].metadata.music[0].title);
+                            // document.getElementById("myDiv1").innerHTML = title;
+                            // document.getElementById("myDiv2").innerHTML = artist;
+
+                            // document.getElementById("myBtn").addEventListener("click", displayData);
+
+                            // function displayData() {
+                            document.getElementById("myDiv1").innerHTML = title;
+                            document.getElementById("myDiv2").innerHTML = artist;
+
+
+
+                            function clearDiv() {
+                                document.getElementById("myDiv1").innerHTML = "";
+                                document.getElementById("myDiv2").innerHTML = "";
+
+                            }
+
+                            document.getElementById("myBtn2").addEventListener("click", clearDiv);
+
+                        })
+                };
+            </script>
+
+
+
+            <script type="text/javascript">
+                function setVolume() {
+                    document.getElementById("radioplayer").volume
+                        = document.getElementById('volume').value;
+                }
+            </script>
+
+        </div>
 
         </div>
 
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     </body>
 
 </html>
