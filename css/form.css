@@ -111,6 +111,7 @@ border: 1px solid #257C9E;
     width: 100%;
     padding: 8px;
     border-radius: 6px;
+    background-color: white;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border: 2px solid #fff;
@@ -217,4 +218,5 @@ h5 {
 select{
 
     font-size: .5em !important;
+    background-color: white;
 }
