@@ -19,7 +19,7 @@
 
     <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
     <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
-    <link type="text/css" rel="stylesheet" href="form.css">
+    <link type="text/css" rel="stylesheet" href="../css/form.css">
         <script src="form.js"></script>
      
     </head>
@@ -35,8 +35,8 @@
     
     
     
-        <header>
-            <div data-includeHTML="https://www.saltydog.com//headers/_HeaderPartial.html"></div>
+    <header>
+            <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
         </header>
     
         <br>
@@ -88,7 +88,12 @@
                             })
                             .catch((err) => { console.log(`Error getting IP Address: ${err}`) })
                     </script>
-                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Thank you, your request has been sent successfully!</h3> </div>
+                      <div id="success_message" style="display:none">
+                            <br>
+                            <br>
+                            <h1>Submitted successfully!</h1>
+                            <h1> Thank you for your request. </h1>
+                        </div>
                     <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
                 </div>
             </div>
