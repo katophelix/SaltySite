@@ -124,6 +124,83 @@ padding-left: 5px;
 
 
 <body>
+    <script>
+bookY
+
+    
+    var book = [
+                {
+                    title: "The Giver",
+                    author: "Mike",
+                    stars: 9,
+                    reccomend: true,
+                },
+                {
+                    title: "The Gift",
+                    author: "Captain",
+                    stars: 2,
+                    reccomend: false,
+                },
+                {
+                    title: "The help",
+                    author: "mom",
+                    stars: 8,
+                    reccomend: true,
+                },
+                {
+                    title: "The top",
+                    author: "bill",
+                    stars: 11,
+                    reccomend: false,
+                },
+                {
+                    title: "The rest",
+                    author: "sam",
+                    stars: 3,
+                    reccomend: false,
+                },
+            ];
+            // draw shelf
+            fill(173, 117, 33);
+            rect(0, 120, width, 10);
+ var bookY = 18;
+ var bookX = 0;
+            for (var i = 0; i < book.length; i++) {
+                fill(240, i * 230, i * 140);
+                var bookX = i * 129;
+                
+                //draw books
+                rect(bookX, bookY , 110, 103);
+                fill(0, 0, 0);
+                textSize(15);
+                text(book[i].title, i * 130 + 15,                 47);
+                textSize(14);
+                text("author " + book[i].author,                 i * 130 + 17, 65);
+                text("stars " + book[i].stars, i                 * 130 + 16, 91);
+                if (book[i].reccomend === true) {
+
+                    image(getImage("space/star"),                 i * 130 + 66, 58, 40, 76);
+
+                }
+
+                else {
+
+            image(getImage("avatars/starky-seed"    ), i * 102 + 93,                     54, 40, 76);
+                }
+
+                if (bookX > 350) {
+                    fill(173, 117, 33);
+                    rect(0, 238, width, 7);
+                    bookY = 143;
+                     bookX = 0;
+
+
+                }
+            }
+
+    
+    
+    </script>
 
     <script>
         $(document).ready(function () {
