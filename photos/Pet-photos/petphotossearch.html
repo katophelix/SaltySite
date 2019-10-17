@@ -27,7 +27,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Compiled and minified CSS -->
 
 
@@ -278,11 +278,11 @@
                     </button>
                 </div>
             </div>
-           
+          
             <div class="image-container">
                 <!-- // Search results will be appended here -->
             </div>
-            <div id="p1"></div>
+         
             <!-- // More image btn -->
             <!-- <a class="waves-effect waves-light btn" id="moreImagesBtn">
                 LOAD MORE PHOTOS
@@ -305,6 +305,7 @@
                 // Search Btn
                 let searchBtn = $("#searchBtn");
                 // More Images btn
+            
                 // let moreImagesBtn = $("#moreImagesBtn");
                 // Result Image area
                 let imageContainer = $(".image-container");
@@ -375,7 +376,8 @@
                     console.log(data.photos.photo);
 
                     if (!data.photos.photo.length) {
-                        document.getElementById("p1").innerHTML = "New text!";
+
+                        swal("Sorry there are no pets by that name.");
                     }
                     else {
                         data.photos.photo.forEach(function (currentPhoto, index, array) {
