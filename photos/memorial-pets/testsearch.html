@@ -376,7 +376,8 @@
                 function getImageData(query) {
                     $.ajax({
                         type: "GET",
-                        url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&tags="salty+dog+cafe+dog+photos+for+salty+dog+site&text=${query}&safe_search=1&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
+                     
+            url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrKey}&tags="Salty+dog+cafe+pet+memorial+photos"&text=${query}&safe_search=1&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
                         success: function (data) {
                             // Call the handle Data function and pass the response
                             handleData(data);
