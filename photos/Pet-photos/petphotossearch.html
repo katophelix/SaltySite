@@ -294,6 +294,7 @@
 
         var gallery;
         var lastSearch = "salty dog cafe dogs";
+        // var p1 =  document.getElementById("p1").innerHTML = "New text!";
         console.log("I'm here");
         $(
             (function (document, window) {
@@ -375,7 +376,7 @@
                     console.log(data.photos.photo);
 
                     if (!data.photos.photo.length) {
-                        document.getElementById("p1").innerHTML = "New text!";
+                       alert("Sorry, no pets by that name");
                     }
                     else {
                         data.photos.photo.forEach(function (currentPhoto, index, array) {

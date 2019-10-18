@@ -391,6 +391,10 @@
                 // Build urls for the images
                 function handleData(data) {
                     //console.log(data);
+                    if (!data.photos.photo.length) {
+                       alert("Sorry, no pets by that name");
+                    }
+                    else {
                     data.photos.photo.forEach(function (currentPhoto, index, array) {
                         // Image URL > Will be built and made an link
                         let photoURL = `https://farm${currentPhoto.farm}.static.flickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
@@ -402,7 +406,7 @@
                     //show the more btn
                     // moreImagesBtn.slideDown();
                 } // END OF handleData
-
+                }
                 // Built HTML tempate and push the images to the webpage
                 function pushImages(url, title) {
                     // Build the HTML element
