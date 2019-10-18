@@ -26,7 +26,7 @@
      <link type="text/css" rel="stylesheet" href="../../headers/mega-header.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Compiled and minified CSS -->
 
 
@@ -391,6 +391,13 @@
                 // Build urls for the images
                 function handleData(data) {
                     //console.log(data);
+
+
+                    if (!data.photos.photo.length) {
+
+swal("Sorry there are no pets by that name.");
+}
+else {
                     data.photos.photo.forEach(function (currentPhoto, index, array) {
                         // Image URL > Will be built and made an link
                         let photoURL = `https://farm${currentPhoto.farm}.static.flickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
@@ -402,7 +409,7 @@
                     //show the more btn
                     // moreImagesBtn.slideDown();
                 } // END OF handleData
-
+                }
                 // Built HTML tempate and push the images to the webpage
                 function pushImages(url, title) {
                     // Build the HTML element
