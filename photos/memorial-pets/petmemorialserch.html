@@ -36,7 +36,7 @@
     <!-- <link type="text/css" rel="stylesheet" href="../css/dropMenustyle.css"> -->
     <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
     <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
-    <link type="text/css" rel="stylesheet" href="bootstrap-lightbox/bootstrap-lightbox.css">
+  
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Compiled and minified CSS -->
 
@@ -254,6 +254,21 @@
             h2 {
                 font-size: 1.5em;
             }
+
+            .materialbox-caption {
+  position: fixed;
+  display: none;
+  color: #fff;
+  line-height: 50px;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0% 15%;
+  height: 50px;
+  z-index: 1000;
+  -webkit-font-smoothing: antialiased;
+}
     </style>
 
 
@@ -431,7 +446,7 @@
                         "</div>";
                     imageContainer.append(htmlText);
                     // Add the Materialize functionality to the images
-                    $('#myLightbox').lightbox(options)
+                    $(".materialboxed").materialbox();
                 } // END OF pushImages
             })() // end of self self executing anonymous function
         );
@@ -440,5 +455,6 @@
       
 
     </script>
-    <script src="bootstrap-lightbox/bootstrap-lightbox.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
