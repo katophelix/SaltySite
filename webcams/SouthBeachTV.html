@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9994729-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-9994729-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>SBforTV</title>
+    <link rel="icon" type="image/png" href="images/apple-touch-icon.png">
+    <!-- Modernizr -->
+
+    <!-- jQuery-->
+
+    <!--<![endif]-->
+    
+
+</head>
+
+
+
+<body bgcolor="#EFEFEF">
+    
+<div align="center">
+
+<br>
+
+    
+
+
+<div align="center">
+
+
+    <a href="http://98.101.223.10:8078/axis-cgi/mjpg/video.cgi">
+    
+    
+    <script language="javascript">
+    var refreshrate=1;             
+    var image="http://98.101.223.10:8078/axis-cgi/jpg/image.cgi?";     
+    var imgheight=1500;                   
+    var imgwidth=2000;                
+    function refresh(){
+    document.images["pic"].src=image+"?"+new Date();
+    setTimeout('refresh()', refreshrate*1000);}
+    document.write('<IMG SRC="'+image+'" ALT="Please Stand By For Webcam Photo Upload" NAME="pic" ID="pic" WIDTH="'+imgwidth+'" HEIGHT="'+imgheight+'" STYLE="border: 3px solid Black;">');
+    if(document.images)window.onload=refresh;
+    </script>  
+    </a>
+    <!--
+    <a href="http://www.caliboguecam.com/fish.html"><img id="image13" src="http://64.203.225.208:8122/axis-cgi/mjpg/video.cgi?date="  width="800" height="450" border="3" align="middle" /></a>
+    
+    
+    -->
+    
+    
+</div>
+    
+    
+    
+
+
+   
+    
+
+
+
+</body>
+
+</html>
