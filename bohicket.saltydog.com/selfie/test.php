@@ -32,5 +32,7 @@ function copyRemoteFile($url, $localPathname){
     return true;
 }
 
-copyRemoteFile("http://98.101.223.10:8251/axis-cgi/jpg/image.cgi",  "/home/saltydog/selfie.saltydog.com/src/".$image.".jpg");
+copyRemoteFile("http://50.252.151.161:8201/axis-cgi/jpg/image.cgi",  "/home/saltydog/bohicket.saltydog.com/selfie/src/".$image.".jpg");
+
+// copyRemoteFile("http://98.101.223.10:8251/axis-cgi/jpg/image.cgi",  "/home/saltydog/bohicket.saltydog.com/selfie/src/".$image.".jpg");
 ?>

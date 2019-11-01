@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<OverDriveMedia id="ba0438c7-fdf4-4aca-a63d-59ccd0713f26-425" ODMVersion="3.0.0.0" OMCVersion="3.0.0.0">
+	<License>
+		<AcquisitionUrl>https://ofs.contentreserve.com/MP3LicenseAcquisitionService.svc/0d73c5e3-2ff1-4153-8fb1-a9d300bb5d16</AcquisitionUrl>
+	</License><![CDATA[<Metadata>
+	<ContentType>MP3 Audio Book</ContentType>
+	<Title>Whispers in the Dark</Title>
+	<SubTitle>Kelly Group International Series, Book 4</SubTitle>
+	<SortTitle>Whispers in the Dark</SortTitle>
+	<Publisher>Recorded Books, LLC</Publisher>
+	<Series>Kelly Group International</Series>
+	<ThumbnailUrl>https://images.contentreserve.com/ImageType-200/1694-1/{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Img200.jpg</ThumbnailUrl>
+	<CoverUrl>https://images.contentreserve.com/ImageType-100/1694-1/{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Img100.jpg</CoverUrl>
+	<Creators>
+		<Creator role="Author" file-as="Banks, Maya">Maya Banks</Creator>
+		<Creator role="Narrator" file-as="Berkeley, Harry">Harry Berkeley</Creator>
+	</Creators>
+	<Subjects>
+		<Subject id="26">Fiction</Subject>
+		<Subject id="77">Romance</Subject>
+		<Subject id="86">Suspense</Subject>
+	</Subjects>
+	<Languages>
+		<Language code="en">English</Language>
+	</Languages>
+<Description>&lt;p&gt;&lt;i&gt;New York Times&lt;/i&gt; and &lt;i&gt;USA Today&lt;/i&gt; bestselling author Maya Banks here continues her enthralling series based around the Kelly brothers&#8212;six rugged men who make up an elite military group. When Nathan Kelly is finally rescued from behind enemy lines, he credits his life to Shea, whose psychic voice sustained his spirit through it all. But now Shea has gone silent, and Nathan fears she's in trouble. Can he find Shea in time to repay the tremendous debt he owes her?</Description>
+</Metadata>]]><DrmInfo>   <PlayOnPC>1</PlayOnPC>   <PlayOnPCCount>-1</PlayOnPCCount>   <BurnToCD>1</BurnToCD>   <BurnToCDCount>-1</BurnToCDCount>   <PlayOnPM>1</PlayOnPM>   <TransferToSDMI>1</TransferToSDMI>   <TransferToNonSDMI>1</TransferToNonSDMI>   <TransferCount>-1</TransferCount>   <CollaborativePlay>0</CollaborativePlay>   <PublicPerformance>0</PublicPerformance>   <TranscodeToAAC>1</TranscodeToAAC>  <ExpirationDate>2019-01-14T22:20:55Z</ExpirationDate><Hash>bdWiIbKfXFiE5ZWNepvwdbx7Ehw=</Hash><Hash2>8K2bdvDJceoB9Ld5d9yE3IUc4i4=</Hash2></DrmInfo><Formats><Format name="Medium Quality"><Quality level="Medium" /><Protocols><Protocol method="download" baseurl="https://mp3audio-gk.cdn.overdrive.com/MP3AudioStore1" /></Protocols><Parts count="10"><Part number="1" filesize="23533737" name="Part 1" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part01.mp3" duration="48:56" /><Part number="2" filesize="33683296" name="Part 2" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part02.mp3" duration="70:05" /><Part number="3" filesize="32971465" name="Part 3" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part03.mp3" duration="68:36" /><Part number="4" filesize="36176005" name="Part 4" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part04.mp3" duration="75:16" /><Part number="5" filesize="34524183" name="Part 5" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part05.mp3" duration="71:50" /><Part number="6" filesize="36677138" name="Part 6" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part06.mp3" duration="76:19" /><Part number="7" filesize="33396529" name="Part 7" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part07.mp3" duration="69:29" /><Part number="8" filesize="37705108" name="Part 8" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part08.mp3" duration="78:27" /><Part number="9" filesize="34092269" name="Part 9" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part09.mp3" duration="70:56" /><Part number="10" filesize="32991574" name="Part 10" filename="1694-1\BA0\438\C7\{BA0438C7-FDF4-4ACA-A63D-59CCD0713F26}Fmt425-Part10.mp3" duration="68:38" /></Parts></Format></Formats><Source id="LosAngeles"><Name>Los Angeles Public Library</Name><WebsiteUrl>http://e-media.lapl.org</WebsiteUrl><BannerUrl>http://e-media.lapl.org/ODMBanner.gif</BannerUrl><AccentColor>#eeeeee</AccentColor></Source><TransactionID>078-702391-02212</TransactionID><EarlyReturnURL>https://notifications-ofs.contentreserve.com/EarlyReturn/LosAngeles/078-702391-02212/ba0438c7-fdf4-4aca-a63d-59ccd0713f26-425?h=MJXQkP0tpkXY2oBDu4M6mBfCro5vncFaOut6kddcML4%3d</EarlyReturnURL><DownloadSuccessURL>https://notifications-ofs.contentreserve.com/DownloadSuccess/LosAngeles/078-702391-02212/ba0438c7-fdf4-4aca-a63d-59ccd0713f26-425?h=MJXQkP0tpkXY2oBDu4M6mBfCro5vncFaOut6kddcML4%3d</DownloadSuccessURL></OverDriveMedia>

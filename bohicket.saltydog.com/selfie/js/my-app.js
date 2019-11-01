@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
 
 				   console.log(number);
 				    setTimeout(function(){
- document.getElementById("newimg").src="https://selfie.saltydog.com/src/image-" + number + ".jpg";
+ document.getElementById("newimg").src="https://bohicket.saltydog.com/selfie/src/image-" + number + ".jpg";
     },1000);
 	$('.download').on('click',function(e) {
 		e.preventDefault();
@@ -55,7 +55,7 @@ jQuery(document).ready(function($){
 
 
 	var target = $('iframe').attr('src');
-	$('iframe').attr('src','https://selfie.saltydog.com/selfie/dev/dl.php?image=https://selfie.saltydog.com/src/image-' + number + '.jpg');
+	$('iframe').attr('src','https://bohicket.saltydog.com/selfie/selfie/dev/dl.php?image=https://bohicket.saltydog.com/selfie/src/image-' + number + '.jpg');
 			  
 //setTimeout(function(){
 // $('.ups').text('Great Shot!');
@@ -66,7 +66,7 @@ jQuery(document).ready(function($){
 var url="index.php";
 $('.discard').on('click',function(e){
 	e.preventDefault();     
-mainView.router.loadPage('https://selfie.saltydog.com/');
+mainView.router.loadPage('https://bohicket.saltydog.com/selfie/');
 
 })
 
@@ -74,7 +74,7 @@ mainView.router.loadPage('https://selfie.saltydog.com/');
 
 })
  myApp.onPageInit('email', function (page) {
-document.getElementById("photo").src="https://selfie.saltydog.com/src/image-" + number + ".jpg";
+document.getElementById("photo").src="https://bohicket.saltydog.com/selfie/src/image-" + number + ".jpg";
 
 jQuery(document).ready(function($){
 $('#email-image').attr('value','image-' + number);
@@ -92,7 +92,7 @@ function test4(){
 	}
 	$.ajax({
            type: "POST",
-           url: 'https://selfie.saltydog.com/test4.php',
+           url: 'https://bohicket.saltydog.com/selfie/test4.php',
            data: $("#webshot").serialize(), // serializes the form's elements.
            success: function(data)
            {
@@ -112,7 +112,7 @@ function test6(){
 	}
 	$.ajax({
            type: "POST",
-           url: 'https://selfie.saltydog.com/test6.php',
+           url: 'https://bohicket.saltydog.com/selfie/test6.php',
            data: $("#webshot").serialize(), // serializes the form's elements.
            success: function(data)
            {
@@ -125,7 +125,7 @@ function test6(){
          });
 };
 function test2(){
-	var url = 'https://selfie.saltydog.com/test2.php';
+	var url = 'https://bohicket.saltydog.com/selfie/test2.php';
     var postData = $('#webshot').serialize();
 	var message = $('textarea[name=message]').value;
 	if ($('.message').val().length === 0 ){
@@ -167,17 +167,17 @@ $("#webshot").submit();
  
   myApp.onPageInit('contest', function (page) {
 $('#email-image').attr('value','image-' + number);
-document.getElementById("photo").src="https://selfie.saltydog.com/src/image-" + number + ".jpg";
+document.getElementById("photo").src="https://bohicket.saltydog.com/selfie/src/image-" + number + ".jpg";
 $('.cancel').on('click',function(e){
 	e.preventDefault();     
-mainView.router.loadPage('https://selfie.saltydog.com/selfie/dev/index.php');
+mainView.router.loadPage('https://bohicket.saltydog.com/selfie/selfie/dev/index.php');
 });
 jQuery(document).ready(function(){
 	$("#webshot").on('click','#submit',function(e)
 {
 	e.preventDefault();
-	mainView.router.loadPage('https://selfie.saltydog.com/selfie/dev/index.php');
-    var url = 'https://selfie.saltydog.com/test3.php';
+	mainView.router.loadPage('https://bohicket.saltydog.com/selfie/selfie/dev/index.php');
+    var url = 'https://bohicket.saltydog.com/selfie/test3.php';
     var postData = $('#webshot').serialize();
     var formURL = url;
     $.ajax({
@@ -192,7 +192,7 @@ jQuery(document).ready(function(){
 				 $(this).val('');
 			 });
 			// mainView.router.back($('#success2').fadeIn().delay(1500).fadeOut());
-			mainView.router.loadPage('https://selfie.saltydog.com');
+			mainView.router.loadPage('https://bohicket.saltydog.com/selfie');
            // window.location.href = '/selfie-test.php/';
 			//$('#webshot').find("input[type=text]").val("");
            }

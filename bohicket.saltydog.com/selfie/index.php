@@ -146,7 +146,10 @@ console.log(number)
                 <div class="content-block-inner">
                   <!--<img src="img/smile.png" style="width:154px;height:70px;position:relative;left:50%;margin-left:-77px;top:0px;" alt="Smile at the Salty Dog Cafe" title="Smile at The Salty Dog Cafe">-->
                   <!-- <img class="webimg" src="https://98.101.223.10:8251/axis-cgi/mjpg/video.cgi" alt="Please Stand By For Webcam Photo Upload" name="pic" id="pic" style="width:100%;">-->
-                 <img class="webimg" src="http://98.101.223.10:8251/axis-cgi/mjpg/video.cgi" style="width:100%;" />
+                 <!--<img class="webimg" src="http://98.101.223.10:8251/axis-cgi/mjpg/video.cgi" style="width:100%;" />-->
+                 
+                 
+                  <img class="webimg" src="http://50.252.151.161:8201/axis-cgi/mjpg/video.cgi" style="width:100%;" />
                   <div class="spin" style="position:absolute;font-size:30px;color:#fff;top:100px;left:50%;margin-left:-15px;display:none;"><i class="fa fa-spinner fa-spin"></i></div>
                   <div style="width:100%;height:5px;margin-top:-5px;display:block;background:#2b3949;"></div>
                   <div>
@@ -155,7 +158,7 @@ console.log(number)
                    </div>-->
                   <div id="mess">
                   
-					  <div style="position:relative;top:-25px;padding:0px;width:100%;text-align:center;font-family:arial,sans-serif;font-size:16px;line-height:24px;color:#fff;">Hello from Salty Dog <br> Hilton Head Island  USA</div>
+					  <div style="position:relative;top:-25px;padding:0px;width:100%;text-align:center;font-family:arial,sans-serif;font-size:16px;line-height:24px;color:#fff;">Hello from Salty Dog <br> Bohicket Marina  USA</div>
 
                  <!-- <div class="weatherInfo" style="position:relative;top:-25px;padding:0px;width:100%;text-align:center;font-family:arial,sans-serif;font-size:16px;line-height:24px;color:#fff;">it's <span id="temp" style="font-weight:300;font-size:20px;"></span> on Hilton Head Island<!--<br><p class="wind2"></p><span id="tick21" style="display:none;"></span></div> -->
                   
@@ -233,7 +236,7 @@ console.log(number)
         <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-     <img  src="http://98.101.223.10:8078/axis-cgi/mjpg/video.cgi" width="100%"
+     <img  src="http://50.252.151.161:8201/axis-cgi/mjpg/video.cgi" width="100%"
                   height="auto">
 //     <script>
 // jQuery(document).ready(function($){
@@ -265,7 +268,7 @@ function killSession() {
     xhr.send();
 }
         var audioElement = document.createElement('audio');
-        audioElement.setAttribute('src', 'https://selfie.saltydog.com/src/shutter.mp3');
+        audioElement.setAttribute('src', 'https://bohicket.saltydog.com/selfie/src/shutter.mp3');
         //audioElement.setAttribute('autoplay', 'autoplay');
         //audioElement.load()
 

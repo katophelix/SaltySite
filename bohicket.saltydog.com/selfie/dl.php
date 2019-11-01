@@ -14,7 +14,7 @@ $image = $_GET['image'];
 <body style="height:auto;width:auto;">
 <div id="cont" style="display:block;width:100%;max-width:640px;height:auto;">
 <!--<image id="img1" src="<?php echo $image?>" style="width:100%;position:relative;top:0;z-index:9999999;left:0;max-width:640px;">-->
-<image id="img1" src="https://saltydog.com/animated-logo3.gif" style="width:250px;position:relative;top:0;z-index:9999999;left:0;max-width:640px;left:50%;margin-left:-125px;">
+<image id="img1" src="https://bohicket.saltydog.com/selfie/animated-logo3.gif" style="width:250px;position:relative;top:0;z-index:9999999;left:0;max-width:640px;left:50%;margin-left:-125px;">
 <div style="clear:both;"></div>
 </div>
  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
