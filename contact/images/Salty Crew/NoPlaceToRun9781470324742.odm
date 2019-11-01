@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<OverDriveMedia id="6b77dceb-6d86-45f9-af1a-73deb78ee20f-425" ODMVersion="3.0.0.0" OMCVersion="3.0.0.0">
+	<License>
+		<AcquisitionUrl>https://ofs.contentreserve.com/MP3LicenseAcquisitionService.svc/54a2a906-34e0-4b11-bbc1-a9d300bb5735</AcquisitionUrl>
+	</License><![CDATA[<Metadata>
+	<ContentType>MP3 Audio Book</ContentType>
+	<Title>No Place to Run</Title>
+	<SubTitle>Kelly Group International Series, Book 2</SubTitle>
+	<SortTitle>No Place to Run</SortTitle>
+	<Publisher>Recorded Books, LLC</Publisher>
+	<Series>Kelly Group International</Series>
+	<ThumbnailUrl>https://images.contentreserve.com/ImageType-200/1694-1/{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Img200.jpg</ThumbnailUrl>
+	<CoverUrl>https://images.contentreserve.com/ImageType-100/1694-1/{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Img100.jpg</CoverUrl>
+	<Creators>
+		<Creator role="Author" file-as="Banks, Maya">Maya Banks</Creator>
+		<Creator role="Narrator" file-as="Berkeley, Harry">Harry Berkeley</Creator>
+	</Creators>
+	<Subjects>
+		<Subject id="26">Fiction</Subject>
+		<Subject id="77">Romance</Subject>
+		<Subject id="86">Suspense</Subject>
+	</Subjects>
+	<Languages>
+		<Language code="en">English</Language>
+	</Languages>
+<Description>&lt;p&gt;The last person Sam Kelly expected to save was Sophie Lundgren. Once they shared a brief, intense affair while Sam was undercover and then she vanished. She's spent the last few months on the run, knowing that any mistake would cost her both her life and that of their unborn child. Now she's resurfaced with a warning for Sam: this time, he's the one in danger.</Description>
+</Metadata>]]><DrmInfo>   <PlayOnPC>1</PlayOnPC>   <PlayOnPCCount>-1</PlayOnPCCount>   <BurnToCD>1</BurnToCD>   <BurnToCDCount>-1</BurnToCDCount>   <PlayOnPM>1</PlayOnPM>   <TransferToSDMI>1</TransferToSDMI>   <TransferToNonSDMI>1</TransferToNonSDMI>   <TransferCount>-1</TransferCount>   <CollaborativePlay>0</CollaborativePlay>   <PublicPerformance>0</PublicPerformance>   <TranscodeToAAC>1</TranscodeToAAC>  <ExpirationDate>2019-01-14T22:21:31Z</ExpirationDate><Hash>EluREhtG1LU7BHQ3z2aFX6dlL3E=</Hash><Hash2>Fs7MxulqEEY+7nP1grg0kSgY34U=</Hash2></DrmInfo><Formats><Format name="Medium Quality"><Quality level="Medium" /><Protocols><Protocol method="download" baseurl="https://mp3audio-gk.cdn.overdrive.com/MP3AudioStore1" /></Protocols><Parts count="8"><Part number="1" filesize="21753984" name="Part 1" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part01.mp3" duration="45:18" /><Part number="2" filesize="31346147" name="Part 2" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part02.mp3" duration="65:17" /><Part number="3" filesize="35740361" name="Part 3" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part03.mp3" duration="74:27" /><Part number="4" filesize="32137135" name="Part 4" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part04.mp3" duration="66:56" /><Part number="5" filesize="35231077" name="Part 5" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part05.mp3" duration="73:23" /><Part number="6" filesize="29703149" name="Part 6" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part06.mp3" duration="61:52" /><Part number="7" filesize="30538859" name="Part 7" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part07.mp3" duration="63:36" /><Part number="8" filesize="36883479" name="Part 8" filename="1694-1\6B7\7DC\EB\{6B77DCEB-6D86-45F9-AF1A-73DEB78EE20F}Fmt425-Part08.mp3" duration="76:49" /></Parts></Format></Formats><Source id="LosAngeles"><Name>Los Angeles Public Library</Name><WebsiteUrl>http://e-media.lapl.org</WebsiteUrl><BannerUrl>http://e-media.lapl.org/ODMBanner.gif</BannerUrl><AccentColor>#eeeeee</AccentColor></Source><TransactionID>078-702391-02213</TransactionID><EarlyReturnURL>https://notifications-ofs.contentreserve.com/EarlyReturn/LosAngeles/078-702391-02213/6b77dceb-6d86-45f9-af1a-73deb78ee20f-425?h=fTRMLKmi%2bUZhKA%2baC2tncpCLa0zOWQKP%2bLhiIeSl4RE%3d</EarlyReturnURL><DownloadSuccessURL>https://notifications-ofs.contentreserve.com/DownloadSuccess/LosAngeles/078-702391-02213/6b77dceb-6d86-45f9-af1a-73deb78ee20f-425?h=fTRMLKmi%2bUZhKA%2baC2tncpCLa0zOWQKP%2bLhiIeSl4RE%3d</DownloadSuccessURL></OverDriveMedia>
