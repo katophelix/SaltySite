@@ -10,7 +10,7 @@
  }
  </style>'; 
 
-//  $recipient_email   = "kat@saltydog.com"; //recepient
+// $recipient_email   = "kat@saltydog.com"; //recepient
  $recipient_email    = "luckyreceipt@saltydog.com"; //recepient
 
 $from_email   = "luckyreceipt@saltydog.com"; //from email using site domain.

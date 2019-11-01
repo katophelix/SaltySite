@@ -14,7 +14,7 @@ if(isset($_POST['message'])){
 	$message = $_POST['message'];
 }
 $bob = 'bob@saltydog.com';
-$tim = 'tim@saltydog.com';
+ $tim = 'tim@saltydog.com';
 $forms = 'forms@saltydog.com';
 
 $sent = 'yes';
@@ -34,5 +34,5 @@ $file_to_attach = 'src/'.$_POST['image'].'.jpg';
 $email->AddAttachment( $file_to_attach , 'saltydogcafe.jpg' );
 
 return $email->Send();
-header('Location:https://selfie.saltydog.com/');
+header('Location:https://bohicket.saltydog.com/selfie');
 ?>

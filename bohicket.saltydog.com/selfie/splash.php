@@ -21,7 +21,7 @@ if(isset($_POST['image'])){
    <div style="position:relative;width:100%;height:100%;text-align:center;color:#fff;font-size:30px;">
        
         <?php if($image != ''){?>
-          <img src="https://saltydog.com/src/<?php echo $image;?>.jpg" style="width:100%;position:relative;top:0;z-index:9999999;left:0;" />
+          <img src="https://bohicket.saltydog.com/selfie/src/<?php echo $image;?>.jpg" style="width:100%;position:relative;top:0;z-index:9999999;left:0;" />
           <?php }else{?>
           
           <!--<img id="newimg" src="" style="width:100%;position:relative;top:0;z-index:9999999;left:0;max-width:640px;">-->

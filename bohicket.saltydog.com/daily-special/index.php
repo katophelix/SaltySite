@@ -141,21 +141,24 @@ font-size: 1.5em;
 
 <body>
 
+   <script>
+        $(document).ready(function () {
+            $("div[data-includeHTML]").each(function () {
+                $(this).load($(this).attr("data-includeHTML"));
+            });
+        });
+    </script>
 
 
 
 
-
-
- <header>
-                <?php include '../headers/_HeaderPartial.html' ; ?>
-           </header>
+    <header>
+        <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
+    </header>
 
          <br>  
 
-            <!-- <img src="https://saltydog.com/images/NEW HEADERS/DAILYSPECIALS.jpg" style="width:100%; height:auto;margin-top: 50px" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and events written on it."> -->
-
-         
+           
 
 
 
