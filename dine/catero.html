@@ -40,8 +40,9 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
     <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
-    <link rel="stylesheet"  href="css/lightslider.css"/>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
 </head>
 
 <style>
@@ -53,26 +54,7 @@
         font-size: .7em;
     }
 
-ul{
-			list-style: none outside none;
-		    padding-left: 0;
-            margin: 0;
-		}
-        .demo .item{
-            margin-bottom: 60px;
-        }
-		.content-slider li{
-		    background-color: #ed3020;
-		    text-align: center;
-		    color: #FFF;
-		}
-		.content-slider h3 {
-		    margin: 0;
-		    padding: 70px 0;
-		}
-		.demo{
-			width: 800px;
-		}
+
 </style>
 
 <body>
@@ -134,104 +116,97 @@ ul{
 
             </div>
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <script src="../src/js/lightslider.js"></script> 
-         
-                 <script type="text/javascript">
-        $(document).ready(function() {
-            $("#lightSlider").lightSlider({
-                item: 3,
-                autoWidth: false,
-                slideMove: 1, // slidemove will be 1 if loop is true
-                slideMargin: 10,
-         
-                addClass: '',
-                mode: "slide",
-                useCSS: true,
-                cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-                easing: 'linear', //'for jquery animation',////
-         
-                speed: 400, //ms'
-                auto: false,
-                loop: true,
-                slideEndAnimation: true,
-                pause: 2000,
-         
-                keyPress: false,
-                controls: true,
-                prevHtml: '',
-                nextHtml: '',
-         
-                rtl:false,
-                adaptiveHeight:false,
-         
-                vertical:false,
-                verticalHeight:500,
-                vThumbWidth:100,
-         
-                thumbItem:10,
-                pager: true,
-                gallery: false,
-                galleryMargin: 5,
-                thumbMargin: 5,
-                currentPagerPosition: 'middle',
-         
-                enableTouch:true,
-                enableDrag:true,
-                freeMove:true,
-                swipeThreshold: 40,
-         
-                responsive : [],
-         
-                onBeforeStart: function (el) {},
-                onSliderLoad: function (el) {},
-                onBeforeSlide: function (el) {},
-                onAfterSlide: function (el) {},
-                onBeforeNextSlide: function (el) {},
-                onBeforePrevSlide: function (el) {}
-            });
-        });
-        </script>
-            </script>
+          
         </head>
         <body>
         
-                <ul id="lightSlider">
-                    <li>
+             
+                <div class="cycle-slideshow"
+                data-cycle-timeout="0"
+                data-cycle-prev="#prev"
+                data-cycle-next="#next"
+                data-cycle-carousel-visible=3
+                data-cycle-carousel-fluid=true
+                >
                      
                         <img src="https://saltydog.com/images/rectangle cater/privevents8.png" alt="Salty dog cater brochure Page 5.">
-                    </li>
-                    <li>
+                    
+                    
                        
                         <img  src="https://saltydog.com/images/rectangle cater/privevents11.png" alt="Salty dog cater brochure Page 2.">
-                    </li>
-                  <li>
+                    
+                  
                     <img  src="https://saltydog.com/images/rectangle cater/privevents12.png" alt="Salty dog cater brochure Page 4.">
-                  </li>
+                  
         
-        <li>
+        
                 <img  src="https://saltydog.com/images/rectangle cater/privevents2.png" alt="Salty dog cater brochure Page 5.">
-                </li>
-                <li>
+                
+                
         
                         <img  src="https://saltydog.com/images/rectangle cater/privevents4.png" alt="Salty dog cater brochure Page 6.">
-                </li>
-                <li>
+                
+                
                         <img src="https://saltydog.com/images/rectangle cater/privevents5.png" alt="Salty dog cater brochure Page 7.">
-                </li>
-                <li>
+                
+                
                         <img  src="https://saltydog.com/images/rectangle cater/privevents7.png" alt="Salty dog cater brochure Page 8.">
-                </li>
-                <li>
+                
+                
                         <img  src="https://saltydog.com/images/rectangle cater/privevents8.png" alt="Salty dog cater brochure Page 5.">
-                </li>
-                <li>
+                
+                
                         <img src="https://saltydog.com/images/rectangle cater/privevents9.png" alt="Salty dog cater brochure Page 6.">
-                </li>
-                  </ul>
+                
+                </div>
               
         
-      
+                <div class="slideshow" 
+                data-cycle-fx=carousel
+                data-cycle-timeout=0
+                data-cycle-carousel-visible=3
+                data-cycle-next="#next"
+                data-cycle-prev="#prev"
+                data-cycle-pager="#pager"
+                >
+                  
+                <img src="https://saltydog.com/images/rectangle cater/privevents8.png" alt="Salty dog cater brochure Page 5.">
+                    
+                    
+                       
+                <img  src="https://saltydog.com/images/rectangle cater/privevents11.png" alt="Salty dog cater brochure Page 2.">
+            
+          
+            <img  src="https://saltydog.com/images/rectangle cater/privevents12.png" alt="Salty dog cater brochure Page 4.">
+          
+
+
+        <img  src="https://saltydog.com/images/rectangle cater/privevents2.png" alt="Salty dog cater brochure Page 5.">
+        
+        
+
+                <img  src="https://saltydog.com/images/rectangle cater/privevents4.png" alt="Salty dog cater brochure Page 6.">
+        
+        
+                <img src="https://saltydog.com/images/rectangle cater/privevents5.png" alt="Salty dog cater brochure Page 7.">
+        
+        
+                <img  src="https://saltydog.com/images/rectangle cater/privevents7.png" alt="Salty dog cater brochure Page 8.">
+        
+        
+                <img  src="https://saltydog.com/images/rectangle cater/privevents8.png" alt="Salty dog cater brochure Page 5.">
+        
+        
+                <img src="https://saltydog.com/images/rectangle cater/privevents9.png" alt="Salty dog cater brochure Page 6.">
+        
+            </div>
+            
+            <div class=center>
+                <a href=# id=prev>&lt;&lt; Prev </a>
+                <a href=# id=next> Next &gt;&gt; </a>
+            </div>
+            
+            <div class="cycle-pager" id=pager></div>
 
         <div class="row justify-content-center" style="margin-top: 10px;margin-left: 7%; width:90%">
                 <div class="col-10">
