@@ -1,135 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <title>lightSlider Demo</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-<!-- framework css -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
-    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- framework css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<!--<![endif]-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--<![endif]-->
 
 
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
-<link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
-    <link rel="stylesheet"  href="css/lightslider.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
+    <link rel="stylesheet" href="css/lightslider.css" />
     <style>
-            h1 {
-        font-size: .8em;
-    }
+        h1 {
+            font-size: .8em;
+        }
 
-    h4 {
-        font-size: .7em;
-    }
-    	ul{
-			list-style: none outside none;
-		    padding-left: 0;
-            margin-left: 50px;
-		}
-        .demo .item{
+        h4 {
+            font-size: .7em;
+        }
+        h5 {
+            font-size: .5em;
+        }
+        ul {
+            list-style: none outside none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        li {
+            display: block;
+
+            margin-right: 6px;
+            cursor: pointer;
+        }
+
+        .img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+
+        #lightSlider ul li {
+
+            margin-left: 10px;
+        }
+
+        .demo .item {
             margin-bottom: 60px;
         }
-		.content-slider li{
-		    background-color: #ed3020;
-		    text-align: center;
-		    color: #FFF;
-		}
-		.content-slider h3 {
-		    margin: 0;
-		    padding: 70px 0;
-		}
-		.demo{
-			width: 800px;
-		}
+
+        .content-slider li {
+            background-color: #ed3020;
+            text-align: center;
+            color: #FFF;
+        }
+
+        .content-slider h3 {
+            margin: 0;
+            padding: 70px 0;
+        }
     </style>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/lightslider.js"></script> 
- 
-    	 <script type="text/javascript">
-$(document).ready(function() {
-    $("#lightSlider").lightSlider({
-        item: 3,
-        autoWidth: false,
-        slideMove: 1, // slidemove will be 1 if loop is true
-        slideMargin: 10,
- 
-        addClass: '',
-        mode: "slide",
-        useCSS: true,
-        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-        easing: 'linear', //'for jquery animation',////
- 
-        speed: 400, //ms'
-        
-        auto: false,
-        loop: true,
-        slideEndAnimation: true,
-        pause: 2000,
- 
-        keyPress: false,
-        controls: true,
-        prevHtml: '',
-        nextHtml: '',
- 
-        rtl:false,
-        adaptiveHeight:false,
- 
-        vertical:false,
-        verticalHeight:500,
-        vThumbWidth:100,
- 
-        thumbItem:10,
-        pager: true,
-        gallery: false,
-        galleryMargin: 5,
-        thumbMargin: 5,
-        currentPagerPosition: 'middle',
- 
-        enableTouch:true,
-        enableDrag:true,
-        freeMove:true,
-        swipeThreshold: 40,
- 
-        responsive : [],
- 
-        onBeforeStart: function (el) {},
-        onSliderLoad: function (el) {},
-        onBeforeSlide: function (el) {},
-        onAfterSlide: function (el) {},
-        onBeforeNextSlide: function (el) {},
-        onBeforePrevSlide: function (el) {}
-    });
-});
-</script>
-  
+    <script src="js/lightslider.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider({
+                item: 3,
+                autoWidth: false,
+                slideMove: 1, // slidemove will be 1 if loop is true
+                slideMargin: 10,
+
+                addClass: '',
+                mode: "slide",
+                useCSS: true,
+                cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+                easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+
+                speed: 400, //ms'
+
+                auto: false,
+                loop: true,
+                slideEndAnimation: true,
+                pause: 2000,
+
+                keyPress: false,
+                controls: true,
+                prevHtml: '',
+                nextHtml: '',
+
+                rtl: false,
+                adaptiveHeight: false,
+
+                vertical: false,
+                verticalHeight: 500,
+                vThumbWidth: 100,
+
+                thumbItem: 10,
+                pager: true,
+                gallery: false,
+                galleryMargin: 5,
+                thumbMargin: 5,
+                currentPagerPosition: 'middle',
+
+                enableTouch: true,
+                enableDrag: true,
+                freeMove: true,
+                swipeThreshold: 40,
+
+                responsive: [
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            item: 3,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            item: 2,
+                            slideMove: 1
+                        }
+                    }
+                ],
+
+                onBeforeStart: function (el) { },
+                onSliderLoad: function (el) { },
+                onBeforeSlide: function (el) { },
+                onAfterSlide: function (el) { },
+                onBeforeNextSlide: function (el) { },
+                onBeforePrevSlide: function (el) { }
+            });
+        });
+    </script>
+
 </head>
+
 <body>
-        <script>
-                $(document).ready(function () {
-                    $("div[data-includeHTML]").each(function () {                
-                        $(this).load($(this).attr("data-includeHTML"));
-                    });
-                });
-            </script>
+    <script>
+        $(document).ready(function () {
+            $("div[data-includeHTML]").each(function () {
+                $(this).load($(this).attr("data-includeHTML"));
+            });
+        });
+    </script>
 
 
 
-<header>
+    <header>
         <div data-includeHTML="https://www.saltydog.com/headers/_HeaderPartial.html"></div>
-   </header>
+    </header>
     <br>
     <br>
     <!-- <img src="https://saltydog.com/images/NEW HEADERS/PRIVEVENTS.jpg" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and events written on it."> -->
@@ -140,10 +179,11 @@ $(document).ready(function() {
         <div class="my-container mx-auto">
             <div class="row mx-auto justify-content-center">
                 <div class="col justify-content-center" style="text-align:center">
-                    <img src="https://saltydog.com/images/cater/CateredEventsLogo.png" style="width:25%; margin-bottom:  30px;margin-top:  30px;">
+                    <img src="https://saltydog.com/images/cater/CateredEventsLogo.png"
+                        style="width:25%; margin-bottom:  30px;margin-top:  30px;">
                 </div>
             </div>
-        <div class="row mx-auto">
+            <div class="row mx-auto">
 
 
                 <div class="col">
@@ -156,75 +196,94 @@ $(document).ready(function() {
                         843.540.8040
                     </h4>
 
-                    <a href="mailto:holly@saltydog.com?Subject=Hello" target="_top">  <h4>holly@saltydog.com</h4></a>
+                    <a href="mailto:holly@saltydog.com?Subject=Hello" target="_top">
+                        <h4>holly@saltydog.com</h4>
+                    </a>
 
 
                 </div>
             </div>
 
             <div class="row mx-auto">
-                    <div class="col-10 mx-auto">
-                        <a href="caterbrochure.html">
-                            <button type="button" class="btn btn-secondary btn-block">
-                                PRIVATE EVENTS BROChURE
-                            </button>
-                        </a>
-                    </div>
-    
+                <div class="col mx-auto">
+                    <a href="caterbrochure.html">
+                        <button type="button" class="btn btn-secondary btn-block">
+                            PRIVATE EVENTS BROChURE
+                        </button>
+                    </a>
                 </div>
-        <ul id="lightSlider">
-            <li>
-             
-                <img src="https://saltydog.com/images/rectangle cater/privevents8.png" alt="Salty dog cater brochure Page 5.">
-            </li>
-            <li>
-               
-                <img  src="https://saltydog.com/images/rectangle cater/privevents11.png" alt="Salty dog cater brochure Page 2.">
-            </li>
-          <li>
-            <img  src="https://saltydog.com/images/rectangle cater/privevents12.png" alt="Salty dog cater brochure Page 4.">
-          </li>
 
-<li>
-        <img  src="https://saltydog.com/images/rectangle cater/privevents2.png" alt="Salty dog cater brochure Page 5.">
-        </li>
-        <li>
+            </div>
+            <div class="row mx-auto">
+                <div class="col mx-auto">
+                    <ul id="lightSlider">
+                        <li>
 
-                <img  src="https://saltydog.com/images/rectangle cater/privevents4.png" alt="Salty dog cater brochure Page 6.">
-        </li>
-        <li>
-                <img src="https://saltydog.com/images/rectangle cater/privevents5.png" alt="Salty dog cater brochure Page 7.">
-        </li>
-        <li>
-                <img  src="https://saltydog.com/images/rectangle cater/privevents7.png" alt="Salty dog cater brochure Page 8.">
-        </li>
-        <li>
-                <img  src="https://saltydog.com/images/rectangle cater/privevents8.png" alt="Salty dog cater brochure Page 5.">
-        </li>
-        <li>
-                <img src="https://saltydog.com/images/rectangle cater/privevents9.png" alt="Salty dog cater brochure Page 6.">
-        </li>
-          </ul>
-      
+                            <img src="https://saltydog.com/images/rectangle cater/privevents8.png"
+                                alt="Salty dog cater brochure Page 5.">
+                        </li>
+                        <li>
 
-   
+                            <img src="https://saltydog.com/images/rectangle cater/privevents11.png"
+                                alt="Salty dog cater brochure Page 2.">
+                        </li>
+                        <li>
+                            <img src="https://saltydog.com/images/rectangle cater/privevents12.png"
+                                alt="Salty dog cater brochure Page 4.">
+                        </li>
+
+                        <li>
+                            <img src="https://saltydog.com/images/rectangle cater/privevents2.png"
+                                alt="Salty dog cater brochure Page 5.">
+                        </li>
+                        <li>
+
+                            <img src="https://saltydog.com/images/rectangle cater/privevents4.png"
+                                alt="Salty dog cater brochure Page 6.">
+                        </li>
+                        <li>
+                            <img src="https://saltydog.com/images/rectangle cater/privevents5.png"
+                                alt="Salty dog cater brochure Page 7.">
+                        </li>
+                        <li>
+                            <img src="https://saltydog.com/images/rectangle cater/privevents7.png"
+                                alt="Salty dog cater brochure Page 8.">
+                        </li>
+                        <li>
+                            <img src="https://saltydog.com/images/rectangle cater/privevents8.png"
+                                alt="Salty dog cater brochure Page 5.">
+                        </li>
+                        <li>
+                            <img src="https://saltydog.com/images/rectangle cater/privevents9.png"
+                                alt="Salty dog cater brochure Page 6.">
+                        </li>
+                    </ul>
 
 
-    <div class="row justify-content-center" style="margin-top: 10px;margin-left: 7%; width:90%">
-            <div class="col-10">
-                <strong>
-                    <h1>LET'S GET PLANNING!</h1>
-                </strong>
-                <h5>
-                    Rehearsal Dinners, wedding receptions, anniversary & birthday celebrations, family reunions, and business retreats are just
-                    a sample of the events that are perfect for professional catering by the Salty Dog. From start to
-                    finish, the experienced Salty Dog Catering and event planning team will be there to ensure all of
-                    your needs and expectations are not only met, but exceeded. Let us make your next party or special
-                    event a legendary one. It is only limited by your imagination.
+                </div>
 
-                </h5>
+            </div>
+
+            <div class="row justify-content-center" style="margin-top: 10px;margin-left: 7%; width:90%">
+                <div class="col-10">
+                    <strong>
+                        <h1>LET'S GET PLANNING!</h1>
+                    </strong>
+                    <h5>
+                        Rehearsal Dinners, wedding receptions, anniversary & birthday celebrations, family reunions, and
+                        business retreats are just
+                        a sample of the events that are perfect for professional catering by the Salty Dog. From start
+                        to
+                        finish, the experienced Salty Dog Catering and event planning team will be there to ensure all
+                        of
+                        your needs and expectations are not only met, but exceeded. Let us make your next party or
+                        special
+                        event a legendary one. It is only limited by your imagination.
+
+                    </h5>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
+    </div>
 </body>
+</html>
