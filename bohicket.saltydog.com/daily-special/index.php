@@ -125,7 +125,9 @@ font-size: 1.5em;
 
     }
 
-    
+    img {
+  width: 100%;
+}
 
     </style>
 
@@ -328,7 +330,21 @@ font-size: 1.5em;
 
   <p class="card-text">   <?php echo $data['bodog']['child_descr'];  ?> </p>
 
+                  
+  <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
+        $filename = 'uploads/uploads/bodog.jpg';
+        if (file_exists($filename)) {
+            $filename = "uploads/uploads/bodog.jpg";
+            $filemtime = filemtime($filename);
+}
+?>
+                    <div class="col"> 
+                   <img src="uploads/uploads/bodog.jpg?<?php echo $filemtime; ?>" >
+</div>
+
+                    </div>
 
 </div> 
  
