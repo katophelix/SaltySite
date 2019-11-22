@@ -405,7 +405,7 @@ img {
 
 
    
-
+<!-- 
                     <div class="block1" style="background-color: white !important;">
                     <h1 class="card-title">The Wreck of the Salty Dog </h1>
                           <h2 class="card-title"><?php echo $data['wreck']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?>  </h2>
@@ -425,24 +425,26 @@ img {
 
                       <h5 class="card-title"> <?php echo $data['wreck']['child_name'];  ?> </h5>
 
-                      <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p>
+                      <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p> -->
 
                       <?php
 // outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-        $filename = 'uploads/uploads/wreck.jpg';
-        if (file_exists($filename)) {
-            $filename = "uploads/uploads/wreck.jpg";
-            $filemtime = filemtime($filename);
-}
-?>
+//         $filename = 'uploads/uploads/wreck.jpg';
+//         if (file_exists($filename)) {
+//             $filename = "uploads/uploads/wreck.jpg";
+//             $filemtime = filemtime($filename);
+// }
+// //
+//  
+
+// ?>
                    
-                   <img src="uploads/uploads/wreck.jpg?<?php echo $filemtime; ?>" >
-                    </div> 
+//                    <img src="uploads/uploads/wreck.jpg?<?php echo $filemtime; ?>" >                   </div> 
 
 
 
-        </div> 
+//         </div> 
 
     </div>
 
