@@ -93,6 +93,7 @@
 
 
 
+   
 
    <style>
 
@@ -147,6 +148,7 @@ font-size: 1.5em;
 img {
   width: 100%;
 }
+
     </style>
 
 
@@ -163,15 +165,7 @@ img {
 
 
 
-<?php
-  //set headers to NOT cache a page
-  header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
-  header("Pragma: no-cache"); //HTTP 1.0
-  header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 
- 
-
-?>
 
 
 
@@ -250,8 +244,7 @@ img {
                       <h5 class="card-title"> <?php echo $data['cafe']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['cafe']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/cafe.jpg' />";?></div>
-
+                      <?php echo "<img src='uploads/uploads/cafe.jpg' />";?>
 
 
 </div>
@@ -281,8 +274,7 @@ img {
                       <h5 class="card-title"> <?php echo $data['let']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['let']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/let.jpg' />";?></div>
-
+                      <?php echo "<img src='uploads/uploads/let.jpg' />";?>
                     </div>  
 
 
@@ -318,8 +310,7 @@ img {
                       <h5 class="card-title"> <?php echo $data['bluffdog']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['bluffdog']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/bluffdog.jpg' />";?></div>
-
+                      <?php echo "<img src='uploads/uploads/bluffdog.jpg' />";?>
                     </div>
 
 
@@ -355,9 +346,8 @@ img {
   <h5 class="card-title"> <?php echo $data['bodog']['child_name'];  ?> </h5>
 
   <p class="card-text">   <?php echo $data['bodog']['child_descr'];  ?> </p>
-       <div class="col"><?php echo "<img src='uploads/uploads/bodog.jpg' />";?></div>
 
-
+  <?php echo "<img src='uploads/uploads/bodog.jpg' />";?>
 
 </div> -->
  
@@ -392,7 +382,6 @@ img {
 
                       <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p>
                       <div class="col"><?php echo "<img src='uploads/uploads/wreck.jpg' />";?></div>
-
                     </div> 
 
 

@@ -1,3 +1,12 @@
+<?php
+  //set headers to NOT cache a page
+  header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
+  header("Pragma: no-cache"); //HTTP 1.0
+  header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+
+ 
+
+?>
 <!DOCTYPE html>
 
 
@@ -163,15 +172,7 @@ img {
 
 
 
-<?php
-  //set headers to NOT cache a page
-  header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
-  header("Pragma: no-cache"); //HTTP 1.0
-  header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 
- 
-
-?>
 
 
 
@@ -250,11 +251,21 @@ img {
                       <h5 class="card-title"> <?php echo $data['cafe']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['cafe']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/cafe.jpg' />";?></div>
+                    
 
+                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
+        $filename = 'uploads/uploads/cafe.jpg';
+        if (file_exists($filename)) {
+            $filename = "uploads/uploads/cafe.jpg";
+            $filemtime = filemtime($filename);
+}
+?>
+                   
+                   <img src="uploads/uploads/cafe.jpg?<?php echo $filemtime; ?>" >
 
-</div>
+                    </div>
 
 
 
@@ -281,9 +292,21 @@ img {
                       <h5 class="card-title"> <?php echo $data['let']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['let']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/let.jpg' />";?></div>
+                  
+                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-                    </div>  
+        $filename = 'uploads/uploads/let.jpg';
+        if (file_exists($filename)) {
+            $filename = "uploads/uploads/let.jpg";
+            $filemtime = filemtime($filename);
+}
+?>
+                    <div class="col"> 
+                   <img src="uploads/uploads/let.jpg?<?php echo $filemtime; ?>" >
+</div>
+
+                    </div>
 
 
 
@@ -318,7 +341,19 @@ img {
                       <h5 class="card-title"> <?php echo $data['bluffdog']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['bluffdog']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/bluffdog.jpg' />";?></div>
+                  
+                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+        $filename = 'uploads/uploads/bluffdog.jpg';
+        if (file_exists($filename)) {
+            $filename = "uploads/uploads/bluffdog.jpg";
+            $filemtime = filemtime($filename);
+}
+?>
+                    <div class="col"> 
+                   <img src="uploads/uploads/bluffdog.jpg?<?php echo $filemtime; ?>" >
+</div>
 
                     </div>
 
@@ -391,8 +426,18 @@ img {
                       <h5 class="card-title"> <?php echo $data['wreck']['child_name'];  ?> </h5>
 
                       <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/wreck.jpg' />";?></div>
 
+                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+        $filename = 'uploads/uploads/wreck.jpg';
+        if (file_exists($filename)) {
+            $filename = "uploads/uploads/wreck.jpg";
+            $filemtime = filemtime($filename);
+}
+?>
+                   
+                   <img src="uploads/uploads/wreck.jpg?<?php echo $filemtime; ?>" >
                     </div> 
 
 
