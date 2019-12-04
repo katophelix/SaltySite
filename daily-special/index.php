@@ -455,7 +455,9 @@ img {
 
 
 
-
+    <footer>
+    <?php include 'https://saltydog.com/headers/footer.html' ; ?>
+                </footer>
 
 
 

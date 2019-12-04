@@ -7,6 +7,7 @@ $(function()
         {
             $('form#reused_form').hide();
             $('#success_message').show();
+            $('#message').show();
             $('#error_message').hide();
         }
         else
