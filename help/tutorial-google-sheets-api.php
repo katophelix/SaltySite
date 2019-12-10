@@ -12,7 +12,8 @@
 <title>Snyder Group Inc | Tutorial</title>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="fdgs.js"></script>
+
+<script src="form.js"></script>
 </head>
 <body>
 
@@ -34,13 +35,20 @@
 </div>
 <!-- Form -->
 <div class="form_container">
+<form role="form" method="post"  enctype=&quot;multipart/form-data&quot; >
 <form id="sheets" name="sheets" class="form_body">
 <input id="first_name" name="last_name" class="form_field" value="" placeholder="First Name"/>
 <input id="last_name" name="last_name" class="form_field" value="" placeholder="Last Name"/>
 <input id="email" name="email" class="form_field" value="" placeholder="Email Address"/>
-<input id="submit" name="submit" type="button" class="form_button" value="Submit" onClick="submit_form()">
+<div class="form-group">
+                            <label for="name"> Image Upload:</label>
+                            <input type="file" class="form-control" id="image" name="image" required>
+                        </div>
+<input id="submit" name="submit" type="button" class="form_button" value="Submit" onClick="function submit_form() &  function after_form_submitted()" >
 </form>
 <div class="form_message" id="message"></div>
+<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
 </div>
 <!-- Form -->
 </div>

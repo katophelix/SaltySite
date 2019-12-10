@@ -546,6 +546,13 @@ margin-top: .5em;
 
 
 
+                <script>
+                    $(document).ready(function () {
+                        $("div[data-includeHTML]").each(function () {
+                            $(this).load($(this).attr("data-includeHTML"));
+                        });
+                    });
+                </script>
             
             
                 <footer>

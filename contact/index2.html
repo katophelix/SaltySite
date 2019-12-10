@@ -362,24 +362,29 @@
 
 
 <body>
-   
-
-    <script>
-    $(document).ready(function() {
-      $("#flip1").flip({
-     trigger: 'manual'
-      });
-    $('#toggle1').click(function() {
-      $("#flip1").flip('toggle');
-      });
-      $("#flip2").flip({
-     trigger: 'manual'
-      });
-    $('#toggle2').click(function() {
-      $("#flip2").flip('toggle');
+        <script>
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                $(function () {
+      $(".flip").flip({
+        trigger: 'click'
       });
     });
-     </script>
+            } else {
+                $(function () {
+      $(".flip").flip({
+        trigger: 'hover'
+      });
+    });
+            }
+          }
+          
+          var x = window.matchMedia("(max-width: 700px)")
+          myFunction(x) // Call listener function at run time
+          x.addListener(myFunction) // Attach listener function on state changes
+ 
+
+  </script>
   <script>
     $(document).ready(function () {
       $("div[data-includeHTML]").each(function () {
@@ -450,8 +455,7 @@
           <h5 class="card-title">Jake the Salty Dog</h5>
 
           <p class="card-text">CEO</p>
-          <button type="button" id = "toggle1" class = "toggle">Click Me!</button>
-          <div id="flip1">
+          <div class="flip">
             <div class="front">
               <img src="https://www.saltydog.com/contact/images/Salty Crew/contact_0011_Jake.jpg" alt="" />
             </div>
@@ -505,15 +509,14 @@
         </div>
       </div>
       
-      <!-- <div class="column leadership">
+      <div class="column leadership">
      
         <div class="card" style="width: 8rem;">
         
           <h5 class="card-title">Tim Stearns</h5>
 
           <p class="card-text">COO</p>
-          <button type="button" id = "toggle1" class = "toggle">Click Me!</button>
-          <div id="flip1">
+          <div class="flip">
             <div class="front">
               <img src="https://www.saltydog.com/contact/images/Salty Crew/tim3.jpg" alt="" />
             </div>
@@ -556,7 +559,7 @@
           </div>
 
         </div>
-      </div> -->
+      </div>
      
 
 
@@ -566,13 +569,12 @@
 
 
       <div class="column web">
-        <div class="card" style="width: 8rem;">DF
+        <div class="card" style="width: 8rem;">
 
           <h5 class="card-title">Brittany Jackett</h5>
 
           <p class="card-text">Marketing Director</p>
-          <button type="button" id = "toggle2" class = "toggle">Click Me!</button>
-          <div id="flip2">
+          <div class="flip">
             <div class="front">
               <img src="https://www.saltydog.com/contact/images/Salty Crew/brit.jpg" alt="" />
             </div>

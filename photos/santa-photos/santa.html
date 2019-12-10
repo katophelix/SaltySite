@@ -4,6 +4,7 @@
 <!--<![endif]-->
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9994729-1"></script>
     <script>
@@ -14,18 +15,15 @@
         gtag('config', 'UA-9994729-1');
     </script>
 
-    <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>SantaPhotos</title>
-
+    <title>SaltyDogCams</title>
     <!-- Modernizr -->
 
     <!-- jQuery-->
-    <!-- jQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- framework css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
@@ -34,95 +32,127 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--<![endif]-->
-
+    <link rel="icon" type="image/png" href="images/apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../../headers/styleBoot.css">
-    <link type="text/css" rel="stylesheet" href="../../headers/mega-header.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.saltydog.com/headers/mega-header.css">
+    <link type="text/css" rel="stylesheet" href="https://www.saltydog.com/headers/styleBoot.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-
-            padding: 10px 0;
-            font-family: 'Quicksand', sans-serif;
-
+            margin: 0;
+            font-family: Arial;
+            background-image: url("images/WEB_WHITEMARINA_BACKGROUND.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            justify-items: center;
         }
 
-
-        #back-button {
-            color: white !important;
-            float: left !important;
-        }
-
+        /*.header {*/
+        /*    text-align: center;*/
+        /*    padding: 32px;*/
+        /*}*/
 
 
-        #a {
-            font-size: .5em !important;
-        }
-
-        h5 .card-title {
-            color: rgb(4, 4, 51) !important;
-            background-color: white !important;
-            font-size: .8em
-        }
-
-        .card {
-            display: inherit !important;
-            background-color: white !important;
-            margin: 2px;
-            margin-top: 20px;
-        }
-
-        .media {
-            display: inherit !important;
-
-        }
-
-        .card .card-body a {
-            color: rgb(4, 4, 51) !important;
-            text-align: left !important
-        }
-
-        .card-body {
-            padding: 0 !important;
-        }
-
-        .card {
-            word-wrap: none !important;
-            padding: 0;
-            height: 5em;
-        }
-
-        .card-deck {
-            margin-bottom: 5px;
-        }
-
-        .card-footer {
-            padding: 0;
-        }
-
-        p {
-            font-size: .6em;
-
-        }
-
-        h5 {
-            font-size: .8em;
-            text-align: center
+        .container {
+            margin: 5px;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         h1 {
-            font-size: .8em;
+
+            font-size: 1em;
+            margin-top: 15px;
+            margin-bottom: -10px;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+            justify-items: center;
             text-align: center;
+
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .column img {
+            margin-top: 3px;
+            margin-bottom: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .col {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .col img {
+            margin-top: 3px;
+            margin-bottom: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .col {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+                height: 70%;
+            }
         }
     </style>
 </head>
 
 <body>
-
-
 
 
 
@@ -135,102 +165,75 @@
     </script>
 
 
-
     <header>
-        <div data-includeHTML="https://www.saltydog.com//headers/_HeaderPartial.html"></div>
+        <div data-includeHTML="https://www.saltydog.com/headers/_HeaderPartial.html"></div>
     </header>
-
     <br>
     <br>
-
-
-
+    <br>
     <div class="container">
-
-
-        <div class="row justify-content-center">
-              
-                         <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> candid 2019</h1>
-                <a href="../santa-photos/candid.html">
-                    <img src="../../images/photo-pages/candid2019.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <h1>Candid 2019 </h1>
+                <a href="candid.html">
+                    <img src="../../images/photo-pages/candid2019.jpg" style="width: 100%" alt="Pictures with Santa."></a>
 
             </div>
-
-            <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> 2015</h1>
-                <a href="../santa-photos/santa2015.html">
-                    <img src="../../images/photo-pages/santa2015.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
+            <div class="column">
+                <h1>2019</h1>
+                <a href="santa2019.html">
+                    <img src="../../images/photo-pages/santa2019.jpg" style="width: 100%" alt="Pictures with Santa."></a>
 
             </div>
-            <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> 2014</h1>
-                <a href="../santa-photos/santa2014.html">
-                    <img src="../../images/photo-pages/santa2014.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
-
+            <div class="column">
+                <h1 style="color: rgb(4, 4, 51) !important;">2018</h1>
+                <a href="santa2018.html">
+                    <img src="../../images/photo-pages/santa2018.jpg" style="width: 100%" alt="Pictures with Santa."></a>
             </div>
-            <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> 2013</h1>
-                <a href="../santa-photos/santa2013.html">
-                    <img src="../../images/photo-pages/santa2013.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
+            <div class="column">
 
-            </div>
-            <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> 2016</h1>
-                <a href="../santa-photos/santa2016.html">
-                    <img src="../../images/photo-pages/santa2016.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
-
+                <h1 style="color: rgb(4, 4, 51) !important;">2017</h1>
+                <a href="santa2017.html">
+                    <img src="../../images/photo-pages/santa2017.jpg" style="width: 100%" alt="Pictures with Santa."></a>
             </div>
 
-            <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> 2015</h1>
-                <a href="../santa-photos/santa2015.html">
-                    <img src="../../images/photo-pages/santa2015.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
-
-            </div>
-            <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> 2014</h1>
-                <a href="../santa-photos/santa2014.html">
-                    <img src="../../images/photo-pages/santa2014.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
-
-            </div>
-            <div class="card">
-                <h1 class="card-title" style="color: rgb(4, 4, 51) !important;"> 2013</h1>
-                <a href="../santa-photos/santa2013.html">
-                    <img src="../../images/photo-pages/santa2013.jpg" style="height: 100%" class="card-img-top"
-                        alt="...">
-                </a>
-
-            </div>
 
         </div>
+        <div class="row">
+            <div class="column">
+                <h1 style="color: rgb(4, 4, 51) !important;">2016 </h1>
+                <a href="../../images/photo-pages/santa2016.jpg">
+                    <img src="../../images/photo-pages/santa2016.jpg" style="width: 100%" alt="Pictures with Santa."></a>
+            </div>
+            <div class="column">
+                <h1 style="color: rgb(4, 4, 51) !important;">2015 </h1>
+                <a href="santa2015.html">
+                    <img src="../../images/photo-pages/santa2015.jpg" style="width: 100%" alt="Pictures with Santa."></a>
+            </div>
+            <div class="column">
 
+                <h1 style="color: rgb(4, 4, 51) !important;">2014</h1>
+                <a href="santa2014.html">
+                    <img src="../../images/photo-pages/santa2014.jpg" style="width: 100%" alt="Pictures with Santa."></a>
+            </div>
+            <div class="column">
+                <h1 style="color: rgb(4, 4, 51) !important;">2013</h1>
+                <a href="santa2013.html">
+                    <img src="../../images/photo-pages/santa2013.jpg" style="width: 100%" alt="Pictures with Santa."></a>
+            </div>
+        </div>
+  
     </div>
-
-</div>
-
-
+    <footer>
+        <div data-includeHTML="https://saltydog.com/headers/footer.html"></div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

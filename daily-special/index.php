@@ -17,7 +17,7 @@
 
 
 
-<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -39,7 +39,7 @@
 
 
 
-    <meta charset="utf-8">
+    
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -273,40 +273,40 @@ img {
 
  
 
-          <div class="block1" style="background-color: white !important;">
-          <h1 class="card-title">Land's End Tavern </h1>
-                <h2 class="card-title"><?php echo $data['let']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?> </h2>
+<!--          <div class="block1" style="background-color: white !important;">-->
+<!--          <h1 class="card-title">Land's End Tavern </h1>-->
+<!--                <h2 class="card-title"><?php echo $data['let']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?> </h2>-->
 
                
-                      <h2 class="card-title"><?php echo $data['let']['chef'];  ?> </h2>
+<!--                      <h2 class="card-title"><?php echo $data['let']['chef'];  ?> </h2>-->
 
                 
-                      <br><h4>Daily Specials</h4>
+<!--                      <br><h4>Daily Specials</h4>-->
 
-                      <h5 class="card-title">  <?php echo $data['let']['special_name'];  ?> </h5>
+<!--                      <h5 class="card-title">  <?php echo $data['let']['special_name'];  ?> </h5>-->
 
-                      <p class="card-text">  <?php echo $data['let']['special_descr'];  ?> </p>
+<!--                      <p class="card-text">  <?php echo $data['let']['special_descr'];  ?> </p>-->
 
-                     <br><br><h4><?php echo $data['let']['header'];  ?> </h4>
+<!--                     <br><br><h4><?php echo $data['let']['header'];  ?> </h4>-->
 
-                      <h5 class="card-title"> <?php echo $data['let']['child_name'];  ?> </h5>
+<!--                      <h5 class="card-title"> <?php echo $data['let']['child_name'];  ?> </h5>-->
 
-                      <p class="card-text">   <?php echo $data['let']['child_descr'];  ?> </p>
+<!--                      <p class="card-text">   <?php echo $data['let']['child_descr'];  ?> </p>-->
                   
-                      <?php
+<!--                      <?php
 // outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-        $filename = 'uploads/uploads/let.jpg';
-        if (file_exists($filename)) {
-            $filename = "uploads/uploads/let.jpg";
-            $filemtime = filemtime($filename);
-}
-?>
-                    <div class="col"> 
-                   <img src="uploads/uploads/let.jpg?<?php echo $filemtime; ?>" >
-</div>
+// <!--        $filename = 'uploads/uploads/let.jpg';
+// <!--        if (file_exists($filename)) {-->
+// <!--            $filename = "uploads/uploads/let.jpg";-->
+// <!--            $filemtime = filemtime($filename);-->
+// <!--}
+// <!--?>
+// <!--                    <div class="col"> -->
+ <!--                   <img src="uploads/uploads/let.jpg?<?php echo $filemtime; ?>" >-->
+ <!--</div>-->
 
-                    </div>
+ <!--                    </div>-->
 
 
 
@@ -456,7 +456,7 @@ img {
 
 
     <footer>
-    <?php include 'https://saltydog.com/headers/footer.html' ; ?>
+    <?php include '../headers/footer.html' ; ?>
                 </footer>
 
 
