@@ -1,3 +1,12 @@
+<?php
+  //set headers to NOT cache a page
+  header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
+  header("Pragma: no-cache"); //HTTP 1.0
+  header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+
+ 
+
+?>
 <!DOCTYPE html>
 
 
@@ -8,7 +17,7 @@
 
 
 
-<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -30,7 +39,7 @@
 
 
 
-    <meta charset="utf-8">
+    
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -163,15 +172,7 @@ img {
 
 
 
-<?php
-  //set headers to NOT cache a page
-  header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
-  header("Pragma: no-cache"); //HTTP 1.0
-  header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 
- 
-
-?>
 
 
 
@@ -250,11 +251,21 @@ img {
                       <h5 class="card-title"> <?php echo $data['cafe']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['cafe']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/cafe.jpg' />";?></div>
+                    
 
+                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
+        $filename = 'uploads/uploads/cafe.jpg';
+        if (file_exists($filename)) {
+            $filename = "uploads/uploads/cafe.jpg";
+            $filemtime = filemtime($filename);
+}
+?>
+                   
+                   <img src="uploads/uploads/cafe.jpg?<?php echo $filemtime; ?>" >
 
-</div>
+                    </div>
 
 
 
@@ -262,28 +273,40 @@ img {
 
  
 
-          <div class="block1" style="background-color: white !important;">
-          <h1 class="card-title">Land's End Tavern </h1>
-                <h2 class="card-title"><?php echo $data['let']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?> </h2>
+<!--          <div class="block1" style="background-color: white !important;">-->
+<!--          <h1 class="card-title">Land's End Tavern </h1>-->
+<!--                <h2 class="card-title"><?php echo $data['let']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?> </h2>-->
 
                
-                      <h2 class="card-title"><?php echo $data['let']['chef'];  ?> </h2>
+<!--                      <h2 class="card-title"><?php echo $data['let']['chef'];  ?> </h2>-->
 
                 
-                      <br><h4>Daily Specials</h4>
+<!--                      <br><h4>Daily Specials</h4>-->
 
-                      <h5 class="card-title">  <?php echo $data['let']['special_name'];  ?> </h5>
+<!--                      <h5 class="card-title">  <?php echo $data['let']['special_name'];  ?> </h5>-->
 
-                      <p class="card-text">  <?php echo $data['let']['special_descr'];  ?> </p>
+<!--                      <p class="card-text">  <?php echo $data['let']['special_descr'];  ?> </p>-->
 
-                     <br><br><h4><?php echo $data['let']['header'];  ?> </h4>
+<!--                     <br><br><h4><?php echo $data['let']['header'];  ?> </h4>-->
 
-                      <h5 class="card-title"> <?php echo $data['let']['child_name'];  ?> </h5>
+<!--                      <h5 class="card-title"> <?php echo $data['let']['child_name'];  ?> </h5>-->
 
-                      <p class="card-text">   <?php echo $data['let']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/let.jpg' />";?></div>
+<!--                      <p class="card-text">   <?php echo $data['let']['child_descr'];  ?> </p>-->
+                  
+<!--                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-                    </div>  
+// <!--        $filename = 'uploads/uploads/let.jpg';
+// <!--        if (file_exists($filename)) {-->
+// <!--            $filename = "uploads/uploads/let.jpg";-->
+// <!--            $filemtime = filemtime($filename);-->
+// <!--}
+// <!--?>
+// <!--                    <div class="col"> -->
+ <!--                   <img src="uploads/uploads/let.jpg?<?php echo $filemtime; ?>" >-->
+ <!--</div>-->
+
+ <!--                    </div>-->
 
 
 
@@ -318,7 +341,19 @@ img {
                       <h5 class="card-title"> <?php echo $data['bluffdog']['child_name'];  ?> </h5>
 
                       <p class="card-text">   <?php echo $data['bluffdog']['child_descr'];  ?> </p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/bluffdog.jpg' />";?></div>
+                  
+                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+        $filename = 'uploads/uploads/bluffdog.jpg';
+        if (file_exists($filename)) {
+            $filename = "uploads/uploads/bluffdog.jpg";
+            $filemtime = filemtime($filename);
+}
+?>
+                    <div class="col"> 
+                   <img src="uploads/uploads/bluffdog.jpg?<?php echo $filemtime; ?>" >
+</div>
 
                     </div>
 
@@ -370,7 +405,7 @@ img {
 
 
    
-
+<!-- 
                     <div class="block1" style="background-color: white !important;">
                     <h1 class="card-title">The Wreck of the Salty Dog </h1>
                           <h2 class="card-title"><?php echo $data['wreck']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?>  </h2>
@@ -390,14 +425,27 @@ img {
 
                       <h5 class="card-title"> <?php echo $data['wreck']['child_name'];  ?> </h5>
 
-                      <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p>
-                      <div class="col"><?php echo "<img src='uploads/uploads/wreck.jpg' />";?></div>
+                      <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p> -->
 
-                    </div> 
+                      <?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+//         $filename = 'uploads/uploads/wreck.jpg';
+//         if (file_exists($filename)) {
+//             $filename = "uploads/uploads/wreck.jpg";
+//             $filemtime = filemtime($filename);
+// }
+// //
+//  
+
+// ?>
+                   
+           
+                   <!-- <p class="card-text">      <img src="uploads/uploads/wreck.jpg?<?php echo $filemtime; ?>" >                   </div>  -->
 
 
 
-        </div> 
+       </div> 
 
     </div>
 
@@ -407,7 +455,9 @@ img {
 
 
 
-
+    <footer>
+    <?php include '../headers/footer.html' ; ?>
+                </footer>
 
 
 

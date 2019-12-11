@@ -30,29 +30,15 @@ html { font-size: calc(1em + 1vw) }
     margin: auto;
   }
 
-
-  .btn-secondary {
-    background: rgb(7, 7, 44);
-   border: none;
-    color: white;
-    white-space: normal !important;
-    font-size: .7em !important;
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-
-   
-} 
-
-     
-/* 
-
-  .btn-secondary {
-    background: white;
   
   .btn-secondary {
     background: rgb(7, 7, 44);
    border: none;
     color: white;
+                 /*color:#f3f1f1;    */
+/*text-shadow: 1px 0 #f3f1f1;*/
+/*letter-spacing:1px;  */
+/*font-weight:bolder;*/
     white-space: normal !important;
     font-size: .7em !important;
     font-family: 'Quicksand', sans-serif;

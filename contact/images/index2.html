@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9994729-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-9994729-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Meet the Crew</title>
+  <!-- Modernizr -->
+
+  <!-- jQuery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--<![endif]-->
+
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
+  <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <script src="flip-master/dist/jquery.flip.min.js"></script>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 1em;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row>.column {
+      padding: 5px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: auto;
+      display: none;
+      /* Hide columns by default */
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 2px;
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      margin: 2px 6px;
+
+      cursor: pointer;
+
+
+    }
+
+    /* Add a grey background color on mouse-over */
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    /* Add a dark background color to the active button */
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+
+    .my-container {
+
+      border-radius: 2px;
+
+      background-color: white;
+
+      padding: 2px;
+
+      color: black;
+
+
+
+    }
+
+    h6 {
+      font-size: .5em;
+    }
+
+    h2 {
+      font-size: .6em;
+    }
+
+    /* .photo-container {
+
+    background-color: rgb(4, 4, 51)
+
+} */
+
+    .container .card-body {
+
+      background-color: white !important
+    }
+
+    .card-body {
+      margin-top: -.1em;
+    }
+
+    .my-container .card {
+
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+      background-color: white !important;
+
+      margin-top: -36px;
+
+      text-align: center
+    }
+
+    .card-title {
+      margin-bottom: 0rem;
+    }
+
+    .container .card-img-top {
+
+      background-color: white !important
+    }
+
+    .container h1 {
+
+      font-size: .7em;
+      margin-top: 0px !important;
+
+      color: rgb(4, 4, 51) !important;
+
+    }
+
+    h1 {
+
+      font-size: .7em;
+      margin-top: 0px !important;
+
+      color: rgb(4, 4, 51) !important;
+
+    }
+
+    .btn:hover {
+      color: #fff;
+      background-color: #d3eaf1;
+
+
+    }
+
+    h5 .card-title {
+
+      color: black !important;
+
+      background-color: white !important;
+      white-space: nowrap !important;
+    }
+
+
+
+    .container {
+
+
+
+      text-align: center;
+    }
+
+
+
+
+
+
+    .media {
+
+      display: inherit !important;
+
+
+
+    }
+
+
+
+    .card .card-body a {
+
+      color: black !important;
+
+      text-align: center !important
+    }
+
+
+
+    .card-body {
+
+      padding: 0 !important;
+      height: 1.5rem;
+      background-color: white !important;
+      font-size: .5em !important;
+
+
+    }
+
+
+
+    .card {
+
+      word-wrap: none !important;
+
+      padding: 0;
+
+
+      text-align: center;
+
+      background-color: white !important;
+
+      margin: 2px;
+
+    }
+
+
+
+    .card-deck {
+
+      margin-bottom: 5px;
+
+    }
+
+
+
+    .card-footer {
+
+      padding: 0;
+      height: 1rem;
+
+    }
+
+    .card-title {
+
+      padding: 0;
+      height: 1rem;
+
+    }
+
+
+    .card-text {
+
+      padding: 0;
+      height: 1.5rem;
+
+    }
+
+    h4 {
+
+
+
+      font-size: .8em
+    }
+
+
+
+    h5 {
+
+
+
+      font-size: .8em
+    }
+
+
+
+    p {
+
+
+
+      font-size: .5em
+    }
+
+    /*.btn {*/
+
+    /*    background-color: white;*/
+
+
+    /*}*/
+
+
+    .flip {
+      height: auto;
+      width: 8rem;
+      margin: 0 auto;
+    }
+
+    .flip img {
+      width: 8rem;
+      height: auto;
+    }
+
+    .flip .back {
+      width: 8rem;
+      height: auto;
+    }
+  </style>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <script>
+    $(function () {
+      $(".flip").flip({
+        trigger: 'click'
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("div[data-includeHTML]").each(function () {
+        $(this).load($(this).attr("data-includeHTML"));
+      });
+    });
+  </script>
+
+
+  <header>
+    <div data-includeHTML="https://saltydog.com/headers/_HeaderPartial.html"></div>
+  </header>
+
+  <br>
+  <br>
+
+
+  <div class="container mx-auto">
+   
+    <!-- <h2>Meet the Crew</h2> -->
+    <div id="myBtnContainer">
+
+      <!-- <button class="btn btn-secondary active" onclick="filterSelection('all')">Everybody</button>
+
+  <button class="btn btn-secondary" onclick="filterSelection('leadership')"> Leadership</button>
+  <button class="btn btn-secondary " onclick="filterSelection('restaurant')"> Dining</button>
+  <button class="btn btn-secondary" onclick="filterSelection('store')"> Shopping</button>
+  <button class="btn btn-secondary" onclick="filterSelection('hr')"> Accounting  - HR</button>
+  <button class="btn btn-secondary" onclick="filterSelection('web')"> Marketing - Web Design</button>
+  <button class="btn btn-secondary" onclick="filterSelection('cruise')"> Cruise Crew</button>
+  <button class="btn btn-secondary" onclick="filterSelection('inn')"> South Beach Inn</button>
+  <button class="btn btn-secondary" onclick="filterSelection('transpo')">Maintenance - Transportation</button>
+  <button class="btn btn-secondary " onclick="filterSelection('production')"> Production</button> -->
+
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div id="myBtnContainer">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Meet The Crew
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="btn  dropdown-item active" onclick="filterSelection('all')">Everybody</button>
+
+          <button class="btn  dropdown-item" onclick="filterSelection('leadership')">Top Dogs</button>
+          <button class="btn dropdown-item" onclick="filterSelection('restaurant')"> Dining</button>
+          <button class="btn  dropdown-item" onclick="filterSelection('store')"> Shopping</button>
+          <button class="btn  dropdown-item" onclick="filterSelection('hr')"> Accounting - HR</button>
+          <button class="btn  dropdown-item" onclick="filterSelection('web')"> Marketing - Web Design - Private
+            Events</button>
+          <button class="btn dropdown-item" onclick="filterSelection('cruise')"> Cruise Crew</button>
+          <button class="btn dropdown-item" onclick="filterSelection('inn')"> South Beach Inn</button>
+          <button class="btn  dropdown-item" onclick="filterSelection('transpo')">Maintenance - Transportation</button>
+          <button class="btn  dropdown-item" onclick="filterSelection('production')"> Production</button>
+
+        </div>
+      </div>
+    </div>
+
+    <h4 style="color: rgb(4, 4, 51);"> <i class="fas fa-paw"></i> - Starting Year
+      with the Company</h4>
+    <div class="row justify-content-center">
+      <div class="column leadership">
+
+        <div class="card" style="width: 8rem;">
+
+          <h5 class="card-title">Jake the Salty Dog</h5>
+
+          <p class="card-text">CEO</p>
+          <div class="flip">
+            <div class="front">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/contact_0011_Jake.jpg" alt="" />
+            </div>
+            <div class="back">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/contact_0010_Bob2.jpg" >
+            </div>
+          </div>
+    
+
+          <div class="card-body">
+
+            <script type="text/javascript">
+              //<![CDATA[
+
+              var x = "function f(x,y){var i,o=\"\",l=x.length;for(i=0;i<l;i++){if(i<5)y++;y" +
+                "%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f(\"`}dozf\\" +
+                "177\\1772u<m?lnxh;u1q\\\"\\002\\003\\016LH\\030^\\tDLDLXE\\002C\\r^^\\010C]" +
+                "_[]\\021B\\025_U_M\\003.&&\\0051n+gxybmp{\\177y*&!-..|e!a7w`2d\\035\\002\\0" +
+                "03\\027\\007\\rN\\002A\\022\\027\\026\\n\\002\\034G\\031L\\036^EN\\037IEIA\\" +
+                "022QPW{n)>|+eoi{K\\177$d'4mcwgagx7w7in~njm\\010\\021\\016LH\\014\\035ZN\\00" +
+                "1\\010\\002\\037\\036\\002s\\022\\007\\000\\003hi\\002\\004\\010ef\\013\\01" +
+                "6\\rbcsqr\\037\\030vww\\024\\025|y|\\021\\022\\t$\\r\\016bge\\n\\013\\020\\" +
+                "023\\031\\0279|b\\036\\020\\023\\031\\027\\031R\\036\\023\\\\\\036\\026\\03" +
+                "7/@<_\\031\\026\\014\\023\\010RR.\\023\\026\\024\\0374>\\n\\\\]504YZ1;9VW<?" +
+                ">SL\\\"!#HIdKD-*+@AW/\\023\\021~\\177\\027\\026\\026{t\\031\\030\\033pqrslm" +
+                "\\004\\001\\004ij\\000\\013\\tfg\\017\\014\\016c\\034vps\\030\\031wtx\\025\\" +
+                "026{|}\\022\\023>\\r\\016bge\\n\\013q+\\006\\007hln\\003<VRS89QVX565X\\\\^3" +
+                ",G@C()BFH%&LAJ\\004n]^j00:#b pmf#\\\\V^@VP &&KD]ZR[@[Tf}\\000\\013BX\\035H\\" +
+                "010GX^XH\\\\R\\013\\030\\033\\030\\037L\\036i\\021P\\022O}XZP\\0033#+'k>o--" +
+                "%\\010>,&\\014=> 5z28>*-\\tfw2ehRP_F\\035^ML\\021@YXP\\004F\\t\\031\\n[X_\\" +
+                "034M\\033D\\020AKA\\024Vrnd8lqaime$s1a\\\"S2M0.{9\\1777jxl`5d2g\\010G\\002M" +
+                "KLRDF\\\\L\\t\\005\",5)";
+              while (x = eval(x));
+              //-->
+              //]]>
+            </script>
+
+
+            <!-- <a href="mailto:jake@saltydog.com?Subject=Hello"
+                style=" font-size: .5em !important; text-align: center" target="_top">Email</a> -->
+
+          </div>
+
+          <div class="card-footer">
+
+            <p> <small class="text-muted"><i class="fas fa-paw"></i> 1987</small></p>
+
+          </div>
+
+
+        </div>
+      </div>
+      
+      <div class="column leadership">
+     
+        <div class="card" style="width: 8rem;">
+        
+          <h5 class="card-title">Tim Stearns</h5>
+
+          <p class="card-text">COO</p>
+          <div class="flip">
+            <div class="front">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/tim3.jpg" alt="" />
+            </div>
+            <div class="back">
+              <img src="https://www.saltydog.com/contact/images/timPets.jpg" >
+            </div>
+          </div>
+
+
+          <div class="card-body">
+
+            <script type="text/javascript">
+              //<![CDATA[
+
+              var x = "function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                "=104){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return " +
+                "o.substr(0,ol);}f(\")001,\\\"010\\\\200\\\\n\\\\130\\\\r\\\\020\\\\)hz)-\\\"" +
+                "\\\\/400\\\\~530\\\\bQUZW\\\\\\\\030\\\\YW520\\\\P]Wb220\\\\s320\\\\H@_C]01" +
+                "0\\\\500\\\\zJHOGi530\\\\k}xvyoj'zyv:t}ui{bl771\\\\Kg`|=iqhjcl\\\"\\\\\\\"\\" +
+                "\\@230\\\\630\\\\010\\\\120\\\\X620\\\\JW\\\\\\\\530\\\\630\\\\420\\\\400\\" +
+                "\\600\\\\430\\\\230\\\\B730\\\\400\\\\410\\\\500\\\\220\\\\500\\\\n\\\\000\\" +
+                "\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;i=" +
+                "+y)001==i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\"" +
+                ")";
+              while (x = eval(x));
+              //-->
+              //]]>
+            </script>
+
+
+            <!-- <a href="mailto:tim@saltydog.com?Subject=Hello" style=" font-size: .5em !important"
+                target="_top">Email</a> -->
+
+          </div>
+
+          <div class="card-footer">
+
+            <p> <small class="text-muted"><i class="fas fa-paw"></i> 2007</small></p>
+
+          </div>
+
+        </div>
+      </div>
+     
+
+
+
+
+    
+
+
+      <div class="column web">
+        <div class="card" style="width: 8rem;">
+
+          <h5 class="card-title">Brittany Jackett</h5>
+
+          <p class="card-text">Marketing Director</p>
+          <div class="flip">
+            <div class="front">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/brit.jpg" alt="" />
+            </div>
+            <div class="back">
+              <img src="https://www.saltydog.com/contact/images/britPet.jpg" >
+            </div>
+          </div>
+         
+
+          <div class="card-body">
+            <script type="text/javascript">
+              //<![CDATA[
+
+              var x = "function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                "=79){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                ".substr(0,ol);}f(\")89,\\\"710\\\\300\\\\t\\\\030\\\\220\\\\120\\\\O200\\\\" +
+                "020\\\\GCHE100\\\\}`530\\\\,V_PY330\\\\TX030\\\\SXPg120\\\\n410\\\\UCZDX310" +
+                "\\\\010\\\\uGKJ@l630\\\\VBEu|ho$wv{9qzpjf}q|Ntbj~}aud?kwnha320\\\\_ F430\\\\" +
+                "430\\\\n\\\\730\\\\V420\\\\HQZ730\\\\430\\\\n\\\\230\\\\400\\\\630\\\\430\\" +
+                "\\D530\\\\600\\\\200\\\\310\\\\020\\\\700\\\\410\\\\600\\\\\\\"(f};o nruter" +
+                "};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;i=+y)89==i(fi{)++i;l" +
+                "<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")";
+              while (x = eval(x));
+                              //-->
+                              //]]>
+            </script>
+
+
+            <!--                  
+                             <a href="mailto:brittany@saltydog.com?Subject=Hello" style=" font-size: .5em !important"
+                                 target="_top">Email</a> -->
+
+          </div>
+
+          <div class="card-footer">
+
+            <p> <small class="text-muted"><i class="fas fa-paw"></i> 2017</small></p>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="column web">
+
+        <div class="card" style="width: 8rem;">
+
+          <h5 class="card-title">Kat Harris</h5>
+
+          <p class="card-text">Web Developer</p>
+          <div class="flip">
+            <div class="front">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/kat.jpg" class="card-img-top"
+              alt="Photo of crewmember">
+            </div>
+            <div class="back">
+              <img src="https://www.saltydog.com/contact/images/katpet.jpg" >
+            </div>
+          </div>
+    
+
+          <div class="card-body">
+
+
+            <script type="text/javascript">
+              //<![CDATA[
+
+              var x = "function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                "=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                ".substr(0,ol);}f(\")83,\\\"r\\\\500\\\\710\\\\230\\\\020\\\\710\\\\Q000\\\\" +
+                "220\\\\AEJGl620\\\\500\\\\zIMBOD000\\\\q771\\\\=xu771\\\\J:K+pxg{e0-Rb`goA5" +
+                "se`nawr?320\\\\220\\\\730\\\\U530\\\\620\\\\430\\\\610\\\\200\\\\130\\\\520" +
+                "\\\\000\\\\2?+\\\"\\\\r(2)-\\\"\\\\/c430\\\\200\\\\XXNS230\\\\X400\\\\520\\" +
+                "\\630\\\\[XVFXBX000\\\\YBNG\\\\\\\\KHB\\\"(f};o nruter};))++y(^)i(tAedoCrah" +
+                "c.x(edoCrahCmorf.gnirtS=+o;721=%y;i=+y)83==i(fi{)++i;l<i;0=i(rof;htgnel.x=l" +
+                ",\\\"\\\"=o,i rav{)y,x(f noitcnuf\")";
+              while (x = eval(x));
+                                  //-->
+                                  //]]>
+            </script>
+
+            <!--                      
+                              <SCRIPT TYPE="text/javascript">
+
+                                emailE = 'saltydog.com'
+                              
+                                emailE = ('kat' + '@' + emailE)
+                              
+                                var email=('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+                              
+                              </script>
+                              
+                              
+                              
+                              <NOSCRIPT>
+                              
+                                Email address protected by JavaScript
+                              
+                              </NOSCRIPT>
+                     
+                              <a href="mailto:kat@saltydog@@com"
+ onclick="this.href=this.href.replace('@@','.')">
+                              Send email
+                           </a> -->
+
+
+          </div>
+
+          <div class="card-footer">
+
+            <p> <small class="text-muted"><i class="fas fa-paw"></i> 2018</small></p>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="column web">
+        <div class="card" style="width: 8rem;">
+
+          <h5 class="card-title">Holly Bingham</h5>
+
+          <p class="card-text">Private Events Coordinator</p>
+          <div class="flip">
+            <div class="front">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/hollybingham.jpg" alt="" />
+            </div>
+            <div class="back">
+              <img src="https://www.saltydog.com/contact/images/hollydog.jpg" >
+            </div>
+          </div>
+         
+
+          <div class="card-body">
+
+            <script type="text/javascript">
+              //<![CDATA[
+
+              var x = "function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                "=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                ".substr(0,ol);}f(\")97,\\\"000\\\\n\\\\200\\\\120\\\\520\\\\010\\\\T330\\\\" +
+                "710\\\\^XQBk320\\\\610\\\\wF@IJC500\\\\JB200\\\\ENzM?@&771\\\\ul~b56O}}|jF0" +
+                "xhocjru:ila/g120\\\\130\\\\500\\\\710\\\\620\\\\030\\\\310\\\\7710\\\\130\\" +
+                "\\030\\\\430\\\\230\\\\K730\\\\330\\\\200\\\\400\\\\r\\\\600\\\\H5U100\\\\3" +
+                "00\\\\720\\\\410\\\\C300\\\\]Bw019/3+/y\\\"\\\\;1>'2?+\\\"(f};o nruter};))+" +
+                "+y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y{)++i;l<i;0=i(rof;htgnel.x" +
+                "=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")";
+              while (x = eval(x));
+                                          //-->
+                                          //]]>
+            </script>
+
+
+            <!-- <a href="mailto:holly@saltydog.com?Subject=Hello" style=" font-size: .5em !important"
+                                            target="_top">Email</a> -->
+
+          </div>
+
+          <div class="card-footer">
+
+            <p> <small class="text-muted"><i class="fas fa-paw"></i> 2016</small></p>
+
+          </div>
+        </div>
+      </div>
+      
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <br>
+    <script>
+      filterSelection("all") // Execute the function and show all columns
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+
+    </script>
+  </div>
+  <footer>
+    <div data-includeHTML="https://saltydog.com/headers/footer.html"></div>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+
+</html>

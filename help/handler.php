@@ -21,11 +21,10 @@ $validator->field('Message')->maxLength(250);
 
 $pp->attachFiles(['image']);
 
- $pp->sendEmailTo(['help@saltydog.com','8433846463@vzwpix.com','8436836473@vzwpix.com']); // ← Your email here
+$pp->sendEmailTo(['help@saltydog.com','8433846463@vzwpix.com','8436836473@vzwpix.com']); // ← Your email here
 
 // $pp->sendEmailTo(['kat@saltydog.com', '8432909379@vzwpix.com', '8432909379@vtext.com', '3237913221@vzwpix.com']);
 
-
-// $pp->sendEmailTo('kat@saltydog.com');
+//  $pp->sendEmailTo('kat@saltydog.com');
 
 echo $pp->process($_POST);

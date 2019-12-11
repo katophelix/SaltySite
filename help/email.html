@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <title>SaltyDogReceipts</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+            <style>
+                    #receipt {
+                        display: block;
+                        margin-inline-start: 2px;
+                        margin-inline-end: 2px;
+                        padding-block-start: 0.35em;
+                        padding-inline-start: 0.75em;
+                        padding-inline-end: 0.75em;
+                        padding-block-end: 0.625em;
+                        min-inline-size: min-content;
+                        border-width: 2px;
+                        border-style: groove;
+                        border-color: red;
+                        border-image: initial;
+                    }
+                    h1{
+                        font-size: 1.5em;
+                    }
+
+                    h2{
+                        font-size: 1em;
+                    }
+
+                    h3{
+                        font-size: .9em;
+                    }
+
+                    h4{
+                        font-size: .8em;
+                    }
+
+.container{
+
+    max-width: 900px;
+    display: block;
+}
+.row{
+
+    width: 100%;
+}
+                </style>
+
+       <!-- Form -->
+<div class="form_container">
+
+        <form enctype="multipart/form-data" method="POST" action="send.php">
+        <form id="sheets" name="sheets" class="form_body">
+        <input id="first_name" name="last_name" class="form_field" value="" placeholder="First Name"/>
+        <input id="last_name" name="last_name" class="form_field" value="" placeholder="Last Name"/>
+        <input id="email" name="email" class="form_field" value="" placeholder="Email Address"/>
+        <input id="submit" name="submit" type="button" class="form_button" value="Submit" onClick="submit_form()">
+      
+        <script>
+                $(document).ready(function() {
+                  $('#choose-file').inputFileText( { text: 'Take a Picture' } );
+              });
+               </script> 
+    <input type="file" id="choose-file"  name="my_files[]" multiple/>
+    </form>
+        <div class="form_message" id="message"></div>
+        </div>
+        <!-- Form -->
+            </div>
+        </div>
+        <br>
+    </body>
+</html>
