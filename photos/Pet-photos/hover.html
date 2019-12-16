@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9994729-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-9994729-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PetSearch</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- framework css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="../css/dropMenustyle.css"> -->
+    <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Compiled and minified CSS -->
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
+
+
+
+
+
+        .image-container {
+            background: #EEE;
+            display: -ms-flexbox;
+            -ms-flex-wrap: wrap;
+            -ms-flex-direction: column;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            display: -webkit-box;
+            display: flex;
+            align-items: center;
+        }
+
+        .image {
+            -webkit-box-flex: auto;
+            -ms-flex: auto;
+            flex: auto;
+            width: 300px;
+            margin: .1vw;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, .5);
+        }
+
+        .material-placeholder {
+            flex: 1;
+        }
+
+        #moreImagesBtn {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #moreImagesBtn>i {
+            font-size: 18px;
+        }
+
+        /*
+	------------------------------
+	Changes to the Materialize CSS
+	------------------------------
+*/
+
+
+
+        .btn:hover {
+            background: #5d5d5e;
+        }
+
+        .btn>i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        input[type=text]:not(.browser-default):focus:not([readonly]) {
+            border-bottom: 1px solid #606161;
+            box-shadow: 0 2px 0 0 #626263;
+        }
+
+        input:not([type]):focus:not([readonly])+label,
+        input[type=text]:not(.browser-default):focus:not([readonly])+label,
+        input[type=password]:not(.browser-default):focus:not([readonly])+label,
+        input[type=email]:not(.browser-default):focus:not([readonly])+label,
+        input[type=url]:not(.browser-default):focus:not([readonly])+label,
+        input[type=time]:not(.browser-default):focus:not([readonly])+label,
+        input[type=date]:not(.browser-default):focus:not([readonly])+label,
+        input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+        input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+        input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+        input[type=number]:not(.browser-default):focus:not([readonly])+label,
+        input[type=search]:not(.browser-default):focus:not([readonly])+label,
+        textarea.materialize-textarea:focus:not([readonly])+label {
+            color: #28282b;
+        }
+
+        /*
+	MEDIA QUERIES
+*/
+
+        @media screen and (max-width: 400px) {
+            image-container div {
+                margin: 0;
+            }
+
+            image-container {
+                padding: 0;
+            }
+        }
+
+        body {
+            color: rgb(4, 4, 51);
+
+            padding: 10px 0;
+        }
+
+
+        nav.nav-center ul {
+            text-align: center;
+        }
+
+        nav.nav-center ul li {
+            display: inline;
+            float: none;
+        }
+
+        nav.nav-center ul li a {
+            display: inline-block;
+        }
+
+        .nav-item {
+            color: rgb(4, 4, 51);
+
+
+            text-align: center;
+            align-content: center;
+            max-width: 1100;
+        }
+
+        nav {
+            color: white;
+
+
+            text-align: center;
+            align-content: center;
+            max-width: 1100;
+        }
+
+        .nav-link {
+            color: white;
+
+
+            text-align: center;
+            align-content: center;
+            max-width: 1100;
+        }
+
+        .col img {
+            width: 98%;
+
+        }
+
+        .container {
+            text-align: center;
+            /* margin-top: 5px; */
+            max-width: 1200px;
+        }
+
+        .btn-warning {
+
+            color: rgb(4, 4, 51);
+        }
+
+        p {
+            text-align: center;
+            color: rgb(4, 4, 51) !important;
+            font-size: 1.2em;
+            font-family: 'Baloo Bhaina', cursive;
+            text-transform: uppercase;
+        }
+
+        label {
+            text-align: center;
+            color: rgb(4, 4, 51) !important;
+            font-size: 1.2em;
+            font-family: 'Baloo Bhaina', cursive;
+            text-transform: uppercase;
+        }
+
+        .col .btn {
+            float: none !important;
+            text-align: center;
+            align-content: center;
+            background-color: transparent;
+        }
+
+        .btn {
+
+            text-align: center;
+            align-content: center;}
+
+            h2 {
+                font-size: 1.5em;
+            }
+            .materialbox-caption {
+  position: fixed;
+  display: none;
+  color: #fff;
+  line-height: 50px;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0% 15%;
+  height: 50px;
+  z-index: 1000;
+  -webkit-font-smoothing: antialiased;
+}
+    </style>
+
+
+    <!-- <script type="text/javascript" src="petphotosearch.js"></script> -->
+</head>
+
+
+<body>
+
+        <script>
+                $(document).ready(function () {
+                    $("div[data-includeHTML]").each(function () {                
+                        $(this).load($(this).attr("data-includeHTML"));
+                    });
+                });
+            </script>
+        <header>
+                <div data-includeHTML="https://www.saltydog.com/headers/_HeaderPartial.html"></div>
+           </header>
+    <main>
+<br>
+<br>
+
+        <div class="container">
+
+          <br>
+          <a href="pets.html">Back to Pet Photos Menu</a>
+          <div class="row" style="text-align: center;">
+         
+          
+            <div class="image-container">
+                <!-- // Search results will be appended here -->
+            </div>
+         
+            <!-- // More image btn -->
+            <!-- <a class="waves-effect waves-light btn" id="moreImagesBtn">
+                LOAD MORE PHOTOS
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a> -->
+        </div>
+    </main>
+    <script type="text/javascript">
+
+        var gallery;
+        var lastSearch = "salty dog cafe dogs";
+        console.log("I'm here");
+        $(document).ready
+            (function (document, window) {
+                "use strict";
+                // API Key
+                const flickrKey = "204df225455ff4bafd6d7bf01c742e3d";
+                // Search Text
+                
+                // Search Btn
+              
+                // More Images btn
+            
+                // let moreImagesBtn = $("#moreImagesBtn");
+                // Result Image area
+                let imageContainer = $(".image-container");
+                // Count of returned results
+                let perPageCount = 500;
+                // variable for current page requested so that when the user scrolls, it is increamented and json is requested
+                let currentPage = 1;
+
+                // SEARCH BTN EVENT LISTENER
+             // end of SEARCH BTN EVENT LISTENER
+
+                //USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
+          
+               // end of USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
+
+                // MORE IMAGES BTN
+                // moreImagesBtn.on("click", function () {
+                //     currentPage++;
+                //     console.log(currentPage);
+                //     validateInput();
+
+                // }); // END OF MORE IMAGES BTN
+
+                // VALIDATE USER INPUT
+             //end of VALIDATE USER INPUT
+
+                // GET JSON FROM FLICKR API
+                function getImageData(query) {
+                    $.ajax({
+                        type: "GET",
+                        // URL: https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=+32abf1b7b04cd47349647890166a4f12&photoset_id=72157645173654026&user_id=124478044%40N03&format=json&nojsoncallback=1
+                        url: `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${flickrKey}&photoset_id=72157645315326232&user_id=124478044%40N03&safe_search=1&per_page=${perPageCount}&page=${currentPage}&format=json&nojsoncallback=1`,
+                        success: function (data) {
+                            // Call the handle Data function and pass the response
+                            handleData(data);
+                       
+                          console.log(data);
+
+                        },
+                        error: function (e) {
+                            alert("Failed to load data from API");
+                            // moreImagesBtn.html("Something Went Wrong");
+                            console.log(e);
+                        }
+                    });
+                } // END OF getImageData
+
+                // Build urls for the images
+                function handleData(data) {
+                    console.log(data.photos.photo);
+
+                    if (!data.photos.photo.length) {
+
+                        swal("Sorry there are no pets by that name.");
+                    }
+                    else {
+                        data.photos.photo.forEach(function (currentPhoto, index, array) {
+                            // Image URL > Will be built and made an link
+                            let photoURL = `https://farm${currentPhoto.farm}.static.flickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
+                            // alt text
+                            let title = currentPhoto.title;
+                            // plug the data to page
+                            pushImages(photoURL, title);
+
+                        });
+
+                        //show the more btn
+                        // moreImagesBtn.slideDown();
+                    } // END OF handleData
+                }
+                // Built HTML tempate and push the images to the webpage
+                function pushImages(url, title) {
+                    // Build the HTML element
+                    let htmlText =
+                        '<div class="image">' +
+                         '<img class="materialboxed" data-caption="' +
+                        title +
+                        '" src="' +
+                        url +
+                        '">' +
+                        "</div>";
+                    imageContainer.append(htmlText);
+                    // Add the Materialize functionality to the images
+                     $(".materialboxed").materialbox();
+                } // END OF pushImages
+            }) // end of self self executing anonymous function
+        ;
+
+
+      
+
+    </script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>

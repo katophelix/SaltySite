@@ -40,9 +40,19 @@
     <link type="text/css" rel="stylesheet" href="../../headers/mega-header.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="../nanoGALLERY-5.10.3/css/nanogallery.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../nanoGALLERY-5.10.3/nanogallery.jquery.json"></script>
+  <script type="text/javascript" src="../nanoGALLERY-5.10.3/jquery.nanogallery.js"></script>
+
+  <style>
   
+  .ngbt .linkOriginalButton .nGEvent{
+
+    display: none;
+  } 
+  </style>
   </head>
   <body>
 
@@ -69,23 +79,48 @@
  <br>
  <br>
 <div class="container">
-        <div ID="2017" data-nanogallery2='{
+    <a href="events.html">Back to Events Photos Menu</a>
+    <div id="nanoGallery"></div>
+    <script>
+        $(document).ready(function () {
+          $("#nanoGallery").nanoGallery({
+      
+            colorSchemeViewer: 'dark',
+      
+            photoset: '72157688165364072',
+            userID: '124478044@N03',
+            kind: 'flickr',
+            thumbnailWidth: 200,
+            thumbnailHeight: 200,
+            viewerDisplayLogo: false,
+            thumbnailLazyLoad: true,
+            thumbnailLabel: { display: false, },
+            
+           
+            thumbnailHoverEffect2: "scale120",
+            photoSorting: 'random',
+          
+          });
+        });</script>
+        <!-- <div ID="2017" data-nanogallery2='{
             "userID": "124478044@N03",
             "kind": "flickr",
             "photoset": "72157688165364072",
             
-            "thumbnailWidth": "200",
-            "colorScheme": {
-              "thumbnail": {
-                "borderColor": "rgba(247,244,244,0.03)"
-              }
-            },
-            "thumbnailLabel": {
-              "display": false
-            },
-            "thumbnailAlignment": "center"
+            "colorSchemeViewer": "dark",
+
+          
+       
+            "thumbnailWidth": 160,
+            "thumbnailHeight": 160,
+            "viewerDisplayLogo": true,
+            "thumbnailLazyLoad": true,
+            "thumbnailLabel": false,
+            "colorScheme": { thumbnail:{ labelBackground: "#000 !important" } },
+            "photoSorting": "random",
+            "touchAnimation": "false"
           }'>
-        
+         -->
         </div>
             </div>
     
