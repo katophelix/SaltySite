@@ -362,25 +362,29 @@
 
 
 <body>
- 
-   
         <script>
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                $(function () {
+      $(".flip").flip({
+        trigger: 'click'
+      });
+    });
+            } else {
+                $(function () {
+      $(".flip").flip({
+        trigger: 'hover'
+      });
+    });
+            }
+          }
           
-    $(".class").flip({
-      trigger: "manual"
-    });
+          var x = window.matchMedia("(max-width: 700px)")
+          myFunction(x) // Call listener function at run time
+          x.addListener(myFunction) // Attach listener function on state changes
+ 
 
-    $(document).on("click", "#flip-btn", function() {
-        $("#card-4").flip(true);
-        $(this).attr("id","unflip-btn").text("Click to UNFLIP").removeClass("btn-success").addClass("btn-danger");
-    });
-
-    $(document).on("click", "#unflip-btn", function() {
-        $("#card-4").flip(false);
-        $(this).attr("id","flip-btn").text("Click to FLIP").removeClass("btn-danger").addClass("btn-success");
-    });
-</script>
-
+  </script>
   <script>
     $(document).ready(function () {
       $("div[data-includeHTML]").each(function () {
@@ -444,7 +448,66 @@
 <h1>Click the pic</h1>
  
     <div class="row justify-content-center">
-     
+      <div class="column leadership">
+
+        <div class="card" style="width: 8rem;">
+
+          <h5 class="card-title">Jake the Salty Dog</h5>
+
+          <p class="card-text">CEO</p>
+          <div class="flip">
+            <div class="front">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/contact_0011_Jake.jpg" alt="" />
+            </div>
+            <div class="back">
+              <img src="https://www.saltydog.com/contact/images/Salty Crew/contact_0010_Bob2.jpg" >
+            </div>
+          </div>
+    
+
+          <div class="card-body">
+
+            <script type="text/javascript">
+              //<![CDATA[
+
+              var x = "function f(x,y){var i,o=\"\",l=x.length;for(i=0;i<l;i++){if(i<5)y++;y" +
+                "%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f(\"`}dozf\\" +
+                "177\\1772u<m?lnxh;u1q\\\"\\002\\003\\016LH\\030^\\tDLDLXE\\002C\\r^^\\010C]" +
+                "_[]\\021B\\025_U_M\\003.&&\\0051n+gxybmp{\\177y*&!-..|e!a7w`2d\\035\\002\\0" +
+                "03\\027\\007\\rN\\002A\\022\\027\\026\\n\\002\\034G\\031L\\036^EN\\037IEIA\\" +
+                "022QPW{n)>|+eoi{K\\177$d'4mcwgagx7w7in~njm\\010\\021\\016LH\\014\\035ZN\\00" +
+                "1\\010\\002\\037\\036\\002s\\022\\007\\000\\003hi\\002\\004\\010ef\\013\\01" +
+                "6\\rbcsqr\\037\\030vww\\024\\025|y|\\021\\022\\t$\\r\\016bge\\n\\013\\020\\" +
+                "023\\031\\0279|b\\036\\020\\023\\031\\027\\031R\\036\\023\\\\\\036\\026\\03" +
+                "7/@<_\\031\\026\\014\\023\\010RR.\\023\\026\\024\\0374>\\n\\\\]504YZ1;9VW<?" +
+                ">SL\\\"!#HIdKD-*+@AW/\\023\\021~\\177\\027\\026\\026{t\\031\\030\\033pqrslm" +
+                "\\004\\001\\004ij\\000\\013\\tfg\\017\\014\\016c\\034vps\\030\\031wtx\\025\\" +
+                "026{|}\\022\\023>\\r\\016bge\\n\\013q+\\006\\007hln\\003<VRS89QVX565X\\\\^3" +
+                ",G@C()BFH%&LAJ\\004n]^j00:#b pmf#\\\\V^@VP &&KD]ZR[@[Tf}\\000\\013BX\\035H\\" +
+                "010GX^XH\\\\R\\013\\030\\033\\030\\037L\\036i\\021P\\022O}XZP\\0033#+'k>o--" +
+                "%\\010>,&\\014=> 5z28>*-\\tfw2ehRP_F\\035^ML\\021@YXP\\004F\\t\\031\\n[X_\\" +
+                "034M\\033D\\020AKA\\024Vrnd8lqaime$s1a\\\"S2M0.{9\\1777jxl`5d2g\\010G\\002M" +
+                "KLRDF\\\\L\\t\\005\",5)";
+              while (x = eval(x));
+              //-->
+              //]]>
+            </script>
+
+
+            <!-- <a href="mailto:jake@saltydog.com?Subject=Hello"
+                style=" font-size: .5em !important; text-align: center" target="_top">Email</a> -->
+
+          </div>
+
+          <div class="card-footer">
+
+            <p> <small class="text-muted"><i class="fas fa-paw"></i> 1987</small></p>
+
+          </div>
+
+
+        </div>
+      </div>
       
       <div class="column leadership">
      
