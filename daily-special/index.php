@@ -211,7 +211,7 @@ img {
 
                    <div class="col">
 
-<a href="https://www.saltydog.com/chefs"><button type="button" class="btn btn-secondary btn-block" >
+<a href="https://www.bohicket.saltydog.com/chefs"><button type="button" class="btn btn-secondary btn-block" >
        <h3>MEET OUR CHEFS!</h3>  </button></a>
 
 
