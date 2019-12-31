@@ -176,7 +176,7 @@ img {
 
 
 
- <header>
+ <!-- <header> -->
                 <?php include '../headers/_HeaderPartial.html' ; ?>
            </header>
 
@@ -302,7 +302,7 @@ img {
 // <!--            $filemtime = filemtime($filename);-->
 // <!--}
 // <!--?>
-// <!--                    <div class="col"> -->
+//                  <div class="col"> -->
  <!--                   <img src="uploads/uploads/let.jpg?<?php echo $filemtime; ?>" >-->
  <!--</div>-->
 
