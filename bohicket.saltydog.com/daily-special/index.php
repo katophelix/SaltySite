@@ -44,10 +44,7 @@
 
     <!-- jQuery-->
 
-      <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 
@@ -111,7 +108,7 @@
 
     }
 
-h4{
+    h4{
 
 font-family: 'Lily Script One', cursive;
 
@@ -142,25 +139,11 @@ font-size: 1.5em;
 
 
 <body>
+<?php include '../headers/headerbo.html' ; ?> 
+   <br>
 
-   <script>
-        $(document).ready(function () {
-            $("div[data-includeHTML]").each(function () {
-                $(this).load($(this).attr("data-includeHTML"));
-            });
-        });
-    </script>
-
-
-
-
-    <header>
-        <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
-    </header>
 
          <br>  
-
-           
 
 
 
@@ -201,64 +184,7 @@ font-size: 1.5em;
 
    
 
-                    <!-- <div class="block1" style="background-color: white !important;">
 
-                    <h1> The Salty Dog Cafe</h1>
-                    <h2 class="card-title"><?php echo $data['cafe']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?>  </h2>
-
-
-                       <h2 class="card-title"> <?php echo $data['cafe']['chef'];  ?> </h2>
-
-
-                      <br><h4>Daily Specials</h4>
-
-                      <h5 class="card-title"> <?php echo $data['cafe']['special_name'];  ?> </h5>
-
-                      <p class="card-text">  <?php echo $data['cafe']['special_descr'];  ?> </p>
-
-                     <br>
-
-                     
-
-                     <h4> <?php echo $data['cafe']['header'];  ?> </h4>
-
-                      
-
-                      <h5 class="card-title"> <?php echo $data['cafe']['child_name'];  ?> </h5>
-
-                      <p class="card-text">   <?php echo $data['cafe']['child_descr'];  ?> </p>
-
-
-
-</div> -->
-
-
-
-
-
- 
-
-          <!-- <div class="block1" style="background-color: white !important;">
-          <h1 class="card-title">Land's End Tavern </h1>
-                <h2 class="card-title"><?php echo $data['let']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?> </h2>
-
-               
-                      <h2 class="card-title"><?php echo $data['let']['chef'];  ?> </h2>
-
-                
-                      <br><h4>Daily Specials</h4>
-
-                      <h5 class="card-title">  <?php echo $data['let']['special_name'];  ?> </h5>
-
-                      <p class="card-text">  <?php echo $data['let']['special_descr'];  ?> </p>
-
-                     <br><br><h4><?php echo $data['let']['header'];  ?> </h4>
-
-                      <h5 class="card-title"> <?php echo $data['let']['child_name'];  ?> </h5>
-
-                      <p class="card-text">   <?php echo $data['let']['child_descr'];  ?> </p>
-
-                    </div>   -->
 
 
 
@@ -267,34 +193,6 @@ font-size: 1.5em;
 
 
 
-
-   
-
-   
-<!-- 
-                    <div class="block1" style="background-color: white !important;">
-                    <h1 class="card-title">Salty Dog Bluffton </h1>
-                    <h2 class="card-title"><?php echo $data['bluffdog']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?> </h2>
-
-                 
-
-                      <h2 class="card-title"> <?php echo $data['bluffdog']['chef'];  ?> </h2>
-
-                      <br><h4>Daily Specials</h4>
-
-                      <h5 class="card-title"> <?php echo $data['bluffdog']['special_name'];  ?> </h5>
-
-                      <p class="card-text">  <?php echo $data['bluffdog']['special_descr'];  ?> </p>
-
-                     <br>
-
-                     <h4> <?php echo $data['bluffdog']['header'];  ?> </h4>
-
-                      <h5 class="card-title"> <?php echo $data['bluffdog']['child_name'];  ?> </h5>
-
-                      <p class="card-text">   <?php echo $data['bluffdog']['child_descr'];  ?> </p>
-
-                    </div> -->
 
 
 
@@ -332,7 +230,7 @@ font-size: 1.5em;
 
                   
   <?php
-// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
 
         $filename = 'uploads/uploads/bodog.png';
         if (file_exists($filename)) {
@@ -349,51 +247,9 @@ font-size: 1.5em;
 </div> 
  
 
-  
-
-
-
-
-
-
-   
-<!-- 
-                    <div class="block1" style="background-color: white !important;">
-                    <h1 class="card-title">The Wreck of the Salty Dog </h1>
-                          <h2 class="card-title"><?php echo $data['wreck']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?>  </h2>
-
-
-                      <h2 class="card-title"> <?php echo $data['wreck']['chef'];  ?> </h2>
-
-                    
-
-                      <br><h4>Daily Specials</h4>
-
-                      <h5 class="card-title">  <?php echo $data['wreck']['special_name'];  ?> </h5>
-
-                      <p class="card-text">  <?php echo $data['wreck']['special_descr'];  ?> </p>
-
-                     <br><br><h4><?php echo $data['wreck']['header'];  ?> </h4>
-
-                      <h5 class="card-title"> <?php echo $data['wreck']['child_name'];  ?> </h5>
-
-                      <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p>
-
-                    </div>  -->
-
-
-
         </div> 
 
     </div>
-
-
-
-
-
-
-
-
 
 
 
