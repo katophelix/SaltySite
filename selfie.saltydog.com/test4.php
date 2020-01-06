@@ -25,6 +25,7 @@ $email->Subject   = 'Hi from '.$name2.' at the Salty Dog Cafe';
 $email->Body      = $message;
  $email->AddBCC($bob);
 $email->AddBCC($tim);
+$email->AddBCC($zach);
 $email->AddBCC($forms);
 
 $email->AddAddress( $email2 );
