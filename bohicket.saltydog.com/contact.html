@@ -31,7 +31,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
-
+<meta name="description" content="Salty Dog Bohicket contact page with crew pictures as well as contact info for the crew. ">
     <title>BoDogContact</title>
 
     <!-- Modernizr -->
@@ -57,7 +57,10 @@
     ></script>
 
     <!-- framework css -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
@@ -97,7 +100,29 @@
     rel="stylesheet"
     href="style.css"
   />
+  <style>
+      .flip-btn{
+
+padding: 5px 5px 5px 17px;
+
+background: #e9e9e9 ;
+border-radius: 16px;
+border: 1px solid #070707;
+font-size: .5em; 
+width: 100%;
+} 
+.unflip-btn{
+
+padding: 5px 5px 5px 17px;
+
+background: #e9e9e9 ;
+border-radius: 16px;
+border: 1px solid #070707;
+font-size: .5em; 
+width: 100%;
+}
   
+  </style>
   </head>
 
   <body>
@@ -203,6 +228,13 @@
               </button>
             </a>
           </div>
+          <div class="col" style="border: none">
+            <a href="https://saltydog.com/legal/">
+              <button type="button" class="btn btn-secondary btn-block">
+                Legal
+              </button>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -219,47 +251,56 @@
       <div class="row justify-content-center">
         <div class="column leadership">
           <div class="card" style="width: 8rem;">
+
             <h5 class="card-title">Tim Stearns</h5>
-
+  
             <p class="card-text">COO</p>
-
-            <img
-              src="https://www.saltydog.com/contact/images/Salty Crew/tim3.jpg"
-              class="card-img-top"
-              alt="Photo of crewmember"
-            />
-
+            <div class="card-grid">
+              <div class="front">
+                <img src="https://www.saltydog.com/contact/images/Salty Crew/tim3.jpg" class="card-img-top"
+                  alt="Photo of crewmember">
+                  <button class="flip-btn" class="btn btn-primary"><i class='fas fa-dog' style='font-size: 15px;color:brown;padding-right: 5px;'><i class='fas fa-dog' style='font-size: 15px;color:black;padding-left: 5px;'></i><i class='fas fa-dog' style='font-size: 15px;color:rgb(223, 174, 100);padding-left: 5px;'></i></i>Meet My Dogs!</button>
+              </div>
+              <div class="back">
+                <img src="https://www.saltydog.com/contact/images/timPets.jpg" class="card-img-top">
+                <button class="unflip-btn" class="btn btn-primary"><i class='fas fa-male' style='font-size: 20px;color:black;padding-right: 5px;'></i>Meet 
+                  Our Person!</button>
+              </div>
+            </div>
+  
+  
             <div class="card-body">
+  
               <script type="text/javascript">
                 //<![CDATA[
-
-                var x =
-                  'function f(x){var i,o="",ol=x.length,l=ol;while(x.charCodeAt(l/13)!' +
+  
+                var x = "function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
                   "=104){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return " +
-                  'o.substr(0,ol);}f(")001,\\"010\\\\200\\\\n\\\\130\\\\r\\\\020\\\\)hz)-\\"' +
+                  "o.substr(0,ol);}f(\")001,\\\"010\\\\200\\\\n\\\\130\\\\r\\\\020\\\\)hz)-\\\"" +
                   "\\\\/400\\\\~530\\\\bQUZW\\\\\\\\030\\\\YW520\\\\P]Wb220\\\\s320\\\\H@_C]01" +
-                  '0\\\\500\\\\zJHOGi530\\\\k}xvyoj\'zyv:t}ui{bl771\\\\Kg`|=iqhjcl\\"\\\\\\"\\' +
+                  "0\\\\500\\\\zJHOGi530\\\\k}xvyoj'zyv:t}ui{bl771\\\\Kg`|=iqhjcl\\\"\\\\\\\"\\" +
                   "\\@230\\\\630\\\\010\\\\120\\\\X620\\\\JW\\\\\\\\530\\\\630\\\\420\\\\400\\" +
                   "\\600\\\\430\\\\230\\\\B730\\\\400\\\\410\\\\500\\\\220\\\\500\\\\n\\\\000\\" +
-                  '\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;i=' +
-                  '+y)001==i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\"\\"=o,i rav{)y,x(f noitcnuf"' +
+                  "\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;i=" +
+                  "+y)001==i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\"" +
                   ")";
-                while ((x = eval(x)));
-                //-->
-                //]]>
+                while (x = eval(x));
+                  //-->
+                  //]]>
               </script>
-
+  
+  
               <!-- <a href="mailto:tim@saltydog.com?Subject=Hello" style=" font-size: .5em !important"
-                            target="_top">Email</a> -->
+                    target="_top">Email</a> -->
+  
             </div>
-
+  
             <div class="card-footer">
-              <p>
-                <small class="text-muted"
-                  ><i class="fas fa-paw"></i> 2007</small
-                >
-              </p>
+  
+              <p> <small class="text-muted"><i class="fas fa-paw"></i> 2007</small></p>
+  
             </div>
+  
           </div>
         </div>
         <div class="column restaurant">
@@ -317,38 +358,46 @@
         <div class="column restaurant">
           <div class="card" style="width: 8rem;">
             <h5 class="card-title">Zach Drescher</h5>
-
+  
             <p class="card-text">C0-Director of Food and Beverage</p>
-
-            <img
-              src="https://www.saltydog.com/contact/images/Salty Crew/Zach.jpeg"
-              class="card-img-top"
-              alt="Photo of crewmember"
-            />
-
+            <div class="card-grid">
+              <div class="front">
+                <img src="https://www.saltydog.com/contact/images/Salty Crew/Zach.jpeg" class="card-img-top"
+                alt="Photo of crewmember" />
+                  <button class="flip-btn" class="btn btn-primary"><i class='fas fa-cat' style='font-size: 15px;color:grey;padding-right: 5px;'></i><i class='fas fa-dog' style='font-size: 15px;color:gold;padding-right: 5px;'></i><i class='fas fa-dog' style='font-size: 15px;color:black;padding-right: 5px;'></i>Meet My Pets!</button>
+                </div>
+              <div class="back">
+                <img src="https://www.saltydog.com/contact/images/Salty Crew/zachpet.jpg" class="card-img-top">
+                <button class="unflip-btn" class="btn btn-primary"><i class='fas fa-male' style='font-size: 20px;color:black;padding-right: 5px;'></i>Meet Our Person!</button>
+              </div>
+            </div>
+         
+  
             <div class="card-body">
+  
+  
               <script type="text/javascript">
                 //<![CDATA[
-
-                var x =
-                  'function f(x){var i,o="",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=' +
-                  'x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f("ufcnitnof x({)av' +
-                  ' r,i=o\\"\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!55{)rt{y+xx=l;=+;' +
+  
+                var x = "function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+                  "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+                  " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!55{)rt{y+xx=l;=+;" +
                   "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-                  '"(2),9\\"\\\\37\\\\03\\\\02\\\\\\\\31\\\\00\\\\01\\\\\\\\02\\\\0!\\\\77\\' +
+                  "\"(2),9\\\"\\\\37\\\\03\\\\02\\\\\\\\31\\\\00\\\\01\\\\\\\\02\\\\0!\\\\77\\" +
                   "\\12\\\\w xsRu2(03\\\\\\\\Zk\\\\\\\\\\\\\\\\^U1W02\\\\\\\\N^16\\\\0I\\\\NB3" +
                   "y01\\\\\\\\2t03\\\\\\\\ICJP1V00\\\\\\\\02\\\\0C\\\\qq~p$Rtl7s17\\\\\\\\fv.a" +
                   "`}#mdkpnk|vgkD`aDz22\\\\00\\\\01\\\\\\\\27\\\\03\\\\02\\\\\\\\30\\\\05\\\\0" +
                   "2\\\\\\\\*U2H02\\\\\\\\26\\\\00\\\\00\\\\\\\\31\\\\0P\\\\16\\\\0R\\\\DO05\\" +
                   "\\06\\\\00\\\\\\\\14\\\\04\\\\03\\\\\\\\16\\\\04\\\\02\\\\\\\\22\\\\0J\\\\2" +
-                  '7\\\\04\\\\01\\\\\\\\04\\\\0r\\\\\\\\\\\\=*82\\"\\\\f(;} ornture;}))++(y)^' +
+                  "7\\\\04\\\\01\\\\\\\\04\\\\0r\\\\\\\\\\\\=*82\\\"\\\\f(;} ornture;}))++(y)^" +
                   "(iAtdeCoarchx.e(odrChamCro.fngriSt+=;o27=1y%i;+=)y92==(iif){++;i<l;i=0(ior;" +
-                  'fthnglex.l=\\\\,\\\\\\"=\\",o iar{vy)x,f(n ioctun\\"f)")';
-                while ((x = eval(x)));
-                //-->
-                //]]>
+                  "fthnglex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")";
+                while (x = eval(x));
+                            //-->
+                            //]]>
               </script>
-
+  
+  
               <!-- <a
                           href="mailto:zach@saltydog.com?Subject=Hello"
                           style=" font-size: .5em !important"
@@ -356,12 +405,10 @@
                           >Email</a
                         > -->
             </div>
-
+  
             <div class="card-footer">
               <p>
-                <small class="text-muted"
-                  ><i class="fas fa-paw"></i> 2014</small
-                >
+                <small class="text-muted"><i class="fas fa-paw"></i> 2014</small>
               </p>
             </div>
           </div>
@@ -370,8 +417,21 @@
           <h5 class="card-title">Stacey Binder</h5>
 
           <p class="card-text">General Manager</p>
-
-          <img src="images/stacey.jpg" class="card-img-top" alt="..." />
+          <div class="card-grid">
+            <div class="front">
+              <img src="images/stacey.jpg" class="card-img-top"
+                alt="Photo of crewmember">
+                <button class="flip-btn" class="btn btn-primary"><i class='fas fa-dog' style='font-size: 13px;color:brown;padding-right: 5px;'>
+                  <i class='fas fa-cat' style='font-size: 13px;color:gray;padding-left: 5px;'></i>
+                  <i class='fas fa-cat' style='font-size: 13px;color:rgb(223, 174, 100);padding-left: 5px;'></i></i>Meet My Pets!</button>
+            </div>
+            <div class="back">
+              <img src="images/stacylindpet.jpg" class="card-img-top">
+              <button class="unflip-btn" class="btn btn-primary"><i class='fas fa-male' style='font-size: 20px;color:black;padding-right: 5px;'></i>Meet 
+                Our Person!</button>
+            </div>
+          </div>
+       
 
           <div class="card-body">
             <script type="text/javascript" language="javascript">
@@ -399,8 +459,21 @@
           <h5 class="card-title">Lindsey Crown</h5>
 
           <p class="card-text">Supervisor</p>
-
-          <img src="images/lindsey.jpg" class="card-img-top" alt="..." />
+          <div class="card-grid">
+            <div class="front">
+              <img src="images/lindsey.jpg" class="card-img-top"
+                alt="Photo of crewmember">
+                <button class="flip-btn" class="btn btn-primary"><i class='fas fa-dog' style='font-size: 13px;color:brown;padding-right: 5px;'>
+                  <i class='fas fa-cat' style='font-size: 13px;color:gray;padding-left: 5px;'></i>
+                  <i class='fas fa-cat' style='font-size: 13px;color:rgb(223, 174, 100);padding-left: 5px;'></i></i>Meet My Pets!</button>
+            </div>
+            <div class="back">
+              <img src="images/stacylindpet.jpg" class="card-img-top">
+              <button class="unflip-btn" class="btn btn-primary"><i class='fas fa-female' style='font-size: 20px;color:black;padding-right: 5px;'></i>Meet 
+                Our Person!</button>
+            </div>
+          </div>
+         
 
           <div class="card-body">
             <script type="text/javascript" language="javascript">
@@ -454,25 +527,35 @@
         </div>
 
         <div class="card" style="width: 8rem;">
-          <h5 class="card-title">Conner Roberts</h5>
+          <h5 class="card-title">Connor Roberts</h5>
 
           <p class="card-text">Kitchen Manager</p>
-
-          <img src="images/connernew.jpg" class="card-img-top" alt="..." />
-
+          <div class="card-grid">
+          <div class="front">
+            <img src="images/conner2.jpg" class="card-img-top"
+              alt="Photo of crewmember">
+              <button class="flip-btn" class="btn btn-primary"><i class='fas fa-child' style='font-size: 15px;color:rgb(236, 132, 150);padding-right: 5px;'>
+          
+             </i></i>Meet My Daughter!</button>
+          </div>
+          <div class="back">
+            <img src="images/connernew.jpg" class="card-img-top">
+            <button class="unflip-btn" class="btn btn-primary"><i class='fas fa-male' style='font-size: 20px;color:black;padding-right: 5px;'></i>Meet 
+              My Daddy!!!!</button>
+          </div>
+        
+          </div>
           <div class="card-body">
             <script type="text/javascript" language="javascript">
-              // Generated by http://rumkin.com/tools/mailto_encoder
-              ML = 'g:de@ofs/c"ytl<aiE =m>.nrh';
-              MI = ">?BIH36C:D?@=<5195GG3H47?=<;250F95D:EAD?@=>8?E";
-              OT = "";
-              for (j = 0; j < MI.length; j++) {
-                OT += ML.charAt(MI.charCodeAt(j) - 48);
-              }
-              document.write(OT);
-              // -->
-            </script>
-            <noscript>You need JavaScript to see my email address</noscript>
+               // Generated by http://rumkin.com/tools/mailto_encoder
+              ML="ec:myaE/fl =\"ntsi<og@.drh>";
+              MI="A5:HG08;<35@9>B21B==BGD?59>4FBCE1B3<I635@9A75I";
+              OT="";
+              for(j=0;j<MI.length;j++){
+              OT+=ML.charAt(MI.charCodeAt(j)-48);
+              }document.write(OT);
+              // --></script>
+              <noscript>You need JavaScript to see my email address</noscript>
           </div>
 
           <div class="card-footer">
@@ -971,7 +1054,25 @@
         <li class="clearfix no-float"></li>
       </ul>
     </div>
+    <script>
 
+      $(".card-grid").flip({
+        trigger: 'manual'
+      });
+
+      $(".flip-btn").click(function () {
+        $(this).closest(".card-grid").flip(true);
+      });
+
+      $(".unflip-btn").click(function () {
+        $(this).closest(".card-grid").flip(false);
+      });
+
+
+
+
+
+    </script>
     <footer>
       <div data-includeHTML="https://saltydog.com/headers/footer.html"></div>
     </footer>
