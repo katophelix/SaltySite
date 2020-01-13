@@ -31,6 +31,7 @@ gtag('config', 'UA-9994729-1'), { 'optimize_id': 'GTM-N9XR6RG'};
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="description" content="Santa Cam where you can watch Santa Live as he greets kids and pets of all ages.">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -105,39 +106,21 @@ crossorigin="anonymous"></script>
  <header>
                 <?php include '../headers/_HeaderPartial.html' ; ?>
            </header>
-  <div class="container" style="text-align:center">
+           <br>
+           <br>
+           <br>
+  <div class="container mx-auto" style="text-align:center;max-width:1200px">
       
-      <div class="row">
+      <div class="row mx-auto">
           
-          <h1>See Santa Live! </h1>
+          <h1>Come back next year to See Santa Live! </h1>
+              
+          </div>
        
-     <h1>     <ul  style="list-style-type:none">
-              
-              <li>
-                  
-                  Sat. Dec. 7th
+  
 
-              </li>
-                         <li>
-              
-Sat. Dec. 14th
-
-              </li>
-                         <li>
-                  
-
-Sat. Dec. 21st
-              </li>
-          </ul></h1>
-          <h2> 3pm to 5pm</h2>
-      </div>
-      
-      
-      <div class="row">
-          
-      
-             <h2> Or Visit South Beach Inn and See Santa In Person! </h2>
-      </div>
+    <div class="row">
+            <div class="col">
 <?php
 
     $images = glob('*.{gif,png,jpg,jpeg}', GLOB_BRACE); //formats to look for
@@ -152,18 +135,24 @@ $latestimage2 = $images[2];
 $latestimage3 = $images[3];
 
 
-echo "<img src='" . $latestimage.  "' height='auto' width='640'> '<br>'";
-echo "<img src='" . $latestimage1.  "' height='auto' width='640'> '<br>' ";
- echo "<img src='" . $latestimage2.  "' height='auto' width='640'> '<br>' ";
-  echo "<img src='" . $latestimage3.  "' height='auto' width='640'> '<br>' ";
+echo  "<img src='" . $latestimage.  "' height='auto' width='100%'> ";
+echo "<br>";
+echo "<br>";
+echo "<img src='" . $latestimage1.  "' height='auto' width='100%'> ";
+echo "<br>";
+echo "<br>";
+ echo "<img src='" . $latestimage2.  "' height='auto' width='100%'> ";
+ echo "<br>";
+ echo "<br>";
+  echo "<img src='" . $latestimage3.  "' height='auto' width='100%'>  ";
 ?>
+</div>
+
+</div>
 
 
-
-
-
-
-  </div>
+</div>
+  
 
     </body>
 </html>
