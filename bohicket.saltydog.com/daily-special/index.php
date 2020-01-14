@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+  header("Expires: Tue, 03 Jul 2001 06:00:00 GMT");
+header("Cache-Control: no-store");
+?>
+
+
+
 
 
 
@@ -35,7 +41,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-
+ <meta name="description" content="Salty dog Cafe Bohicket Marina Daily specials - images and descriptions - see what's serving today!!!">
     <title>SaltyDogSpecials </title>
 
     <!-- Modernizr -->
@@ -231,15 +237,14 @@ font-size: 1.5em;
                   
   <?php
 
-
-        $filename = 'uploads/uploads/bodog.png';
+ $filename = 'uploads/uploads/bodog.png';
         if (file_exists($filename)) {
             $filename = "uploads/uploads/bodog.png";
             $filemtime = filemtime($filename);
 }
 ?>
                     <div class="col"> 
-                   <img src="uploads/uploads/bodog.png?<?php echo $filemtime; ?>" >
+                   <img src="https://www.saltydog.com/daily-special/uploads/uploads/bodog.png?<?php echo $filemtime; ?>" >
 </div>
 
                     </div>
