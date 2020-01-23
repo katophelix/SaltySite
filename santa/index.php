@@ -3,7 +3,7 @@
 $page = $_SERVER['PHP_SELF'];
 $sec = "10";
 ?>
-<html>
+<html lang="en" >
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

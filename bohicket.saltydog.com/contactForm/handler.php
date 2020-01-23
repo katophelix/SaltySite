@@ -19,7 +19,6 @@ $validator->field('email')->isEmail();
 $validator->field('message')->maxLength(6000);
 
 
-$pp->requireCaptcha();
 
 // $pp->sendEmailTo('kat@saltydog.com');
 $pp->sendEmailTo('bodoginfo@saltydog.com'); // ← Your email here

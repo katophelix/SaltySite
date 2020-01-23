@@ -1,6 +1,6 @@
 <?php
 $target_dir = "uploads/";
-$target_file = $target_dir . 'bodog.jpg';
+$target_file = $target_dir . 'bodog.png';
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
@@ -20,7 +20,7 @@ if(isset($_POST["submit"])) {
 //   $uploadOk = 0;
 // }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 3000000) {
+if ($_FILES["fileToUpload"]["size"] > 5000000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
 }

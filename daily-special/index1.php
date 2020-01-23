@@ -17,7 +17,7 @@
 
 
 
-<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -39,7 +39,7 @@
 
 
 
-    <meta charset="utf-8">
+    
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -256,14 +256,14 @@ img {
                       <?php
 // outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-        $filename = 'uploads/uploads/cafe.jpg';
+        $filename = 'uploads/uploads/cafe.png';
         if (file_exists($filename)) {
-            $filename = "uploads/uploads/cafe.jpg";
+            $filename = "uploads/uploads/cafe.png";
             $filemtime = filemtime($filename);
 }
 ?>
                    
-                   <img src="uploads/uploads/cafe.jpg?<?php echo $filemtime; ?>" >
+                   <img src="uploads/uploads/cafe.png?<?php echo $filemtime; ?>" >
 
                     </div>
 
@@ -296,14 +296,14 @@ img {
                       <?php
 // outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-        $filename = 'uploads/uploads/let.jpg';
+        $filename = 'uploads/uploads/let.png';
         if (file_exists($filename)) {
-            $filename = "uploads/uploads/let.jpg";
+            $filename = "uploads/uploads/let.png";
             $filemtime = filemtime($filename);
 }
 ?>
                     <div class="col"> 
-                   <img src="uploads/uploads/let.jpg?<?php echo $filemtime; ?>" >
+                   <img src="uploads/uploads/let.png?<?php echo $filemtime; ?>" >
 </div>
 
                     </div>
@@ -345,14 +345,14 @@ img {
                       <?php
 // outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-        $filename = 'uploads/uploads/bluffdog.jpg';
+        $filename = 'uploads/uploads/bluffdog.png';
         if (file_exists($filename)) {
-            $filename = "uploads/uploads/bluffdog.jpg";
+            $filename = "uploads/uploads/bluffdog.png";
             $filemtime = filemtime($filename);
 }
 ?>
                     <div class="col"> 
-                   <img src="uploads/uploads/bluffdog.jpg?<?php echo $filemtime; ?>" >
+                   <img src="uploads/uploads/bluffdog.png?<?php echo $filemtime; ?>" >
 </div>
 
                     </div>
@@ -364,37 +364,7 @@ img {
 
 
 
-                    <!-- <div class="block1" style="background-color: white !important;">
 
-<h1> The Salty Dog Cafe at Bohicket Marina</h1>
-<h2 class="card-title"><?php echo $data['bodog']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?>  </h2>
-
-
-   <h2 class="card-title"> <?php echo $data['bodog']['chef'];  ?> </h2>
-
-
-  <br><h4>Daily Specials</h4>
-
-  <h5 class="card-title"> <?php echo $data['bodog']['special_name'];  ?> </h5>
-
-  <p class="card-text">  <?php echo $data['bodog']['special_descr'];  ?> </p>
-
- <br>
-
- 
-
- <h4> <?php echo $data['bodog']['header'];  ?> </h4>
-
-  
-
-  <h5 class="card-title"> <?php echo $data['bodog']['child_name'];  ?> </h5>
-
-  <p class="card-text">   <?php echo $data['bodog']['child_descr'];  ?> </p>
-       <div class="col"><?php echo "<img src='uploads/uploads/bodog.jpg' />";?></div>
-
-
-
-</div> -->
  
 
   
@@ -405,7 +375,7 @@ img {
 
 
    
-<!-- 
+
                     <div class="block1" style="background-color: white !important;">
                     <h1 class="card-title">The Wreck of the Salty Dog </h1>
                           <h2 class="card-title"><?php echo $data['wreck']['meal']; ?>  <?php echo  date("m-d-Y") ;  ?>  </h2>
@@ -425,23 +395,22 @@ img {
 
                       <h5 class="card-title"> <?php echo $data['wreck']['child_name'];  ?> </h5>
 
-                      <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p> -->
+                      <p class="card-text">  <?php echo $data['wreck']['child_descr'];  ?></p> 
 
                       <?php
 // outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
 
-//         $filename = 'uploads/uploads/wreck.jpg';
-//         if (file_exists($filename)) {
-//             $filename = "uploads/uploads/wreck.jpg";
-//             $filemtime = filemtime($filename);
-// }
-// //
-//  
+        $filename = 'uploads/uploads/wreck.png';         if (file_exists($filename)) {
+           $filename = "uploads/uploads/wreck.png";
+            $filemtime = filemtime($filename);
+}
 
-// ?>
+ 
+
+ ?>
                    
            
-                   <!-- <p class="card-text">      <img src="uploads/uploads/wreck.jpg?<?php echo $filemtime; ?>" >                   </div>  -->
+                    <p class="card-text">      <img src="uploads/uploads/wreck.png?<?php echo $filemtime; ?>" >                   </div>  
 
 
 
