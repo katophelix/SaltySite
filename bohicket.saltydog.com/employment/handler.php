@@ -22,6 +22,6 @@ $validator->field('Email')->isEmail();
 
 
 
-$pp->sendEmailTo('kat@saltydog.com'); // ← Your email here
+$pp->sendEmailTo('bodoginfo@saltydog.com'); // ← Your email here
 
 echo $pp->process($_POST);

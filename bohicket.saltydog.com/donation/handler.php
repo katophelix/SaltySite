@@ -22,6 +22,6 @@ $validator->field('Message')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('kat@saltydog.com'); // ← Your email here
+$pp->sendEmailTo('bodoginfo@saltydog.com'); // ← Your email here
 
 echo $pp->process($_POST);

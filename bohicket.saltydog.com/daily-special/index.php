@@ -10,7 +10,7 @@
 
 
 
-<html class="no-js">
+<html lang="en" class="no-js">
 
 <!--<![endif]-->
 

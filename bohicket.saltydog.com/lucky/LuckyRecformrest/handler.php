@@ -26,6 +26,6 @@ $pp->attachFiles(['image']);
 
  $pp->sendEmailTo('luckyreceipt@saltydog.com'); // ← Your email here
 
-//  $pp->sendEmailTo('kat@saltydog.com'); // ← Your email here
+//$pp->sendEmailTo('kat@saltydog.com'); // ← Your email here
 
 echo $pp->process($_POST);
